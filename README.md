@@ -62,8 +62,8 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 ## Estado
 
 - **Fase 0 — cimientos:** ✅ PWA instalable + offline, modelo de datos, búsqueda, navegación por capas, rutas y situaciones, tema claro/oscuro.
-- **Fase 1 — contenido Capa 0:** Grupos A (enfoque educativo, 10 conceptos) y B (Método Scout y sus 8 elementos, 10 conceptos) **redactados y AUDITADOS**. 2 rutas guiadas. Quedan stubs de enlace en `borrador` (p. ej. `ciclo-de-programa`).
-- **Pendiente:** Grupo C (Sección/Rama/Unidad, Oportunidades de Aprendizaje, Ciclo de Programa, Progresión por etapas, DURASLID) y Grupo D (principios transversales); situaciones reales de la Capa 0; íconos PNG 192/512 para iOS; capas 1–3.
+- **Fase 1 — Capa 0 COMPLETA:** 32 conceptos **redactados y AUDITADOS** en 4 grupos — A (enfoque educativo), B (Método Scout y sus 8 elementos), C (organización y dinámica: sección/rama/unidad, grupos naturales, oportunidades de aprendizaje, etapas de progresión, ciclo de programa, DURASLID) y D (principios transversales: rol del dirigente, reconocimiento, participación juvenil, familia, coeducación, ODS). 4 rutas guiadas. Sin stubs pendientes.
+- **Pendiente:** situaciones reales de la Capa 0; íconos PNG 192/512 para iOS; capas 1–3 (política, ramas, aplicación).
 
 ## Identidad visual
 

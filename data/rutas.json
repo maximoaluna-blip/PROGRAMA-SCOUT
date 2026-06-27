@@ -36,5 +36,35 @@
       "equilibrio-del-metodo"
     ],
     "estado": "borrador"
+  },
+  {
+    "id": "como-se-organiza-y-mueve-la-unidad",
+    "titulo": "Cómo se organiza y se mueve la vida scout",
+    "descripcion": "De la estructura (sección, rama, unidad) a la dinámica que la pone en marcha: grupos naturales, oportunidades de aprendizaje, progresión, ciclo de programa y el estándar DURASLID.",
+    "capa": 0,
+    "pasos": [
+      "seccion-rama-unidad",
+      "grupos-naturales",
+      "oportunidades-de-aprendizaje",
+      "etapas-de-progresion",
+      "ciclo-de-programa",
+      "duraslid"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "principios-que-atraviesan-todo",
+    "titulo": "Principios que atraviesan todo el programa",
+    "descripcion": "Las dimensiones transversales del Programa de Jóvenes: el rol del dirigente, el reconocimiento, la participación juvenil, la familia, la coeducación y los ODS.",
+    "capa": 0,
+    "pasos": [
+      "rol-del-dirigente",
+      "reconocimiento",
+      "participacion-juvenil",
+      "familia-aliada",
+      "coeducacion-diversidad-inclusion",
+      "scouts-por-los-ods"
+    ],
+    "estado": "borrador"
   }
 ]

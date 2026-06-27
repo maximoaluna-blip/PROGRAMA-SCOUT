@@ -383,21 +383,227 @@
     "estado": "auditado"
   },
   {
+    "id": "seccion-rama-unidad",
+    "termino": "Sección, Rama y Unidad",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Los tres niveles sobre los que se organiza un Grupo Scout. La SECCIÓN es la gran categoría etaria (agrupa Protagonistas con desarrollo y necesidades similares); la RAMA es la propuesta educativa propia de cada sección, con su identidad y marco simbólico (las cinco ramas: Cachorros, Lobatos, Scouts, Nómadas Scout y Rovers); la UNIDAD es el colectivo concreto de esa rama en un Grupo, con su propio nombre: Familia, Manada, Tropa, Comunidad y Clan.",
+    "enLaPractica": "Tu unidad es, por ejemplo, «la Manada»; su rama es Lobatos; y su sección, la franja de 7 a 10 años. Distinguir rama (la propuesta educativa) de unidad (el colectivo concreto) evita confundir «edad» con «método».",
+    "cita": {
+      "texto": "Las secciones, ramas y unidades son la estructura sobre la cual se organiza un Grupo en el Movimiento Scout.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 4, p. 17"
+    },
+    "relacionados": [
+      "grupos-naturales",
+      "areas-de-crecimiento"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "grupos-naturales",
+    "termino": "Grupos naturales y estructuras educativas",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Organizar a los Protagonistas de Programa en pequeños colectivos estables (patrullas, seisenas, equipos…) no es una costumbre heredada, sino una decisión pedagógica: son «el mejor laboratorio de ciudadanía» del escultismo. En ellos las competencias dejan de ser una lista y se vuelven práctica cotidiana: comunicarse, resolver desacuerdos, planear, asumir roles, rendir cuentas.",
+    "enLaPractica": "El grupo natural reproduce a pequeña escala la vida social (diversidad de ritmos, acuerdos, responsabilidades distribuidas). Cuida que tenga «nombre, rostro y memoria»: identidad y estabilidad, no equipos improvisados en cada reunión.",
+    "cita": {
+      "texto": "Trabajar en grupos naturales no es una costumbre heredada, es una decisión pedagógica.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 5, p. 24"
+    },
+    "relacionados": [
+      "sistema-de-equipos",
+      "seccion-rama-unidad",
+      "participacion-juvenil"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "oportunidades-de-aprendizaje",
+    "termino": "Oportunidades de Aprendizaje",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Toda experiencia —dentro o fuera del Movimiento, planificada o espontánea— que permite a un Protagonista de Programa acercarse a una competencia educativa, ya sea explorándola, aplicándola o profundizándola. El modelo reconoce que la vida misma ofrece innumerables oportunidades: cobran sentido educativo cuando se viven con intención, reflexión y acompañamiento.",
+    "enLaPractica": "No todo lo que pasa «enseña» por sí solo: un campamento o un servicio se vuelve oportunidad de aprendizaje cuando lo acompañas y lo cierras con reflexión. Busca también el aprendizaje en lo cotidiano y en lo externo al escultismo.",
+    "cita": {
+      "texto": "Se entiende por oportunidad de aprendizaje toda experiencia, dentro o fuera del Movimiento Scout, que permite a un Protagonista de Programa acercarse a una competencia educativa, ya sea explorando, aplicándola o profundizando.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 7, p. 40"
+    },
+    "relacionados": [
+      "competencias-educativas",
+      "aprender-haciendo",
+      "etapas-de-progresion"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "etapas-de-progresion",
+    "termino": "Etapas de la progresión (Adaptación, Progresión, Transición)",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El recorrido en la unidad tiene tres etapas: ADAPTACIÓN (el joven se incorpora y conoce Promesa y Ley, marco simbólico y vida de grupo; culmina con la investidura o renovación de la Promesa); PROGRESIÓN PERSONAL (vive oportunidades de aprendizaje y desarrolla competencias en tres niveles de desempeño: Exploro, Aplico, Profundizo); y TRANSICIÓN (preparación para pasar a la siguiente rama).",
+    "enLaPractica": "No hay un orden fijo de competencias: cada joven construye su propio camino según intereses y ritmo. Tu acompañamiento cambia con el nivel: apoyas en Exploro, acompañas en Aplico y enlazas en Profundizo.",
+    "cita": {
+      "texto": "Corresponde al momento en que un joven se incorpora a una rama o al Movimiento Scout por primera vez... Un Protagonista de Programa puede acercarse a una determinada competencia en tres niveles de desempeño.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 8.1, pp. 45–47"
+    },
+    "relacionados": [
+      "progresion-personal",
+      "oportunidades-de-aprendizaje",
+      "rol-del-dirigente"
+    ],
+    "estado": "auditado"
+  },
+  {
     "id": "ciclo-de-programa",
     "termino": "Ciclo de Programa",
     "capa": 0,
     "rama": null,
-    "definicion": "Forma en que se organiza la vida de la unidad en períodos sucesivos (propuesta, selección y preparación de actividades, realización y evaluación), articulando la vida de grupo con la progresión personal. (Ficha base; se desarrolla en el Grupo C, Cap. 11 del Modelo.)",
-    "enLaPractica": "El ciclo evita que la unidad funcione «por inercia»: cada período tiene inicio, actividades elegidas con participación y un cierre que evalúa avances.",
+    "definicion": "El «pulso con el que la unidad respira»: mirar el entorno con honestidad, elegir propósitos con los jóvenes, diseñar experiencias con sentido, ejecutar con disciplina y cerrar con reflexión y celebración, para iniciar un nuevo ciclo con más madurez. Al fundirlo con Aprendizaje Basado en Proyectos (ABP) gana dirección y propósito público: se trabaja para un destinatario concreto, con criterios de calidad y rendición de cuentas.",
+    "enLaPractica": "Evita que la unidad funcione «por inercia»: cada ciclo se elige con participación de los jóvenes y se cierra evaluando y celebrando. El ABP le da propósito público (un producto o servicio para alguien real).",
     "cita": {
-      "texto": "",
+      "texto": "El Ciclo de Programa es el pulso con el que tu unidad respira: mirar el entorno con honestidad, elegir propósitos con los jóvenes, diseñar experiencias con sentido, ejecutar con disciplina y cerrar con reflexión y celebración.",
       "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
-      "ubicacion": "Cap. 11 (por desarrollar — Grupo C)"
+      "ubicacion": "Cap. 11, p. 75"
     },
     "relacionados": [
-      "metodo-scout",
+      "oportunidades-de-aprendizaje",
+      "duraslid",
+      "equilibrio-del-metodo"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "duraslid",
+    "termino": "DURASLID (estándar de calidad)",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Estándar de calidad de toda oportunidad de aprendizaje. Sus siglas: Desafiantes, Útiles, Recompensantes, Atractivas, Seguras, Lúdicas, Inclusivas y Diversas. Es el «lente» con el que se decide si una idea entra al plan, cómo se implementa y qué evidencias dejará.",
+    "enLaPractica": "Úsalo en tres momentos: al diseñar (sentido y forma), al facilitar (ajustar sobre la marcha) y al cerrar (leer lo vivido y convertirlo en progreso: Exploro–Aplico–Profundizo).",
+    "cita": {
+      "texto": "adoptamos DURASLID como estándar de calidad de toda oportunidad de aprendizaje: Desafiantes, Útiles, Recompensantes, Atractivas, Seguras, Lúdicas, Inclusivas y Diversas.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 10, p. 69"
+    },
+    "relacionados": [
+      "oportunidades-de-aprendizaje",
+      "ciclo-de-programa"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "rol-del-dirigente",
+    "termino": "Rol del dirigente: apoyar, acompañar, enlazar",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El acompañamiento del dirigente no es supervisar actividades ni certificar logros: es un papel educativo que inspira, guía, orienta y abre caminos. Se organiza en torno a los tres momentos de aprendizaje —Exploro, Aplico, Profundizo— y sus roles pedagógicos asociados: APOYAR, ACOMPAÑAR y ENLAZAR.",
+    "enLaPractica": "Ajusta tu rol al momento del joven: apoyas cuando explora (facilitas recursos), acompañas cuando aplica (sostienes el proceso) y enlazas cuando profundiza (lo conectas con mentores y experiencias externas).",
+    "cita": {
+      "texto": "tomando como referencia los tres momentos de aprendizaje del modelo —Exploro, Aplico y Profundizo— y sus roles pedagógicos asociados: apoyar, acompañar y enlazar.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 9, p. 58"
+    },
+    "relacionados": [
+      "apoyo-del-adulto",
+      "etapas-de-progresion",
+      "autoeducacion-progresiva"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "reconocimiento",
+    "termino": "Reconocimiento en el proceso educativo",
+    "capa": 0,
+    "rama": null,
+    "definicion": "En el escultismo el reconocimiento se vive a través de momentos de ceremonia que acompañan el proceso educativo. No se trata de «adornar», sino de educar con símbolos, palabra y ritmo: dar forma a lo vivido, nombre al esfuerzo y hacer de la pertenencia una experiencia compartida.",
+    "enLaPractica": "Una ceremonia bien diseñada dice con claridad por qué nos reunimos y por qué ese instante importa. No es un espectáculo para espectadores pasivos: los equipos asumen roles reales y la participación juvenil conduce.",
+    "cita": {
+      "texto": "No se trata de adornar: se trata de educar con símbolos, palabra y ritmo.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 12, p. 81"
+    },
+    "relacionados": [
+      "marco-simbolico",
+      "progresion-personal",
+      "promesa-y-ley"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "familia-aliada",
+    "termino": "La familia como aliada educativa",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El escultismo reconoce a la familia como el núcleo fundamental de la educación. La propuesta de Scouts de Colombia no pretende sustituirla, sino complementarla y potenciarla: familia y Movimiento como aliados por el desarrollo integral de cada Protagonista de Programa. La familia no es un acompañante pasivo, sino un actor activo en la progresión y en la vida de grupo.",
+    "enLaPractica": "Involucra a las familias de forma concreta: su participación da coherencia al proceso y proyecta a la vida cotidiana lo aprendido en el Movimiento. No las trates como público, sino como parte del equipo educativo.",
+    "cita": {
+      "texto": "La propuesta educativa de Scouts de Colombia no pretende sustituir esta tarea, sino complementarla y potenciarla, generando un ambiente en el que familia y Movimiento se convierten en aliados.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 13, p. 86"
+    },
+    "relacionados": [
+      "educacion-integral",
       "areas-de-crecimiento"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
+  },
+  {
+    "id": "coeducacion-diversidad-inclusion",
+    "termino": "Coeducación, diversidad e inclusión",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Más que políticas o declaraciones formales, son oportunidades de aprendizaje para vivir experiencias transformadoras en entornos de respeto, equidad y reconocimiento mutuo. El modelo las incorpora en coherencia con el Proyecto Educativo y la Política Interamericana de Diversidad e Inclusión: el escultismo aspira a ser un Movimiento inclusivo y coeducativo.",
+    "enLaPractica": "No son normas rígidas sino una visión: garantiza la participación derribando barreras y aprovecha la diversidad del grupo como material educativo. (Para profundizar: «Nuevas Perspectivas de la Coeducación».)",
+    "cita": {
+      "texto": "la coeducación, la diversidad y la inclusión, que más que políticas o declaraciones formales, son oportunidades de aprendizaje que permiten que los Protagonistas de Programa vivan experiencias transformadoras.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 14, p. 90"
+    },
+    "relacionados": [
+      "fundamentos-pedagogicos",
+      "participacion-juvenil"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "participacion-juvenil",
+    "termino": "Participación juvenil",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Pilar central del escultismo y rasgo de su identidad como educación no formal: Baden-Powell concibió el Movimiento como una escuela donde se aprende participando en la vida real —decidiendo, organizando, planificando y asumiendo responsabilidades. En Scouts de Colombia se entiende no solo como un derecho, sino como estrategia pedagógica que fortalece la progresión y prepara para una ciudadanía activa.",
+    "enLaPractica": "Da a los jóvenes decisiones reales en su patrulla, equipo o comunidad, no participación decorativa. Cuanta más responsabilidad genuina asumen, más educa.",
+    "cita": {
+      "texto": "la participación juvenil se entiende no sólo como un derecho, sino como una estrategia pedagógica que fortalece la progresión personal, consolida la vida de grupo y prepara a los protagonistas para ejercer una ciudadanía activa y transformadora.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 15, p. 94"
+    },
+    "relacionados": [
+      "sistema-de-equipos",
+      "rol-del-dirigente",
+      "proposito-del-movimiento"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "scouts-por-los-ods",
+    "termino": "Scouts por los ODS (Desafíos ODS)",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Los Desafíos ODS son oportunidades de aprendizaje de alta calidad dentro del Programa de Jóvenes, vividas bajo el Método Scout, con experiencias reales, reflexión y resultados visibles para la comunidad. «Scouts por los ODS» ofrece un catálogo organizado en cuatro iniciativas (áreas focales) para orientar proyectos, campañas y servicios con impacto, alimentando competencias y progresión personal.",
+    "enLaPractica": "La premisa: servir a un propósito real, generar evidencias observables y traducir la experiencia en aprendizajes transferibles. Para implementar un desafío concreto, consulta sus guías oficiales.",
+    "cita": {
+      "texto": "Los Desafíos ODS son oportunidades de aprendizaje de alta calidad que viven dentro del Programa de Jóvenes, bajo el Método Scout, y que se evidencian con experiencias reales, reflexiones con sentido y resultados visibles para la comunidad.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 16, p. 98"
+    },
+    "relacionados": [
+      "oportunidades-de-aprendizaje",
+      "participacion-en-la-comunidad",
+      "competencias-educativas"
+    ],
+    "estado": "auditado"
   }
 ]

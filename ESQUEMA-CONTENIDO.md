@@ -12,14 +12,16 @@ El contenido va de lo **transversal** (capa 0) a lo **específico** (capa 3). Un
 |---|---|---|
 | 0 | `transversal` | Enfoque educativo, Método Scout y sus 8 elementos, áreas de crecimiento, ciclo de programa |
 | 1 | `politica` | PSNPJ y su Modelo de Aplicación «El Gran Juego para la Vida» |
-| 2 | `ramas` | Manada, Tropa, Caminantes, Rover |
+| 2 | `ramas` | Cachorros, Lobatos, Scouts, Nómadas Scout, Rovers |
 | 3 | `aplicacion` | Herramientas del dirigente y situaciones reales |
 
 ### Estado del contenido (Capa 0)
 
 - **Grupo A — enfoque educativo** (10 conceptos, `auditado`): propósito, educación no formal, 4 pilares (Delors/UNESCO), educación integral, autoeducación progresiva, educación basada en valores, fundamentos pedagógicos, áreas de crecimiento, prioridades educativas, competencias educativas. Fuentes: «Características Esenciales del Movimiento Scout» (WOSM 2019) y Modelo 2026.
 - **Grupo B — Método Scout** (10 conceptos, `auditado`): el método + sus 8 elementos + equilibrio. Fuente: Modelo 2026, Cap. 3.
-- **Pendiente:** Grupo C (organización y dinámica) y Grupo D (principios transversales); el stub `ciclo-de-programa` se desarrolla en el Grupo C.
+- **Grupo C — organización y dinámica** (6 conceptos, `auditado`): sección/rama/unidad, grupos naturales, oportunidades de aprendizaje, etapas de progresión, ciclo de programa, DURASLID. Fuente: Modelo 2026, Caps. 4, 5, 7, 8, 10, 11.
+- **Grupo D — principios transversales** (6 conceptos, `auditado`): rol del dirigente, reconocimiento, participación juvenil, familia aliada, coeducación/diversidad/inclusión, Scouts por los ODS. Fuente: Modelo 2026, Caps. 9, 12–16.
+- **Capa 0 completa: 32 conceptos auditados.** Pendiente: situaciones reales y capas 1–3.
 
 ## `data/conceptos.json` — tarjeta de concepto
 

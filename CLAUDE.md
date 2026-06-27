@@ -38,4 +38,6 @@ GitHub Pages desde la raíz (`main`, `/`), HTTPS. Publicar = `commit + push` a `
 
 ## 6. Estado
 
-Capa 0: Grupos A (enfoque educativo) y B (Método Scout) **auditados** (20 conceptos). Pendiente: Grupos C y D, situaciones reales, íconos PNG iOS, capas 1–3. Ver `README.md` §Estado.
+**Capa 0 COMPLETA: 32 conceptos auditados** (Grupos A enfoque educativo, B Método Scout, C organización/dinámica, D principios transversales) + 4 rutas guiadas. Pendiente: situaciones reales de la Capa 0, íconos PNG iOS, capas 1–3. Ver `README.md` §Estado.
+
+Terminología confirmada (Modelo 2026): las 5 **ramas** son Cachorros, Lobatos, Scouts, **Nómadas Scout** (no «Caminantes») y Rovers; sus **unidades** son Familia, Manada, Tropa, Comunidad y Clan.
