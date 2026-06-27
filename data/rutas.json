@@ -17,5 +17,24 @@
       "competencias-educativas"
     ],
     "estado": "borrador"
+  },
+  {
+    "id": "el-metodo-scout-paso-a-paso",
+    "titulo": "El Método Scout, elemento por elemento",
+    "descripcion": "Recorre el sistema completo: primero el método como un todo, luego sus ocho elementos y, al cierre, el equilibrio que los integra.",
+    "capa": 0,
+    "pasos": [
+      "metodo-scout",
+      "promesa-y-ley",
+      "aprender-haciendo",
+      "progresion-personal",
+      "sistema-de-equipos",
+      "apoyo-del-adulto",
+      "marco-simbolico",
+      "naturaleza",
+      "participacion-en-la-comunidad",
+      "equilibrio-del-metodo"
+    ],
+    "estado": "borrador"
   }
 ]

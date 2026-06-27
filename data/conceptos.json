@@ -193,56 +193,194 @@
     "termino": "Método Scout",
     "capa": 0,
     "rama": null,
-    "definicion": "Sistema de autoeducación progresiva formado por ocho elementos interdependientes que actúan como un todo (no como una lista de la que se elige): Promesa y Ley, aprender haciendo, progresión personal, sistema de equipos, apoyo del adulto, marco simbólico, naturaleza y participación en la comunidad.",
-    "enLaPractica": "Si en la unidad se aplica solo «aprender haciendo» pero se ignoran el sistema de equipos o el marco simbólico, no se está aplicando el Método Scout: es el conjunto el que educa.",
+    "definicion": "El Método Scout es el «corazón operativo» de la propuesta educativa: un sistema —se nombra en singular— formado por ocho elementos interdependientes que se combinan de manera intencional y equilibrada, reforzándose entre sí. No es una suma de técnicas aisladas. Sus ocho elementos son: la Promesa y la Ley, aprender haciendo, progresión personal, sistema de equipos, apoyo del adulto, marco simbólico, naturaleza y participación en la comunidad.",
+    "enLaPractica": "Aunque en un momento dado no todos los elementos estén en primer plano, a lo largo del ciclo de la unidad (reuniones, salidas, campamentos, proyectos) el sistema completo debe activarse. Si aplicas solo «aprender haciendo» e ignoras el equipo o el símbolo, no estás aplicando el método.",
     "cita": {
-      "texto": "",
+      "texto": "El Método Scout se nombra en singular por una razón: es un sistema. Sus elementos no compiten entre sí ni se aplican por separado; se combinan de manera intencional y equilibrada, reforzándose mutuamente.",
       "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
-      "ubicacion": "Cap. 3 (por desarrollar — Grupo B)"
+      "ubicacion": "Cap. 3, p. 11"
     },
     "relacionados": [
-      "autoeducacion-progresiva",
       "promesa-y-ley",
-      "progresion-personal"
+      "aprender-haciendo",
+      "progresion-personal",
+      "sistema-de-equipos",
+      "apoyo-del-adulto",
+      "marco-simbolico",
+      "naturaleza",
+      "participacion-en-la-comunidad",
+      "equilibrio-del-metodo",
+      "autoeducacion-progresiva"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "promesa-y-ley",
     "termino": "Promesa y Ley Scout",
     "capa": 0,
     "rama": null,
-    "definicion": "Primer elemento del Método Scout. La Promesa es el compromiso personal y voluntario de hacer todo lo posible por vivir la Ley; la Ley es el código de conducta ética que expresa los valores del Movimiento. (Ficha base; se desarrolla en el Grupo B.)",
-    "enLaPractica": "Es la puerta de entrada vivencial a los valores: se asume libremente y orienta la vida de la unidad.",
+    "definicion": "Primer elemento del método: «el punto de anclaje ético». La Promesa y la Ley no son un reglamento externo, sino un compromiso personal y voluntario con un conjunto de valores compartidos. El escultismo no busca producir conductas por obediencia, sino formar convicciones por adhesión vivencial; por eso la Promesa no se cumple una vez, se renueva interiormente a medida que el joven crece.",
+    "enLaPractica": "La Ley se vuelve «una manera de conversar la vida»: ayuda a planear, a reconocer errores sin aplastar la dignidad y a orientar decisiones en los conflictos. Se nota menos en lo que se recita y más en el clima del grupo.",
     "cita": {
-      "texto": "",
+      "texto": "La Promesa y la Ley son el punto de anclaje ético del método. No funcionan como reglamento externo, sino como un compromiso personal y voluntario con un conjunto de valores compartidos.",
       "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
-      "ubicacion": "Cap. 3.1.1 (por desarrollar — Grupo B)"
+      "ubicacion": "Cap. 3.1.1, p. 13"
     },
     "relacionados": [
       "metodo-scout",
       "educacion-basada-en-valores"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
+  },
+  {
+    "id": "aprender-haciendo",
+    "termino": "Aprender haciendo",
+    "capa": 0,
+    "rama": null,
+    "definicion": "«El motor pedagógico del método»: el uso de acciones prácticas —experiencias de vida real— y de la reflexión sobre esas experiencias para facilitar el aprendizaje continuo. La vivencia no es premio ni relleno: es laboratorio vital. El joven actúa, se equivoca, vuelve a intentar y luego se detiene a leer el sentido de lo vivido.",
+    "enLaPractica": "Una caminata, una construcción o un servicio educan cuando se cierran con reflexión (planear–hacer–revisar). Ahí el joven descubre que su crecimiento no depende de «que le enseñen»: es la puerta de la autoeducación.",
+    "cita": {
+      "texto": "Aprender haciendo es el motor pedagógico del método. Se trata del uso de acciones prácticas —experiencias de vida real— y de la reflexión sobre esas experiencias para facilitar el aprendizaje y el desarrollo continuos.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.1.2, p. 13"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "autoeducacion-progresiva",
+      "fundamentos-pedagogicos"
+    ],
+    "estado": "auditado"
   },
   {
     "id": "progresion-personal",
     "termino": "Progresión Personal",
     "capa": 0,
     "rama": null,
-    "definicion": "Camino de desarrollo de cada joven a su propio ritmo, hecho visible mediante competencias intermedias y acompañado por el dirigente. (Ficha base; se desarrolla en el Grupo C, Cap. 8 del Modelo.)",
-    "enLaPractica": "No es una carrera ni una competencia entre jóvenes: cada quien avanza desde su punto de partida.",
+    "definicion": "«El ritmo interno del método»: un viaje de aprendizaje progresivo y autodirigido, facilitado por los adultos, orientado a motivar y desafiar a cada joven. El reconocimiento (incluidas las insignias) tiene sentido cuando ilumina avances reales y fortalece la confianza, sin convertirse en presión ni en etiqueta.",
+    "enLaPractica": "El joven no «colecciona logros»: aprende a leerse, a retarse con honestidad y a celebrar lo que mejora con humildad. No es una carrera entre jóvenes; cada quien avanza desde su punto de partida.",
     "cita": {
-      "texto": "",
+      "texto": "La progresión personal es el ritmo interno del método. Es un viaje de aprendizaje progresivo orientado a motivar y desafiar...",
       "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
-      "ubicacion": "Cap. 8 (por desarrollar — Grupo C)"
+      "ubicacion": "Cap. 3.1.3, pp. 13–14"
     },
     "relacionados": [
+      "metodo-scout",
       "competencias-educativas",
-      "autoeducacion-progresiva",
-      "metodo-scout"
+      "autoeducacion-progresiva"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
+  },
+  {
+    "id": "sistema-de-equipos",
+    "termino": "Sistema de equipos",
+    "capa": 0,
+    "rama": null,
+    "definicion": "«La arquitectura social del método»: el uso de pequeños equipos como forma de aprendizaje colaborativo para desarrollar el trabajo colectivo, las habilidades interpersonales, el liderazgo y un sentido real de responsabilidad y pertenencia. Convierte la vida comunitaria en escuela de ciudadanía, con un sistema de representación que conecta las decisiones del equipo con la vida de la unidad.",
+    "enLaPractica": "No basta con «nombrar patrullas»: hay que crear condiciones para que la autogestión sea real (que el equipo organice, proponga y evalúe). Así el joven aprende a ser libre sin ser irresponsable, y responsable sin perder la alegría.",
+    "cita": {
+      "texto": "El sistema de equipos es la arquitectura social del método. Consiste en el uso de pequeños equipos como forma de aprendizaje colaborativo, para desarrollar trabajo en colectivo, habilidades interpersonales, liderazgo y un sentido real de responsabilidad y pertenencia.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.1.4, p. 14"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "apoyo-del-adulto",
+      "participacion-en-la-comunidad"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "apoyo-del-adulto",
+    "termino": "Apoyo del adulto",
+    "capa": 0,
+    "rama": null,
+    "definicion": "«El motivador consciente del proceso»: adultos que facilitan y apoyan a los jóvenes para crear oportunidades de aprendizaje y, mediante una cultura de asociación, convertirlas en experiencias significativas. Sostiene una convicción esencial: el Movimiento es de jóvenes, apoyado por adultos; no es un movimiento para jóvenes dirigido por adultos.",
+    "enLaPractica": "Conviven tres funciones en el rol adulto: educador (apoya la autoformación), facilitador del grupo (cuida clima y relaciones) y promotor de la actividad (garantiza que ocurra con éxito y seguridad). Y se acompaña distinto a una Manada que a un Clan: esa diferenciación es respeto educativo.",
+    "cita": {
+      "texto": "El Movimiento es de jóvenes, apoyado por adultos; no es un Movimiento para jóvenes dirigido por adultos.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.1.5, pp. 14–15"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "sistema-de-equipos",
+      "autoeducacion-progresiva"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "marco-simbolico",
+    "termino": "Marco simbólico",
+    "capa": 0,
+    "rama": null,
+    "definicion": "«La gramática emocional y cultural del método»: una estructura unificadora de temas y símbolos que facilita el aprendizaje y el desarrollo de una identidad propia como scout, haciendo el programa memorable y significativo. Es progresivo: cada sección vive un marco acorde a su madurez.",
+    "enLaPractica": "Bien usado, eleva lo cotidiano: una fogata se vuelve comunidad; un banderín, pertenencia. Regla de oro: el símbolo funciona cuando no se sobreexplica —se propone, se vive y se deja resonar.",
+    "cita": {
+      "texto": "El marco simbólico es la gramática emocional y cultural del método. Es una estructura unificadora de temas y símbolos que facilita el aprendizaje y el desarrollo de una identidad única como Scout.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.1.6, p. 15"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "progresion-personal"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "naturaleza",
+    "termino": "Naturaleza",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Mucho más que «hacer actividades al aire libre»: son oportunidades de aprendizaje en entornos naturales que fomentan la comprensión y la relación con el mundo más amplio. Ofrece aventura, pero también humildad, paciencia, cuidado, resiliencia y asombro, y abre una puerta al desarrollo espiritual. Puede expresarse también en contextos urbanos.",
+    "enLaPractica": "La vida real al aire libre obliga a planear, adaptarse y cooperar, y luego a leer lo que la experiencia dejó en cada uno. «La naturaleza enseña sin gritar, pero deja huella.»",
+    "cita": {
+      "texto": "La naturaleza es mucho más que hacer actividades al aire libre. Son oportunidades de aprendizaje en entornos naturales que fomentan la comprensión y relación con el mundo más amplio.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.1.7, p. 15"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "participacion-en-la-comunidad"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "participacion-en-la-comunidad",
+    "termino": "Participación en la comunidad",
+    "capa": 0,
+    "rama": null,
+    "definicion": "«El despliegue social del método»: exploración activa y compromiso con las comunidades y el mundo, fomentando el aprecio y la comprensión entre las personas. Bien implementado evita el asistencialismo superficial: el servicio no es «hacer por», sino «hacer con», desde la ciudadanía activa, la cooperación y el reconocimiento de la dignidad del otro.",
+    "enLaPractica": "Conecta, cuando se pueda, cada oportunidad de aprendizaje con su sentido comunitario: incluso habilidades personales ganan profundidad cuando el joven reflexiona cómo ponerlas al servicio de los demás.",
+    "cita": {
+      "texto": "La participación en la comunidad es el despliegue social del método: exploración activa y compromiso con las comunidades y el mundo, fomentando aprecio y comprensión entre las personas.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.1.8, pp. 15–16"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "sistema-de-equipos",
+      "naturaleza"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "equilibrio-del-metodo",
+    "termino": "Equilibrio, intención y coherencia",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El método funciona cuando se vive como sistema: implementarlo no es «cumplir elementos» de forma administrativa, sino cuidar su equilibrio. En un momento destacará el marco simbólico; en otro, la naturaleza, el servicio o la vida de equipo; pero a lo largo del tiempo el conjunto debe estar presente, porque el método es el tejido completo, no un recorte.",
+    "enLaPractica": "Conviene un seguimiento periódico de cómo se implementa el método en la unidad: sin mecanismos de revisión aparecen variaciones entre grupos, y esa dispersión se vuelve un riesgo para la coherencia del programa.",
+    "cita": {
+      "texto": "a lo largo del tiempo, el conjunto debe estar presente de forma simultánea, porque el método es el tejido completo, no un recorte.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.2, p. 16"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "ciclo-de-programa",
+      "competencias-educativas"
+    ],
+    "estado": "auditado"
   },
   {
     "id": "ciclo-de-programa",
