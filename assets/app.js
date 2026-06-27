@@ -154,7 +154,7 @@ function viewRuta(id) {
     </div>`;
 }
 
-function viewBuscar(q) {
+function searchResultsHTML(q) {
   const res = search(q);
   const cs = res.conceptos
     .map((c) => `<button class="card list-item" onclick="go('#/concepto/${c.id}')"><h3>${esc(c.termino)} ${draftChip(c.estado)}</h3><p>${esc(c.definicion).slice(0,100)}…</p></button>`)
@@ -163,17 +163,31 @@ function viewBuscar(q) {
     .map((s) => `<button class="card list-item" onclick="go('#/situacion/${s.id}')"><h3>💬 ${esc(s.titulo)}</h3></button>`)
     .join("");
   const total = res.conceptos.length + res.situaciones.length;
+  if (!q) return '<p class="empty">Escribe para buscar conceptos y situaciones.</p>';
+  if (total === 0) return '<p class="empty">Sin resultados. Prueba con otra palabra.</p>';
+  return `${cs ? `<p class="section-title">Conceptos</p>${cs}` : ""}${ss ? `<p class="section-title">Situaciones</p>${ss}` : ""}`;
+}
+
+function viewBuscar(q) {
   return `
     <div class="view">
       <div class="search-wrap">
         <span class="si">🔍</span>
-        <input type="search" autofocus value="${esc(q)}" placeholder="Buscar…" oninput="go('#/buscar/' + encodeURIComponent(this.value))" />
+        <input id="q-input" type="search" value="${esc(q)}" placeholder="Buscar…" oninput="runSearch(this.value)" />
       </div>
-      ${!q ? '<p class="empty">Escribe para buscar conceptos y situaciones.</p>' :
-        total === 0 ? '<p class="empty">Sin resultados. Prueba con otra palabra.</p>' :
-        `${cs ? `<p class="section-title">Conceptos</p>${cs}` : ""}${ss ? `<p class="section-title">Situaciones</p>${ss}` : ""}`}
+      <div id="search-results">${searchResultsHTML(q)}</div>
     </div>`;
 }
+
+/* Búsqueda en vivo: actualiza SOLO los resultados, sin re-renderizar el
+   cuadro de texto (así no se pierde el foco al escribir). El hash se
+   sincroniza con replaceState, que no dispara render(). */
+function runSearch(q) {
+  const cont = document.getElementById("search-results");
+  if (cont) cont.innerHTML = searchResultsHTML(q);
+  history.replaceState(null, "", "#/buscar/" + encodeURIComponent(q));
+}
+window.runSearch = runSearch;
 
 function viewSituaciones() {
   const items = DB.situaciones
@@ -205,6 +219,10 @@ function render() {
   app.scrollTo?.(0, 0);
   window.scrollTo(0, 0);
   updateTabbar(route);
+  if (route === "buscar") {
+    const inp = document.getElementById("q-input");
+    if (inp) { inp.focus(); const v = inp.value; inp.value = ""; inp.value = v; }
+  }
 }
 
 function updateTabbar(route) {
