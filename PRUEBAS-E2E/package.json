@@ -1,0 +1,20 @@
+{
+  "name": "programa-scout-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pruebas E2E (Playwright + axe) para la PWA Programa Scout.",
+  "scripts": {
+    "test": "playwright test",
+    "smoke": "playwright test smoke",
+    "data": "playwright test data",
+    "a11y": "playwright test a11y",
+    "responsive": "playwright test responsive",
+    "search": "playwright test search",
+    "pwa": "playwright test pwa",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.50.0"
+  }
+}
