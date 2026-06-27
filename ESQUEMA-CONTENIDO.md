@@ -1,6 +1,8 @@
 # ESQUEMA-CONTENIDO.md — Modelo de datos de Programa Scout
 
-> Fuente de verdad de la app. Todo el contenido vive en `/data/*.json` y es **auditable** con el agente `auditor-doctrinal-asc` antes de pasar de `borrador` a `auditado`.
+> Fuente de verdad de la app. Todo el contenido vive en `/data/*.json` y pasa por **dos compuertas** antes de quedar `auditado`:
+> 1. **Doctrinal** — el agente `auditor-doctrinal-asc` coteja definiciones, citas y páginas contra los documentos oficiales.
+> 2. **Técnica** — la prueba `PRUEBAS-E2E/tests/data.spec.js` exige JSON válidos, sin IDs duplicados, sin enlaces rotos (`relacionados`/rutas/situaciones) y que **todo concepto `auditado` tenga cita con fuente y ubicación**. Corre en CI en cada push.
 
 ## Principio: capas progresivas
 
@@ -8,10 +10,16 @@ El contenido va de lo **transversal** (capa 0) a lo **específico** (capa 3). Un
 
 | Capa | id | Contenido |
 |---|---|---|
-| 0 | `transversal` | Propósito, método scout, ciclo de programa, áreas de crecimiento, mundo simbólico |
+| 0 | `transversal` | Enfoque educativo, Método Scout y sus 8 elementos, áreas de crecimiento, ciclo de programa |
 | 1 | `politica` | PSNPJ y su Modelo de Aplicación «El Gran Juego para la Vida» |
 | 2 | `ramas` | Manada, Tropa, Caminantes, Rover |
 | 3 | `aplicacion` | Herramientas del dirigente y situaciones reales |
+
+### Estado del contenido (Capa 0)
+
+- **Grupo A — enfoque educativo** (10 conceptos, `auditado`): propósito, educación no formal, 4 pilares (Delors/UNESCO), educación integral, autoeducación progresiva, educación basada en valores, fundamentos pedagógicos, áreas de crecimiento, prioridades educativas, competencias educativas. Fuentes: «Características Esenciales del Movimiento Scout» (WOSM 2019) y Modelo 2026.
+- **Grupo B — Método Scout** (10 conceptos, `auditado`): el método + sus 8 elementos + equilibrio. Fuente: Modelo 2026, Cap. 3.
+- **Pendiente:** Grupo C (organización y dinámica) y Grupo D (principios transversales); el stub `ciclo-de-programa` se desarrolla en el Grupo C.
 
 ## `data/conceptos.json` — tarjeta de concepto
 
