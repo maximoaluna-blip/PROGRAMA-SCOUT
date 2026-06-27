@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Programa Scout">
+  <rect width="512" height="512" rx="96" fill="#622599"/>
+  <!-- Flor de lis estilizada -->
+  <g fill="#ffe675">
+    <path d="M256 96c-18 36-18 74 0 110 18-36 18-74 0-110z"/>
+    <path d="M256 190c-26 0-46 22-46 52 0 40 46 84 46 84s46-44 46-84c0-30-20-52-46-52zm0 38a16 16 0 110 32 16 16 0 010-32z"/>
+    <path d="M150 210c-12 30-6 64 18 92 8-38-2-72-18-92z"/>
+    <path d="M362 210c12 30 6 64-18 92-8-38 2-72 18-92z"/>
+  </g>
+  <rect x="150" y="338" width="212" height="20" rx="10" fill="#00afef"/>
+  <circle cx="170" cy="348" r="22" fill="#00afef"/>
+  <circle cx="342" cy="348" r="22" fill="#00afef"/>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "Programa Scout — Consulta PJ",
+  "short_name": "Programa Scout",
+  "description": "Compañero de consulta del Programa de Jóvenes de la Asociación Scouts de Colombia: aclara y aterriza conceptos a la práctica.",
+  "lang": "es-CO",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#622599",
+  "theme_color": "#622599",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

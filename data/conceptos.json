@@ -1,0 +1,265 @@
+[
+  {
+    "id": "proposito-del-movimiento",
+    "termino": "Propósito y definición del Movimiento Scout",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El fin del Movimiento Scout es contribuir al desarrollo de los jóvenes, ayudándoles a realizar plenamente sus posibilidades físicas, intelectuales, emocionales, sociales y espirituales, como individuos, como ciudadanos responsables y como miembros de sus comunidades local, nacional e internacional. Crecer como individuo y crecer como ciudadano son dos dimensiones inseparables.",
+    "enLaPractica": "Cada decisión del dirigente se mide preguntando si acerca al joven a ese desarrollo integral y a una ciudadanía activa, no solo si la actividad «salió bien».",
+    "cita": {
+      "texto": "El Movimiento Scout tiene como objetivo contribuir al desarrollo de los jóvenes ayudándoles a realizar plenamente sus posibilidades físicas, intelectuales, emocionales, sociales y espirituales, como individuos, como ciudadanos responsables y como miembros de comunidades locales, nacionales e internacionales.",
+      "fuente": "Constitución de la WOSM, citada en «Características Esenciales del Movimiento Scout» (WOSM, 2019)",
+      "ubicacion": "p. 8"
+    },
+    "relacionados": [
+      "educacion-integral",
+      "educacion-basada-en-valores",
+      "areas-de-crecimiento"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "educacion-no-formal",
+    "termino": "Educación formal, no formal e informal",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Hay tres tipos de educación que se complementan: la formal (el sistema escolar reglado), la no formal (organizada e intencional, pero voluntaria y fuera del aula) y la informal (el aprendizaje espontáneo de la vida diaria). El escultismo es educación NO formal: tiene estructura e intención, pero es voluntaria y complementaria a la escuela y la familia.",
+    "enLaPractica": "La unidad no es una «escuela paralela» ni una guardería: es un espacio educativo voluntario con intención, donde se aprende haciendo, no recibiendo clases.",
+    "cita": {
+      "texto": "...una gran variedad de establecimientos y proveedores externos de los servicios educativos ofrecen educación formal, no formal e informal.",
+      "fuente": "Características Esenciales del Movimiento Scout (WOSM, 2019)",
+      "ubicacion": "pp. 11–12"
+    },
+    "relacionados": [
+      "autoeducacion-progresiva",
+      "fundamentos-pedagogicos",
+      "proposito-del-movimiento"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "cuatro-pilares-educacion",
+    "termino": "Los cuatro pilares de la educación",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Según el Informe Delors de la UNESCO, la educación se apoya en cuatro pilares: aprender a ser (desarrollar la personalidad con autonomía, juicio y responsabilidad), aprender a conocer (un saber amplio y «aprender a aprender»), aprender a hacer (afrontar situaciones y trabajar en equipo) y aprender a vivir juntos (comprender a los demás y adherir a los valores de la democracia, el respeto mutuo, la paz y la justicia).",
+    "enLaPractica": "Una actividad scout completa toca los cuatro pilares: no solo enseña una técnica (hacer), también forma carácter (ser), comprensión (conocer) y convivencia (vivir juntos).",
+    "cita": {
+      "texto": "La educación es un proceso continuo, un desarrollo holístico de por vida, que cuenta con el apoyo de cada uno de los cuatro pilares definidos en el informe UNESCO.",
+      "fuente": "Características Esenciales del Movimiento Scout (WOSM, 2019)",
+      "ubicacion": "p. 10"
+    },
+    "relacionados": [
+      "educacion-integral",
+      "metodo-scout"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "educacion-integral",
+    "termino": "Educación integral y desarrollo holístico",
+    "capa": 0,
+    "rama": null,
+    "definicion": "La educación es un proceso continuo y un desarrollo holístico de por vida. El escultismo busca el desarrollo de la persona completa —cuerpo, mente, emociones, relaciones, valores y aspiraciones trascendentes—, no solo de algunas facetas. Esas dimensiones se organizan pedagógicamente en las Áreas de Crecimiento.",
+    "enLaPractica": "Revisa si la propuesta de tu unidad desarrolla a la persona completa o si está concentrada en pocas dimensiones (p. ej., solo lo físico o solo lo recreativo).",
+    "cita": {
+      "texto": "La educación es un proceso continuo, un desarrollo holístico de por vida.",
+      "fuente": "Características Esenciales del Movimiento Scout (WOSM, 2019)",
+      "ubicacion": "p. 10"
+    },
+    "relacionados": [
+      "areas-de-crecimiento",
+      "proposito-del-movimiento",
+      "cuatro-pilares-educacion"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "autoeducacion-progresiva",
+    "termino": "Sistema progresivo de autoeducación",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El escultismo es un enfoque centrado en el joven y basado en la autoeducación: cada miembro es un individuo único que asume la responsabilidad de su propio desarrollo desde temprana edad —«educación desde adentro», no «desde fuera»— y aprende a aprender. Es progresiva porque el Método Scout, conservando sus elementos, se adapta a cada etapa de desarrollo y al ritmo de cada persona.",
+    "enLaPractica": "Tu rol no es «dictar contenidos», sino crear las condiciones para que el joven descubra y se proponga sus propios desafíos a su ritmo.",
+    "cita": {
+      "texto": "El Movimiento Scout utiliza y es un enfoque centrado en el sujeto de aprendizaje, basado en el concepto de autoeducación.",
+      "fuente": "Características Esenciales del Movimiento Scout (WOSM, 2019)",
+      "ubicacion": "p. 15"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "progresion-personal",
+      "educacion-no-formal"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "educacion-basada-en-valores",
+    "termino": "Educación basada en valores",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El escultismo se basa en un sistema de valores expresado en la Promesa y la Ley Scout: la Promesa es un compromiso personal y voluntario de hacer todo lo posible por adherirse a un código de conducta ética (la Ley). Esos valores son el marco ético sin el cual el Movimiento dejaría de ser el Movimiento Scout, y se expresan en sus principios.",
+    "enLaPractica": "La Promesa y la Ley no son un «requisito de ingreso»: son la brújula ética que da sentido a cada actividad y a la convivencia de la unidad.",
+    "cita": {
+      "texto": "Una de las características esenciales del Movimiento Scout es que, desde su creación, se ha basado en un sistema de valores, un conjunto de reglas éticas interrelacionadas.",
+      "fuente": "Características Esenciales del Movimiento Scout (WOSM, 2019)",
+      "ubicacion": "p. 22"
+    },
+    "relacionados": [
+      "promesa-y-ley",
+      "autoeducacion-progresiva",
+      "proposito-del-movimiento"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "fundamentos-pedagogicos",
+    "termino": "Fundamentos pedagógicos del programa",
+    "capa": 0,
+    "rama": null,
+    "definicion": "El Programa de Jóvenes de Scouts de Colombia reconoce a cada niño, niña, adolescente y joven —el Protagonista de Programa— como protagonista de su propio aprendizaje. Su esencia es la Educación por la Acción: el aprendizaje surge de la experiencia directa, y la acción no es un fin en sí misma sino un medio para que el aprendizaje sea significativo (aprendizaje experiencial, en la línea de Dewey y Kolb).",
+    "enLaPractica": "Un campamento no es «una salida recreativa»: es un espacio donde se ponen en práctica el trabajo en equipo, la autonomía y el cuidado del ambiente. Diseña la experiencia con intención y ciérrala con reflexión.",
+    "cita": {
+      "texto": "La esencia del escultismo descansa en un principio que se mantiene vigente y que otorga coherencia al programa en todas sus ramas: Educación por la Acción.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 2, p. 8"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "areas-de-crecimiento",
+      "autoeducacion-progresiva"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "areas-de-crecimiento",
+    "termino": "Áreas de Crecimiento",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Son la traducción pedagógica de las dimensiones del ser humano y dan estructura a la formación integral. En Scouts de Colombia son seis: espiritualidad, corporalidad, carácter, afecto (afectividad), sociabilidad (desarrollo social) y creatividad (intelectualidad y pensamiento crítico). Cada área se organiza en prioridades educativas, que se concretan en competencias terminales.",
+    "enLaPractica": "Al planear el ciclo, revisa que las actividades toquen las seis áreas a lo largo del tiempo y no siempre las mismas: ese equilibrio es lo que hace integral la formación.",
+    "cita": {
+      "texto": "Las áreas de crecimiento son la traducción pedagógica de las dimensiones del ser humano.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 6.1, p. 29"
+    },
+    "relacionados": [
+      "educacion-integral",
+      "prioridades-educativas",
+      "competencias-educativas"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "prioridades-educativas",
+    "termino": "Prioridades Educativas",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Son los énfasis pedagógicos estratégicos que concentran la propuesta educativa para que no se disperse. Cada prioridad surge de articular cuatro cosas: la visión institucional (Proyecto Educativo 2022–2032), los principios del escultismo (promesa, ley, método), las necesidades del contexto colombiano y la coherencia con las políticas mundiales e interamericanas de programa. Organizan cada área de crecimiento y se concretan en competencias terminales.",
+    "enLaPractica": "Son el «para qué» que evita las actividades sueltas: ayudan a decidir en qué enfocar el esfuerzo educativo según la realidad concreta de tus jóvenes.",
+    "cita": {
+      "texto": "Las Prioridades Educativas son los énfasis pedagógicos estratégicos que permiten traducir la visión amplia del Proyecto Educativo.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 6.2, pp. 29–30"
+    },
+    "relacionados": [
+      "areas-de-crecimiento",
+      "competencias-educativas",
+      "proposito-del-movimiento"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "competencias-educativas",
+    "termino": "Competencias Educativas",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Una competencia educativa es la manera en que un joven aplica en su vida diaria lo que ha aprendido dentro y fuera del Movimiento. Se redacta con tres partes: acción (lo que hace), condición (dónde o en qué situación) y conocimiento o principio (el valor que la orienta). Las terminales son los grandes logros al final del recorrido; las intermedias las adaptan a cada rama, son observables y hacen visible la progresión (están en las Guías de Dirigente).",
+    "enLaPractica": "Al observar a un joven no preguntes «¿se sabe la teoría?», sino «¿lo aplica?»: por ejemplo, «trabaja en equipo en su patrulla respetando la diversidad».",
+    "cita": {
+      "texto": "Una competencia educativa es, en pocas palabras, la manera en que un joven aplica en su vida diaria lo que ha aprendido dentro y fuera del Movimiento Scout.",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 6.3, p. 31"
+    },
+    "relacionados": [
+      "prioridades-educativas",
+      "areas-de-crecimiento",
+      "progresion-personal"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "metodo-scout",
+    "termino": "Método Scout",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Sistema de autoeducación progresiva formado por ocho elementos interdependientes que actúan como un todo (no como una lista de la que se elige): Promesa y Ley, aprender haciendo, progresión personal, sistema de equipos, apoyo del adulto, marco simbólico, naturaleza y participación en la comunidad.",
+    "enLaPractica": "Si en la unidad se aplica solo «aprender haciendo» pero se ignoran el sistema de equipos o el marco simbólico, no se está aplicando el Método Scout: es el conjunto el que educa.",
+    "cita": {
+      "texto": "",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3 (por desarrollar — Grupo B)"
+    },
+    "relacionados": [
+      "autoeducacion-progresiva",
+      "promesa-y-ley",
+      "progresion-personal"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "promesa-y-ley",
+    "termino": "Promesa y Ley Scout",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Primer elemento del Método Scout. La Promesa es el compromiso personal y voluntario de hacer todo lo posible por vivir la Ley; la Ley es el código de conducta ética que expresa los valores del Movimiento. (Ficha base; se desarrolla en el Grupo B.)",
+    "enLaPractica": "Es la puerta de entrada vivencial a los valores: se asume libremente y orienta la vida de la unidad.",
+    "cita": {
+      "texto": "",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3.1.1 (por desarrollar — Grupo B)"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "educacion-basada-en-valores"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "progresion-personal",
+    "termino": "Progresión Personal",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Camino de desarrollo de cada joven a su propio ritmo, hecho visible mediante competencias intermedias y acompañado por el dirigente. (Ficha base; se desarrolla en el Grupo C, Cap. 8 del Modelo.)",
+    "enLaPractica": "No es una carrera ni una competencia entre jóvenes: cada quien avanza desde su punto de partida.",
+    "cita": {
+      "texto": "",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 8 (por desarrollar — Grupo C)"
+    },
+    "relacionados": [
+      "competencias-educativas",
+      "autoeducacion-progresiva",
+      "metodo-scout"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "ciclo-de-programa",
+    "termino": "Ciclo de Programa",
+    "capa": 0,
+    "rama": null,
+    "definicion": "Forma en que se organiza la vida de la unidad en períodos sucesivos (propuesta, selección y preparación de actividades, realización y evaluación), articulando la vida de grupo con la progresión personal. (Ficha base; se desarrolla en el Grupo C, Cap. 11 del Modelo.)",
+    "enLaPractica": "El ciclo evita que la unidad funcione «por inercia»: cada período tiene inicio, actividades elegidas con participación y un cierre que evalúa avances.",
+    "cita": {
+      "texto": "",
+      "fuente": "Modelo de Aplicación de la PSNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 11 (por desarrollar — Grupo C)"
+    },
+    "relacionados": [
+      "metodo-scout",
+      "areas-de-crecimiento"
+    ],
+    "estado": "borrador"
+  }
+]

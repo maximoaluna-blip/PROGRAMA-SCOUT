@@ -1,0 +1,21 @@
+[
+  {
+    "id": "por-que-educamos",
+    "titulo": "¿Por qué y para qué educamos en el escultismo?",
+    "descripcion": "Una secuencia lógica para entender el enfoque educativo del Movimiento antes de entrar al método y a tu rama.",
+    "capa": 0,
+    "pasos": [
+      "proposito-del-movimiento",
+      "educacion-no-formal",
+      "cuatro-pilares-educacion",
+      "educacion-integral",
+      "autoeducacion-progresiva",
+      "educacion-basada-en-valores",
+      "fundamentos-pedagogicos",
+      "areas-de-crecimiento",
+      "prioridades-educativas",
+      "competencias-educativas"
+    ],
+    "estado": "borrador"
+  }
+]

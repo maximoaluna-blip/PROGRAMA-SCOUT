@@ -1,0 +1,30 @@
+[
+  {
+    "nivel": 0,
+    "id": "transversal",
+    "titulo": "Fundamentos transversales",
+    "resumen": "Lo común a todas las ramas: propósito, método, ciclo de programa, áreas de crecimiento y mundo simbólico.",
+    "icono": "compass"
+  },
+  {
+    "nivel": 1,
+    "id": "politica",
+    "titulo": "La Política y su Modelo",
+    "resumen": "La Política Nacional de Programa de Jóvenes (PSNPJ) y su aplicación: «El Gran Juego para la Vida».",
+    "icono": "book"
+  },
+  {
+    "nivel": 2,
+    "id": "ramas",
+    "titulo": "Por rama",
+    "resumen": "Cómo aterriza el programa en Manada, Tropa, Comunidad de Caminantes y Clan Rover.",
+    "icono": "layers"
+  },
+  {
+    "nivel": 3,
+    "id": "aplicacion",
+    "titulo": "Herramientas y situaciones reales",
+    "resumen": "Instrumentos del dirigente y casos concretos para aterrizar la doctrina a la práctica.",
+    "icono": "tool"
+  }
+]

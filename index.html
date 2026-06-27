@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+  <meta name="theme-color" content="#622599" />
+  <meta name="description" content="Compañero de consulta del Programa de Jóvenes — Asociación Scouts de Colombia." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Programa Scout" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icons/icon.svg" />
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <title>Programa Scout — Consulta PJ</title>
+</head>
+<body>
+  <header class="app-header">
+    <img class="logo" src="./icons/icon.svg" alt="" />
+    <h1>Programa Scout</h1>
+    <span class="spacer"></span>
+    <button class="icon-btn" id="theme-btn" aria-label="Cambiar tema">◐</button>
+  </header>
+
+  <main id="app"><p class="empty">Cargando…</p></main>
+
+  <nav class="tabbar">
+    <a href="#/" data-route="" class="active"><span class="ti">🏠</span>Inicio</a>
+    <a href="#/buscar/" data-route="buscar"><span class="ti">🔍</span>Buscar</a>
+    <a href="#/situaciones" data-route="situaciones"><span class="ti">💬</span>Situaciones</a>
+  </nav>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
