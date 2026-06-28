@@ -64,8 +64,13 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 - **Fase 0 — cimientos:** ✅ PWA instalable + offline, modelo de datos, búsqueda, navegación por capas, rutas y situaciones, tema claro/oscuro.
 - **Fase 1 — Capa 0 COMPLETA (32 conceptos auditados):** Grupos A (enfoque educativo), B (Método Scout y sus 8 elementos), C (organización y dinámica) y D (principios transversales).
 - **Fase 2 — Capa 1 COMPLETA (8 conceptos auditados):** la Política (PNPJ) y su Modelo «El Gran Juego para la Vida» — propósito, sujetos, principios, definición/características/elementos del PJ, criterios de calidad y operación por nivel.
-- **40 conceptos auditados, 5 rutas guiadas.**
-- **Pendiente:** situaciones reales; íconos PNG 192/512 para iOS; **Capa 2** (por rama: Cachorros, Lobatos, Scouts, Nómadas Scout, Rovers) y **Capa 3** (herramientas y aplicación).
+- **Fase 3 — Capa 2 (por rama), en curso:** **Lobatos (Manada) COMPLETA y AUDITADA** como rama-patrón (5 conceptos: la rama/unidad, marco simbólico de la Selva, seisenas, progresión por Sendas, el Viejo Lobo). Plantilla de rama (~5 conceptos) lista para replicar a Cachorros, Scouts, Nómadas Scout y Rovers.
+- **45 conceptos auditados, 6 rutas guiadas.**
+- **Pendiente:** ramas Cachorros, Scouts, Nómadas Scout y Rovers (Capa 2); **Capa 3** (herramientas y aplicación); situaciones reales; íconos PNG 192/512 para iOS.
+
+### Plantilla de rama (Capa 2)
+
+Cada rama instancia ~5 conceptos (`capa: 2`, `rama: <id>`): la rama/unidad y su edad, el marco simbólico, los grupos naturales propios, la progresión propia y el rol del dirigente. Fuente: la Guía de Dirigente de la rama + el Modelo 2026 (Caps. 4–5).
 
 ## Identidad visual
 

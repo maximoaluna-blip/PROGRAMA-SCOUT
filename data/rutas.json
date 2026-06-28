@@ -83,5 +83,19 @@
       "el-gran-juego-para-la-vida"
     ],
     "estado": "borrador"
+  },
+  {
+    "id": "conoce-la-manada",
+    "titulo": "Conoce la Manada (rama Lobatos)",
+    "descripcion": "Todo lo propio de la rama de 7 a 10 años: la unidad, su marco simbólico de la Selva, las seisenas, la progresión por Sendas y el rol del Viejo Lobo.",
+    "capa": 2,
+    "pasos": [
+      "manada-lobatos",
+      "marco-simbolico-manada",
+      "grupos-naturales-manada",
+      "progresion-manada",
+      "dirigente-manada"
+    ],
+    "estado": "borrador"
   }
 ]

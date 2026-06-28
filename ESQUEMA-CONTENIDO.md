@@ -22,7 +22,12 @@ El contenido va de lo **transversal** (capa 0) a lo **específico** (capa 3). Un
 - **Grupo C — organización y dinámica** (6 conceptos, `auditado`): sección/rama/unidad, grupos naturales, oportunidades de aprendizaje, etapas de progresión, ciclo de programa, DURASLID. Fuente: Modelo 2026, Caps. 4, 5, 7, 8, 10, 11.
 - **Grupo D — principios transversales** (6 conceptos, `auditado`): rol del dirigente, reconocimiento, participación juvenil, familia aliada, coeducación/diversidad/inclusión, Scouts por los ODS. Fuente: Modelo 2026, Caps. 9, 12–16.
 - **Capa 1 — la Política y su Modelo** (8 conceptos, `auditado`): la PNPJ (DNPJ-2026-023) y «El Gran Juego para la Vida» — propósito, sujetos, principios, definición/características/elementos del PJ, criterios de calidad, operación por nivel. Fuente: PNPJ 2026.
-- **Capas 0 y 1 completas: 40 conceptos auditados.** Pendiente: situaciones reales, Capa 2 (por rama) y Capa 3 (aplicación).
+- **Capa 2 — por rama** (en curso): **Lobatos/Manada COMPLETA y auditada** (5 conceptos, `rama: "lobatos"`) como patrón — la rama/unidad, marco simbólico (la Selva), seisenas, progresión por Sendas, el Viejo Lobo. Fuente: Guía de Dirigente de Manada 2026 + Modelo 2026 Caps. 4–5.
+- **45 conceptos auditados.** Pendiente: ramas Cachorros, Scouts, Nómadas Scout, Rovers; Capa 3 (aplicación); situaciones reales.
+
+### Plantilla de rama (Capa 2)
+
+Cada rama instancia ~5 conceptos con `capa: 2` y `rama: <id>` (`cachorros`|`lobatos`|`scouts`|`nomadas-scout`|`rovers`): (1) la rama y su unidad (edad, momento de desarrollo), (2) el marco simbólico propio, (3) los grupos naturales propios, (4) la progresión propia, (5) el rol del dirigente en la rama. Enlazan a sus conceptos transversales de Capa 0 con `relacionados`.
 
 > **Terminología:** la política vigente es **PNPJ** (Política Nacional de Programa de Jóvenes, 2024, DNPJ-2026-023). «PSNPJ 2020» es la versión sustituida — no usar para citar lo vigente.
 

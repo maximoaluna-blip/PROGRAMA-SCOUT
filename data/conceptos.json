@@ -754,5 +754,100 @@
       "ciclo-de-programa"
     ],
     "estado": "auditado"
+  },
+  {
+    "id": "manada-lobatos",
+    "termino": "La Manada (rama Lobatos)",
+    "capa": 2,
+    "rama": "lobatos",
+    "definicion": "La rama de la sección de 7 a 10 años es Lobatos, y su unidad se llama La Manada. A esta edad los niños y niñas viven la aventura del descubrimiento a través de la imaginación, los relatos y el juego organizado, que canalizan sus energías y fortalecen la convivencia. La Manada es «una gran hermandad» donde aprenden a pertenecer, a respetar los roles y a asumir las primeras responsabilidades colectivas.",
+    "enLaPractica": "Diseña con juego e imaginación, no con clases: a esta edad el juego organizado es la herramienta pedagógica. Se recomienda 1 adulto por cada 6 lobatos, más el Jefe de Unidad.",
+    "cita": {
+      "texto": "La unidad de los niños y niñas de 7 a 10 años es La Manada, un espacio de aventura compartida, inspirado en relatos y símbolos que fortalecen la imaginación, pero al mismo tiempo regulado por reglas sencillas que enseñan convivencia y respeto.",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 4, pp. 19–20"
+    },
+    "relacionados": [
+      "seccion-rama-unidad",
+      "marco-simbolico-manada",
+      "grupos-naturales-manada"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "marco-simbolico-manada",
+    "termino": "El marco simbólico de la Manada (la Selva)",
+    "capa": 2,
+    "rama": "lobatos",
+    "definicion": "El marco simbólico de la Manada es «El Libro de las Tierras Vírgenes» (de R. Kipling): los niños juegan a ser lobos que viven en la Selva y aprenden de Akela, Baloo, Bagheera y los demás personajes, que encarnan valores. La fantasía no es un adorno: es el lenguaje natural de los Lobatos para comprender ideas profundas como la lealtad, el respeto y el cuidado.",
+    "enLaPractica": "Usa la Selva como hilo conductor de la vida de la Manada (ceremonias, nombres, relatos), sin sobreexplicarla: el símbolo educa cuando se vive. En la Manada, la Promesa toma forma de aventura: «ser amigo, ayudar y aprender del juego de la selva».",
+    "cita": {
+      "texto": "A través de El Libro de las Tierras Vírgenes, los niños juegan a ser lobos, a vivir en la Selva, a aprender de Akela, Baloo, Bagheera y los demás personajes que encarnan valores y enseñanzas.",
+      "fuente": "Guía de Dirigente de Manada (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 10"
+    },
+    "relacionados": [
+      "marco-simbolico",
+      "manada-lobatos",
+      "promesa-y-ley"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "grupos-naturales-manada",
+    "termino": "Las seisenas (grupos naturales de la Manada)",
+    "capa": 2,
+    "rama": "lobatos",
+    "definicion": "En la Manada los grupos naturales se llaman seisenas: pequeños equipos donde el éxito deja de ser individual y pasa a ser compartido. Facilitan la participación de los Lobatos en espacios cercanos y manejables, en los que pueden opinar, proponer y sentirse escuchados según su edad.",
+    "enLaPractica": "La seisena es el primer «nosotros» del niño: aprovéchala para que aprendan a ayudarse y a participar de verdad (organizar un juego, preparar una actividad, un servicio sencillo), sin exigirles responsabilidades de adultos.",
+    "cita": {
+      "texto": "Las seisenas facilitan esta participación en espacios más cercanos y manejables. Allí los niños pueden expresar ideas, proponer soluciones y sentirse escuchados.",
+      "fuente": "Guía de Dirigente de Manada (Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 5, p. 27"
+    },
+    "relacionados": [
+      "grupos-naturales",
+      "sistema-de-equipos",
+      "manada-lobatos"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "progresion-manada",
+    "termino": "La progresión en la Manada (el territorio de la selva y las Sendas)",
+    "capa": 2,
+    "rama": "lobatos",
+    "definicion": "La progresión personal en la Manada se vive sobre «el territorio de la selva». Las áreas de crecimiento se representan como Sendas, cada una con su insignia: Corporalidad → Senda del rastreador; Creatividad → Senda de la imaginación; Afectividad → Senda del corazón; Carácter → Senda del buen lobo; Sociabilidad → Senda de la unidad; Espiritualidad → Senda del eco del bosque. Apunta al perfil de egreso del Lobato (7–10 años).",
+    "enLaPractica": "Acompaña a cada niño por las seis Sendas a su ritmo (Exploro–Aplico–Profundizo), no como una carrera de insignias: las insignias iluminan avances reales, no se coleccionan.",
+    "cita": {
+      "texto": "Las sendas serán los siguientes: Corporalidad - Senda del rastreador; Creatividad - Senda de la imaginación; Afectividad - Senda del corazón; Carácter - Senda del buen lobo; Sociabilidad - Senda de la unidad; Espiritualidad - Senda del eco del bosque.",
+      "fuente": "Guía de Dirigente de Manada (Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 8, p. 45"
+    },
+    "relacionados": [
+      "etapas-de-progresion",
+      "areas-de-crecimiento",
+      "manada-lobatos"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "dirigente-manada",
+    "termino": "El dirigente de Manada (el Viejo Lobo)",
+    "capa": 2,
+    "rama": "lobatos",
+    "definicion": "En la Manada, el dirigente recibe el nombre simbólico de Viejo Lobo. Su papel no es resolver todo por los niños, sino ofrecer las condiciones para que ellos marquen el rumbo: acompañar, mediar en los conflictos (que son normales y parte del aprendizaje), enseñar con el ejemplo y hacer que las normas sean claras.",
+    "enLaPractica": "Como Viejo Lobo, deja que el error sea fuente de aprendizaje y que los Lobatos sientan las actividades como suyas. Tú ofreces las condiciones; el rumbo lo marcan ellos.",
+    "cita": {
+      "texto": "El Viejo Lobo ofrece las condiciones, pero el rumbo lo marcan ellos. En este contexto, el error deja de ser un fracaso para convertirse en una fuente valiosa de aprendizaje.",
+      "fuente": "Guía de Dirigente de Manada (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 19"
+    },
+    "relacionados": [
+      "rol-del-dirigente",
+      "apoyo-del-adulto",
+      "manada-lobatos"
+    ],
+    "estado": "auditado"
   }
 ]
