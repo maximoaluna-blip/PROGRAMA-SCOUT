@@ -64,9 +64,9 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 - **Fase 0 — cimientos:** ✅ PWA instalable + offline, modelo de datos, búsqueda, navegación por capas, rutas y situaciones, tema claro/oscuro.
 - **Fase 1 — Capa 0 COMPLETA (32 conceptos auditados):** Grupos A (enfoque educativo), B (Método Scout y sus 8 elementos), C (organización y dinámica) y D (principios transversales).
 - **Fase 2 — Capa 1 COMPLETA (8 conceptos auditados):** la Política (PNPJ) y su Modelo «El Gran Juego para la Vida» — propósito, sujetos, principios, definición/características/elementos del PJ, criterios de calidad y operación por nivel.
-- **Fase 3 — Capa 2 (por rama), en curso:** **Lobatos (Manada) COMPLETA y AUDITADA** como rama-patrón (5 conceptos: la rama/unidad, marco simbólico de la Selva, seisenas, progresión por Sendas, el Viejo Lobo). Plantilla de rama (~5 conceptos) lista para replicar a Cachorros, Scouts, Nómadas Scout y Rovers.
-- **45 conceptos auditados, 6 rutas guiadas.**
-- **Pendiente:** ramas Cachorros, Scouts, Nómadas Scout y Rovers (Capa 2); **Capa 3** (herramientas y aplicación); situaciones reales; íconos PNG 192/512 para iOS.
+- **Fase 3 — Capa 2 (por rama) COMPLETA:** las **5 ramas auditadas** (24 conceptos) — Cachorros (Familia), Lobatos (Manada), Scouts (Tropa), Nómadas Scout (Comunidad) y Rovers (Clan); cada una con su rama/unidad, marco simbólico, grupos naturales, progresión y dirigente.
+- **64 conceptos auditados, 10 rutas guiadas.**
+- **Pendiente:** **Capa 3** (herramientas del dirigente y aplicación); situaciones reales; íconos PNG 192/512 para iOS.
 
 ### Plantilla de rama (Capa 2)
 

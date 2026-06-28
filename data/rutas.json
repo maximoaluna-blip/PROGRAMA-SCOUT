@@ -97,5 +97,37 @@
       "dirigente-manada"
     ],
     "estado": "borrador"
+  },
+  {
+    "id": "conoce-cachorros",
+    "titulo": "Conoce la Familia de Cachorros (rama Cachorros)",
+    "descripcion": "La rama de 5 a 6 años: la Familia, su marco simbólico (la selva y el Cubil), las Camadas, la progresión por el juego y el Viejo Lobo de Familia.",
+    "capa": 2,
+    "pasos": ["familia-cachorros", "marco-simbolico-cachorros", "grupos-naturales-cachorros", "progresion-cachorros", "dirigente-cachorros"],
+    "estado": "borrador"
+  },
+  {
+    "id": "conoce-scouts",
+    "titulo": "Conoce la Tropa (rama Scouts)",
+    "descripcion": "La rama de 11 a 14 años: la Tropa, la aventura, el Sistema de Patrulla, la progresión por especialidades y el Jefe de Tropa.",
+    "capa": 2,
+    "pasos": ["tropa-scouts", "marco-simbolico-scouts", "grupos-naturales-scouts", "progresion-scouts", "dirigente-scouts"],
+    "estado": "borrador"
+  },
+  {
+    "id": "conoce-nomadas",
+    "titulo": "Conoce la Comunidad (rama Nómadas Scout)",
+    "descripcion": "La rama de 15 a 17 años: la Comunidad, su marco simbólico, los Equipos con liderazgo rotativo, la progresión y el Dirigente de Comunidad.",
+    "capa": 2,
+    "pasos": ["comunidad-nomadas", "marco-simbolico-nomadas", "grupos-naturales-nomadas", "progresion-nomadas", "dirigente-nomadas"],
+    "estado": "borrador"
+  },
+  {
+    "id": "conoce-rovers",
+    "titulo": "Conoce el Clan (rama Rovers)",
+    "descripcion": "La rama de 18 a 20 años: el Clan, la Ruta y el Servicio, los equipos, la progresión por fases (RC, RP) y el Dirigente de Clan.",
+    "capa": 2,
+    "pasos": ["clan-rovers", "marco-simbolico-rovers", "progresion-rovers", "dirigente-rovers"],
+    "estado": "borrador"
   }
 ]

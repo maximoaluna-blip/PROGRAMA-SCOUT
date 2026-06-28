@@ -849,5 +849,366 @@
       "manada-lobatos"
     ],
     "estado": "auditado"
+  },
+  {
+    "id": "familia-cachorros",
+    "termino": "La Familia de Cachorros (rama Cachorros)",
+    "capa": 2,
+    "rama": "cachorros",
+    "definicion": "La rama de la sección de 5 a 6 años es Cachorros, y su unidad se llama La Familia de Cachorros. A esta edad el juego es el principal medio para explorar el mundo, comprender normas, relacionarse y desarrollar habilidades. La Familia es un ambiente de juego, afecto y aprendizaje, con el lema «Siempre Alegres».",
+    "enLaPractica": "Planea cada juego con intención: un juego sin propósito entretiene un rato; uno bien diseñado se vuelve Oportunidad de Aprendizaje. A esta edad, el afecto y la seguridad son la base.",
+    "cita": {
+      "texto": "...la edad de los niños y niñas de 5 a 6 años, ya que esta se convierte en una Oportunidad de Aprendizaje. ...en esta etapa del desarrollo, el juego constituye el principal medio a través del cual los niños exploran el mundo, comprenden normas, interactúan con otros y desarrollan nuevas habilidades.",
+      "fuente": "Guía para el Dirigente de Familia de Cachorros (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 27"
+    },
+    "relacionados": [
+      "seccion-rama-unidad",
+      "marco-simbolico-cachorros",
+      "grupos-naturales-cachorros"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "marco-simbolico-cachorros",
+    "termino": "El marco simbólico de Cachorros (la selva y el Cubil)",
+    "capa": 2,
+    "rama": "cachorros",
+    "definicion": "El marco simbólico de los Cachorros se inspira en «El Libro de las Tierras Vírgenes» de Kipling: los niños reciben un Nombre de Caza ligado a sus personajes, se reúnen en el Cubil y celebran con el grito de felicidad «¡Eo-Wawa!». Su lema es «Siempre Alegres» y su color, el naranja.",
+    "enLaPractica": "Aprovecha el símbolo para educar, no para decorar: el Nombre de Caza, el Cubil y el «Eo-Wawa» dan identidad y sentido a la vida de la Familia. Vívelos en las ceremonias (investidura, progresión, paso a la Manada).",
+    "cita": {
+      "texto": "Estos nombres están relacionados con los personajes del Libro de las Tierras Vírgenes y cuentos posteriores de Rudyard Kipling. ...el Nombre de Caza es de suma importancia debido al papel que juegan dentro de las Familias de Cachorros.",
+      "fuente": "Guía para el Dirigente de Familia de Cachorros (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 10"
+    },
+    "relacionados": [
+      "marco-simbolico",
+      "familia-cachorros",
+      "marco-simbolico-manada"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "grupos-naturales-cachorros",
+    "termino": "Las Camadas y el Círculo de Familia",
+    "capa": 2,
+    "rama": "cachorros",
+    "definicion": "En la Familia de Cachorros los grupos naturales se llaman Camadas. La vida de la Familia se expresa también en el Círculo de Familia (una formación simbólica de unidad) y la participación se canaliza en el Encuentro del Cubil. El Círculo convierte un gesto corporal en experiencia educativa de pertenencia.",
+    "enLaPractica": "Usa la Camada para que los más pequeños empiecen a cooperar y a tener un «nosotros», y el Círculo de Familia para hacer visible la unidad del grupo en cada reunión.",
+    "cita": {
+      "texto": "El Círculo de Familia es una de las expresiones más potentes del marco simbólico en la Rama de Cachorros, porque convierte un gesto corporal en una experiencia educativa.",
+      "fuente": "Guía para el Dirigente de Familia de Cachorros (Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 5, p. 30"
+    },
+    "relacionados": [
+      "grupos-naturales",
+      "familia-cachorros",
+      "grupos-naturales-manada"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "progresion-cachorros",
+    "termino": "La progresión en Cachorros",
+    "capa": 2,
+    "rama": "cachorros",
+    "definicion": "La progresión en la Familia se vive en el territorio de la fantasía y el juego: un camino no lineal y personalizado, donde se avanza reconociendo, expresando y compartiendo. El territorio no es solo un lugar físico, sino el entramado de relaciones, símbolos y retos donde la experiencia se vuelve aprendizaje.",
+    "enLaPractica": "No apures ni compares: a los 5–6 años la progresión se reconoce y se celebra en pequeños pasos, dentro del juego y el afecto. Cada Cachorro tiene su propio ritmo.",
+    "cita": {
+      "texto": "Territorio: no solo el lugar físico; es el entramado de relaciones, símbolos y retos donde la experiencia se vuelve aprendizaje. Cada rama lo apropia y adapta: de la fantasía y el juego, a la aventura y la ciudadanía activa. ...Progresión Personal: un camino no lineal y personalizado. Se avanza reconociendo, expresando y compartiendo.",
+      "fuente": "Guía para el Dirigente de Familia de Cachorros (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 7"
+    },
+    "relacionados": [
+      "etapas-de-progresion",
+      "areas-de-crecimiento",
+      "familia-cachorros"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "dirigente-cachorros",
+    "termino": "El Viejo Lobo de Familia",
+    "capa": 2,
+    "rama": "cachorros",
+    "definicion": "En la Familia de Cachorros, el dirigente recibe el nombre simbólico de Viejo Lobo (de Familia). Acompaña con afecto, encarna el marco simbólico (representa los Nombres de Caza) y cuida un ambiente seguro, alegre y motivador para los más pequeños.",
+    "enLaPractica": "Como Viejo Lobo de Familia, tu cercanía afectiva y tu ejemplo son la herramienta principal: a esta edad los niños aprenden sobre todo de la relación segura con el adulto.",
+    "cita": {
+      "texto": "Los Nombres de Caza son representados por los Viejos Lobos de Familia, teniendo en cuenta que existen unas características y cualidades que reúne. ...es importante que los Viejos Lobos cumplan con el propósito de ser un adulto idóneo dentro de la unidad.",
+      "fuente": "Guía para el Dirigente de Familia de Cachorros (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 10"
+    },
+    "relacionados": [
+      "rol-del-dirigente",
+      "apoyo-del-adulto",
+      "familia-cachorros"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "tropa-scouts",
+    "termino": "La Tropa (rama Scouts)",
+    "capa": 2,
+    "rama": "scouts",
+    "definicion": "La rama de la sección de 11 a 14 años es Scouts, y su unidad se llama La Tropa. Es un espacio vibrante, marcado por la vida en patrullas y la aventura al aire libre, donde la autonomía, el liderazgo, la toma de decisiones y la cooperación adquieren una nueva dimensión.",
+    "enLaPractica": "Apóyate en la patrulla y en la aventura: a esta edad los adolescentes aprenden tomando decisiones reales y asumiendo liderazgo. Se recomienda un adulto por patrulla, más el Jefe de Unidad.",
+    "cita": {
+      "texto": "La Tropa es la unidad de los adolescentes de 11 a 14 años. Es un espacio vibrante, marcado por la vida en patrullas, donde la autonomía y la cooperación adquieren una nueva dimensión.",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 4, p. 20"
+    },
+    "relacionados": [
+      "seccion-rama-unidad",
+      "marco-simbolico-scouts",
+      "grupos-naturales-scouts"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "marco-simbolico-scouts",
+    "termino": "El marco simbólico de Scouts (la aventura)",
+    "capa": 2,
+    "rama": "scouts",
+    "definicion": "El marco simbólico de la Tropa es la «aventura fantástica» vivida en y con la naturaleza, ligada a la exploración y a la toma de conciencia del scout sobre sí mismo y su entorno. El lema de los Scouts en Colombia es «Siempre Listos» (del «Be Prepared» de Baden-Powell) y su color, el verde.",
+    "enLaPractica": "Canaliza la energía adolescente con aventura real al aire libre y un fondo motivador (nombre y lema de Tropa elegidos por los propios scouts en la Corte de Honor). La naturaleza es el escenario que da sentido.",
+    "cita": {
+      "texto": "el lema de los scouts es «SIEMPRE LISTOS», que viene de una frase muy famosa utilizada por Baden Powell... «Be Prepared»... la «aventura fantástica» que se vive en la tropa está relacionada con la toma de conciencia del scout de su propia naturaleza y trascendencia en el universo.",
+      "fuente": "Guía de Buenas Prácticas para Jefes de Tropa (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 8"
+    },
+    "relacionados": [
+      "marco-simbolico",
+      "tropa-scouts",
+      "naturaleza"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "grupos-naturales-scouts",
+    "termino": "La Patrulla y el Sistema de Patrulla",
+    "capa": 2,
+    "rama": "scouts",
+    "definicion": "En la Tropa los grupos naturales son las Patrullas, de 6 a 8 integrantes, lideradas por un Guía de Patrulla (con un Subguía que lo apoya). Funcionan mediante el Sistema de Patrulla, donde cada integrante asume una responsabilidad. Sus órganos son el Consejo de Patrulla y la Corte de Honor.",
+    "enLaPractica": "Deja que la patrulla se autogestione de verdad (el Guía dirige, el Consejo decide): el Sistema de Patrulla es la escuela de liderazgo de la rama. Tu rol es acompañar, no mandar la patrulla.",
+    "cita": {
+      "texto": "La Patrulla debe estar conformada por mínimo 6 (ver manual del guía de patrulla) máximo 8 integrantes del mismo o diferente género... La Patrulla trabaja mediante un sistema llamado Sistema de Patrulla.",
+      "fuente": "Guía de Buenas Prácticas para Jefes de Tropa (Scouts de Colombia, 2026)",
+      "ubicacion": "pp. 9–11"
+    },
+    "relacionados": [
+      "grupos-naturales",
+      "sistema-de-equipos",
+      "tropa-scouts"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "progresion-scouts",
+    "termino": "La progresión en Scouts",
+    "capa": 2,
+    "rama": "scouts",
+    "definicion": "La progresión en la Tropa avanza por fases dentro de la rama y se enriquece con las especialidades (insignias que reconocen intereses y habilidades). Hacia el final de la etapa (tras los 14 años) el scout vive la «Travesía», un acercamiento a la rama siguiente (Nómadas Scout) antes de su paso.",
+    "enLaPractica": "Acompaña la progresión sin volverla una colección de insignias: las especialidades motivan cuando nacen del interés real del joven. Prepara con tiempo la transición a la Comunidad de Nómadas Scout.",
+    "cita": {
+      "texto": "...etapa de «Travesía» en el cual hará un acercamiento a la Comunidad... Su paso a la rama siguiente se estimará en un tiempo no mayor a seis meses luego del cumplimiento de los 14 años de edad.",
+      "fuente": "Guía de Buenas Prácticas para Jefes de Tropa (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 4"
+    },
+    "relacionados": [
+      "etapas-de-progresion",
+      "areas-de-crecimiento",
+      "tropa-scouts"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "dirigente-scouts",
+    "termino": "El Jefe de Tropa",
+    "capa": 2,
+    "rama": "scouts",
+    "definicion": "El dirigente de la rama Scouts es el Jefe de Tropa. Su papel es sostener el Sistema de Patrulla: acompaña a los Guías de Patrulla, trabaja en contacto directo con ellos y cuida que la autogestión de las patrullas sea funcional y educativa, sin sustituir el liderazgo juvenil.",
+    "enLaPractica": "Trabaja «a través de los Guías», no por encima de ellos: forma y acompaña a los líderes de patrulla para que la Tropa funcione por sí misma. Tu éxito se mide en cuánto pueden hacer sin ti.",
+    "cita": {
+      "texto": "...mantener contacto directo con el Jefe de Tropa, planear actividades para su Patrulla... debe velar por que el sistema de Patrulla sea funcional.",
+      "fuente": "Guía de Buenas Prácticas para Jefes de Tropa (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 11"
+    },
+    "relacionados": [
+      "rol-del-dirigente",
+      "apoyo-del-adulto",
+      "tropa-scouts"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "comunidad-nomadas",
+    "termino": "La Comunidad de Nómadas Scout (rama Nómadas Scout)",
+    "capa": 2,
+    "rama": "nomadas-scout",
+    "definicion": "La rama de la sección de 15 a 17 años es Nómadas Scout, y su unidad se llama La Comunidad. Es el espacio en el que los adolescentes desarrollan proyectos colectivos de mayor envergadura, fortalecen su pensamiento crítico y se preparan para decisiones vocacionales y sociales, emprendiendo «la aventura hacia la ciudadanía».",
+    "enLaPractica": "Da espacio a proyectos colectivos ambiciosos y a la reflexión crítica: a esta edad el motor es el propósito y el impacto real. La naturaleza sigue siendo el principal espacio educativo.",
+    "cita": {
+      "texto": "Sección 15 a 17 años: Rama Nómadas Scout. Es el espacio en el que los adolescentes desarrollan proyectos colectivos de mayor envergadura, fortalecen su pensamiento crítico y se preparan para decisiones vocacionales y sociales.",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 4, p. 19"
+    },
+    "relacionados": [
+      "seccion-rama-unidad",
+      "marco-simbolico-nomadas",
+      "grupos-naturales-nomadas"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "marco-simbolico-nomadas",
+    "termino": "El marco simbólico de Nómadas Scout",
+    "capa": 2,
+    "rama": "nomadas-scout",
+    "definicion": "En la Comunidad de Nómadas Scout el marco simbólico se expresa en referentes, banderas y símbolos propios que refuerzan la pertenencia y el propósito. El hilo conductor es el territorio entendido como «la aventura hacia la ciudadanía»: el camino del joven que sale al mundo a comprometerse con él.",
+    "enLaPractica": "Construye con la Comunidad sus propios símbolos e identidad (no impuestos): a esta edad la pertenencia se fortalece cuando los jóvenes la co-crean y la ligan a un propósito.",
+    "cita": {
+      "texto": "El Escultismo usa símbolos, tradiciones y un lenguaje propio que dan identidad y sentido a las experiencias de los Protagonistas de Programa. En la Comunidad de Nómadas Scout, esto se expresa en referentes, banderas y símbolos que ayudan a reforzar pertenencia y propósito.",
+      "fuente": "Guía para el Dirigente de Comunidad de Nómadas Scout (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 9"
+    },
+    "relacionados": [
+      "marco-simbolico",
+      "comunidad-nomadas",
+      "participacion-en-la-comunidad"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "grupos-naturales-nomadas",
+    "termino": "Los Equipos de la Comunidad",
+    "capa": 2,
+    "rama": "nomadas-scout",
+    "definicion": "En la Comunidad de Nómadas Scout los grupos naturales son los Equipos. El liderazgo en ellos es rotativo, situacional y compartido: no se centra en cargos fijos, sino en que cada joven ejerza el liderazgo en distintos momentos, aprendiendo a motivar, coordinar y mediar con sus pares.",
+    "enLaPractica": "Rota responsabilidades a propósito: que liderar sea una Oportunidad de Aprendizaje para todos, no un cargo permanente de unos pocos. Tú acompañas como facilitador.",
+    "cita": {
+      "texto": "El liderazgo en los Equipos de la Comunidad de Nómadas Scout es rotativo, situacional y compartido. No se centra en cargos fijos, sino en la oportunidad de que cada joven ejerza el liderazgo en distintos momentos.",
+      "fuente": "Guía para el Dirigente de Comunidad de Nómadas Scout (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 15"
+    },
+    "relacionados": [
+      "grupos-naturales",
+      "sistema-de-equipos",
+      "comunidad-nomadas"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "progresion-nomadas",
+    "termino": "La progresión en Nómadas Scout",
+    "capa": 2,
+    "rama": "nomadas-scout",
+    "definicion": "Cada Nómada Scout avanza en su propio camino de crecimiento, marcando metas claras, superando retos y desarrollando sus competencias según su ritmo y su momento de vida. La progresión se cuida, no se acelera ni se empuja.",
+    "enLaPractica": "Evalúa sin afanes: observa, registra lo esencial y conversa con calma. Confía en el deseo de crecer del joven; tu papel es acompañar el ritmo, no imponerlo.",
+    "cita": {
+      "texto": "Cada joven avanza en su propio camino de crecimiento. La progresión personal permite que el Nómada Scout marque metas claras, supere retos y desarrolle sus competencias según su ritmo y momento de vida.",
+      "fuente": "Guía para el Dirigente de Comunidad de Nómadas Scout (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 9"
+    },
+    "relacionados": [
+      "etapas-de-progresion",
+      "areas-de-crecimiento",
+      "comunidad-nomadas"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "dirigente-nomadas",
+    "termino": "El Dirigente de Comunidad",
+    "capa": 2,
+    "rama": "nomadas-scout",
+    "definicion": "El dirigente de la rama Nómadas Scout es el Dirigente de Comunidad. Su rol es de facilitador: garantiza que la rotación de responsabilidades sea una oportunidad de aprendizaje y acompaña los proyectos y la progresión sin centralizar las decisiones en sí mismo.",
+    "enLaPractica": "Sé facilitador, no jefe de proyectos: crea las condiciones para que la Comunidad decida y ejecute, y acompaña la reflexión que convierte sus experiencias en aprendizaje.",
+    "cita": {
+      "texto": "El Dirigente de Comunidad acompaña este proceso con un rol de facilitador: Garantiza que la rotación de responsabilidades sea una Oportunidad de Aprendizaje.",
+      "fuente": "Guía para el Dirigente de Comunidad de Nómadas Scout (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 15"
+    },
+    "relacionados": [
+      "rol-del-dirigente",
+      "apoyo-del-adulto",
+      "comunidad-nomadas"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "clan-rovers",
+    "termino": "El Clan (rama Rovers)",
+    "capa": 2,
+    "rama": "rovers",
+    "definicion": "La rama de la sección de 18 a 20 años es Rovers, y su unidad se llama El Clan. Es la rama de los jóvenes adultos, centrada en el servicio, la ciudadanía activa y la coherencia de vida: del «yo» al «nosotros». Su lema es «Servir».",
+    "enLaPractica": "Orienta el Clan al servicio real y a la construcción de comunidad: a esta edad el crecimiento se juega en el compromiso con los demás y en decisiones de vida conscientes.",
+    "cita": {
+      "texto": "Servir. Es el lema de los Rovers. Representa el deber ser y actuar de todos los Rovers. ...Es una actitud permanente de vida y de disposición en los entornos en los que participan.",
+      "fuente": "Guía de Dirigente de Clan (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 30"
+    },
+    "relacionados": [
+      "seccion-rama-unidad",
+      "marco-simbolico-rovers",
+      "progresion-rovers"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "marco-simbolico-rovers",
+    "termino": "El marco simbólico de Rovers (la Ruta y el Servicio)",
+    "capa": 2,
+    "rama": "rovers",
+    "definicion": "El marco simbólico del Clan es la Ruta: el viaje interior del Rover (una «ruta de cambio» que va de actuar por inercia a decidir con conciencia), la vida comunitaria (del yo al nosotros) y una espiritualidad abierta y vivencial. El lema es «Servir» y el color, el rojo.",
+    "enLaPractica": "Usa la metáfora del camino para acompañar decisiones de vida: cada experiencia (un campamento, una partida Rover) es una etapa de la ruta personal que se vuelve aprendizaje mediante la reflexión.",
+    "cita": {
+      "texto": "En la ruta personal: el viaje interior del Rover. Cada Rover puede reconocer en su proceso de progresión una «ruta de cambio», pasando de actuar por inercia a hacerlo desde una decisión consciente. En la vida comunitaria: del yo al nosotros... Esa es la esencia del Clan: un espacio de apoyo, corresponsabilidad y servicio mutuo.",
+      "fuente": "Guía de Dirigente de Clan (Scouts de Colombia, 2026)",
+      "ubicacion": "p. 29"
+    },
+    "relacionados": [
+      "marco-simbolico",
+      "clan-rovers",
+      "participacion-en-la-comunidad"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "progresion-rovers",
+    "termino": "La progresión en Rovers (fases e insignias)",
+    "capa": 2,
+    "rama": "rovers",
+    "definicion": "La progresión en el Clan avanza por fases: la primera es de adaptación y conduce a la insignia de Rover Ciudadano (RC); la siguiente lleva a Rover Participativo (RP), donde el Rover, con su dirigente, define qué competencias terminales desarrollará mediante su plan personal (PARCE, «Proceso Autónomo del Rover en Competencias para su Evolución»). Las fases siguientes son Rover Transformador (RT) y Be Prepared – Ciudadano Global (BP).",
+    "enLaPractica": "Acompaña a cada Rover a fijar metas concretas (competencias terminales por área) y a leer su propio avance: la progresión aquí es un proyecto de vida, no una lista de requisitos.",
+    "cita": {
+      "texto": "La primera es la fase de adaptación y está orientada a alcanzar la progresión denominada Rover Ciudadano (RC)... competencias terminales para alcanzar el nivel de Rover Participativo (RP)... cada Rover estará en capacidad, con apoyo de su dirigente de Clan, de establecer... qué competencias terminales empezará a desarrollar.",
+      "fuente": "Guía de Dirigente de Clan (Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 8.7, pp. 41–42"
+    },
+    "relacionados": [
+      "etapas-de-progresion",
+      "competencias-educativas",
+      "clan-rovers"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "dirigente-rovers",
+    "termino": "El Dirigente de Clan",
+    "capa": 2,
+    "rama": "rovers",
+    "definicion": "El dirigente de la rama Rovers es el Dirigente de Clan. Acompaña a jóvenes adultos: apoya a cada Rover a definir y desarrollar sus competencias terminales, sostiene la vida comunitaria del Clan y orienta el sentido del servicio, desde una relación más horizontal y de mentoría.",
+    "enLaPractica": "Con jóvenes adultos, acompaña como mentor y par mayor, no como jefe: tu valor está en provocar reflexión, abrir puertas (enlazar) y sostener el compromiso de servicio del Clan.",
+    "cita": {
+      "texto": "...cada Rover estará en capacidad, con apoyo de su dirigente de Clan, de establecer como punto de partida qué competencias terminales empezará a desarrollar.",
+      "fuente": "Guía de Dirigente de Clan (Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 8.7, p. 42"
+    },
+    "relacionados": [
+      "rol-del-dirigente",
+      "apoyo-del-adulto",
+      "clan-rovers"
+    ],
+    "estado": "auditado"
   }
 ]
