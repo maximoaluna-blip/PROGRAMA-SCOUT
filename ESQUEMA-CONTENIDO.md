@@ -11,7 +11,7 @@ El contenido va de lo **transversal** (capa 0) a lo **específico** (capa 3). Un
 | Capa | id | Contenido |
 |---|---|---|
 | 0 | `transversal` | Enfoque educativo, Método Scout y sus 8 elementos, áreas de crecimiento, ciclo de programa |
-| 1 | `politica` | PSNPJ y su Modelo de Aplicación «El Gran Juego para la Vida» |
+| 1 | `politica` | PNPJ y su Modelo de Aplicación «El Gran Juego para la Vida» |
 | 2 | `ramas` | Cachorros, Lobatos, Scouts, Nómadas Scout, Rovers |
 | 3 | `aplicacion` | Herramientas del dirigente y situaciones reales |
 
@@ -21,7 +21,10 @@ El contenido va de lo **transversal** (capa 0) a lo **específico** (capa 3). Un
 - **Grupo B — Método Scout** (10 conceptos, `auditado`): el método + sus 8 elementos + equilibrio. Fuente: Modelo 2026, Cap. 3.
 - **Grupo C — organización y dinámica** (6 conceptos, `auditado`): sección/rama/unidad, grupos naturales, oportunidades de aprendizaje, etapas de progresión, ciclo de programa, DURASLID. Fuente: Modelo 2026, Caps. 4, 5, 7, 8, 10, 11.
 - **Grupo D — principios transversales** (6 conceptos, `auditado`): rol del dirigente, reconocimiento, participación juvenil, familia aliada, coeducación/diversidad/inclusión, Scouts por los ODS. Fuente: Modelo 2026, Caps. 9, 12–16.
-- **Capa 0 completa: 32 conceptos auditados.** Pendiente: situaciones reales y capas 1–3.
+- **Capa 1 — la Política y su Modelo** (8 conceptos, `auditado`): la PNPJ (DNPJ-2026-023) y «El Gran Juego para la Vida» — propósito, sujetos, principios, definición/características/elementos del PJ, criterios de calidad, operación por nivel. Fuente: PNPJ 2026.
+- **Capas 0 y 1 completas: 40 conceptos auditados.** Pendiente: situaciones reales, Capa 2 (por rama) y Capa 3 (aplicación).
+
+> **Terminología:** la política vigente es **PNPJ** (Política Nacional de Programa de Jóvenes, 2024, DNPJ-2026-023). «PSNPJ 2020» es la versión sustituida — no usar para citar lo vigente.
 
 ## `data/conceptos.json` — tarjeta de concepto
 
@@ -35,7 +38,7 @@ El contenido va de lo **transversal** (capa 0) a lo **específico** (capa 3). Un
   "enLaPractica": "…cómo se ve en la realidad del dirigente…",
   "cita": {
     "texto": "cita textual del documento oficial (vacío si pendiente)",
-    "fuente": "Política Nacional de Programa de Jóvenes (PSNPJ 2020)",
+    "fuente": "Política Nacional de Programa de Jóvenes (PNPJ, DNPJ-2026-023)",
     "ubicacion": "p. 12 / Art. 4.3"      // 'por verificar' mientras no se confirme
   },
   "relacionados": ["proposito-del-movimiento"],   // ids de otros conceptos

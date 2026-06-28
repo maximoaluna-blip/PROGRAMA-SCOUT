@@ -66,5 +66,22 @@
       "scouts-por-los-ods"
     ],
     "estado": "borrador"
+  },
+  {
+    "id": "la-politica-y-su-modelo",
+    "titulo": "La Política (PSNPJ) y su Modelo, paso a paso",
+    "descripcion": "Qué es la política, a quién obliga, qué establece sobre el Programa de Jóvenes y cómo se aterriza en «El Gran Juego para la Vida».",
+    "capa": 1,
+    "pasos": [
+      "politica-psnpj",
+      "sujetos-de-la-politica",
+      "principios-de-la-politica",
+      "definicion-caracteristicas-pj",
+      "elementos-del-pj",
+      "criterios-de-calidad-pj",
+      "operacion-de-la-politica",
+      "el-gran-juego-para-la-vida"
+    ],
+    "estado": "borrador"
   }
 ]

@@ -38,6 +38,9 @@ GitHub Pages desde la raíz (`main`, `/`), HTTPS. Publicar = `commit + push` a `
 
 ## 6. Estado
 
-**Capa 0 COMPLETA: 32 conceptos auditados** (Grupos A enfoque educativo, B Método Scout, C organización/dinámica, D principios transversales) + 4 rutas guiadas. Pendiente: situaciones reales de la Capa 0, íconos PNG iOS, capas 1–3. Ver `README.md` §Estado.
+**Capas 0 y 1 COMPLETAS: 40 conceptos auditados** + 5 rutas guiadas. Capa 0 (Grupos A–D: enfoque educativo, Método Scout, organización/dinámica, principios transversales) y Capa 1 (la Política PNPJ y su Modelo). Pendiente: situaciones reales, íconos PNG iOS, Capa 2 (por rama) y Capa 3 (aplicación). Ver `README.md` §Estado.
 
-Terminología confirmada (Modelo 2026): las 5 **ramas** son Cachorros, Lobatos, Scouts, **Nómadas Scout** (no «Caminantes») y Rovers; sus **unidades** son Familia, Manada, Tropa, Comunidad y Clan.
+Terminología confirmada (docs 2026):
+- Política vigente = **PNPJ** (Política Nacional de Programa de Jóvenes, 2024, DNPJ-2026-023). **«PSNPJ» = versión 2020 sustituida**, no usar para lo vigente.
+- 5 **ramas**: Cachorros, Lobatos, Scouts, **Nómadas Scout** (no «Caminantes»), Rovers; sus **unidades**: Familia, Manada, Tropa, Comunidad, Clan.
+- Proyecto Educativo: usar **2022–2032** (hay errata «2023-2033» en la PNPJ Cap. 2; ver CHANGELOG-DOCTRINA raíz).
