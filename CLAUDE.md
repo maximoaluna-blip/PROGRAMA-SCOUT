@@ -38,7 +38,7 @@ GitHub Pages desde la raíz (`main`, `/`), HTTPS. Publicar = `commit + push` a `
 
 ## 6. Estado
 
-**64 conceptos auditados** + 10 rutas. Capas 0 (A–D), 1 (Política PNPJ) y **2 (por rama, las 5: Cachorros, Lobatos, Scouts, Nómadas Scout, Rovers) COMPLETAS**. Pendiente: Capa 3 (herramientas y aplicación); situaciones reales; íconos PNG iOS. Ver `README.md` §Estado y la **plantilla de rama** en `ESQUEMA-CONTENIDO.md`.
+**65 conceptos auditados** + 10 rutas. Capas 0 (A–D), 1 (Política PNPJ) y **2 (por rama, las 5: Cachorros, Lobatos, Scouts, Nómadas Scout, Rovers) COMPLETAS**. Pendiente: Capa 3 (herramientas y aplicación); situaciones reales; íconos PNG iOS. Ver `README.md` §Estado y la **plantilla de rama** en `ESQUEMA-CONTENIDO.md`.
 
 Terminología confirmada (docs 2026):
 - Política vigente = **PNPJ** (Política Nacional de Programa de Jóvenes, 2024, DNPJ-2026-023). **«PSNPJ» = versión 2020 sustituida**, no usar para lo vigente.

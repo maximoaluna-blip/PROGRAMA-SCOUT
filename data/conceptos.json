@@ -33,7 +33,28 @@
     "relacionados": [
       "autoeducacion-progresiva",
       "fundamentos-pedagogicos",
-      "proposito-del-movimiento"
+      "proposito-del-movimiento",
+      "como-aprenden"
+    ],
+    "estado": "auditado"
+  },
+  {
+    "id": "como-aprenden",
+    "termino": "Cómo aprenden las personas (7 principios)",
+    "capa": 0,
+    "rama": null,
+    "definicion": "La educación scout se apoya en la evidencia sobre cómo aprenden las personas. Siete principios resumen ese conocimiento, válidos en cualquier entorno: (1) el que aprende está en el centro del proceso; (2) aprender es un proceso social, principalmente cooperativo; (3) las emociones y la motivación son parte integral; (4) se atienden las diferencias individuales; (5) el desafío y el esfuerzo son esenciales, sin sobrecarga; (6) la evaluación formativa y la claridad de expectativas ayudan; (7) se aprende mejor creando vínculos entre saberes y con la comunidad y el mundo.",
+    "enLaPractica": "Úsalos como lista de chequeo al diseñar una actividad: ¿pone al joven en el centro?, ¿es cooperativa?, ¿motiva?, ¿reta sin abrumar?, ¿da retroalimentación clara?, ¿conecta con la vida real? Si falla en varios, replantéala.",
+    "cita": {
+      "texto": "Los siguientes siete principios resumen el conocimiento actual de cómo las personas aprenden, en cualquier entorno: 1. Los sujetos que aprenden deben estar en el centro del proceso de aprendizaje. 2. El aprendizaje es un proceso social, es decir, principalmente cooperativo. 3. Las emociones y la motivación son una parte integral del aprendizaje. 4. El aprendizaje debe tener en cuenta las diferencias individuales. 5. El desafío y el esfuerzo son esenciales para el aprendizaje, no sobrecarga. 6. La evaluación formativa y la claridad de las expectativas promueven el aprendizaje. 7. El aprendizaje se promueve cuando se crean vínculos horizontales entre dominios de conocimiento y con la comunidad y el mundo en general.",
+      "fuente": "Características Esenciales del Movimiento Scout (WOSM, 2019)",
+      "ubicacion": "p. 11"
+    },
+    "relacionados": [
+      "educacion-no-formal",
+      "autoeducacion-progresiva",
+      "aprender-haciendo",
+      "cuatro-pilares-educacion"
     ],
     "estado": "auditado"
   },

@@ -65,7 +65,7 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 - **Fase 1 — Capa 0 COMPLETA (32 conceptos auditados):** Grupos A (enfoque educativo), B (Método Scout y sus 8 elementos), C (organización y dinámica) y D (principios transversales).
 - **Fase 2 — Capa 1 COMPLETA (8 conceptos auditados):** la Política (PNPJ) y su Modelo «El Gran Juego para la Vida» — propósito, sujetos, principios, definición/características/elementos del PJ, criterios de calidad y operación por nivel.
 - **Fase 3 — Capa 2 (por rama) COMPLETA:** las **5 ramas auditadas** (24 conceptos) — Cachorros (Familia), Lobatos (Manada), Scouts (Tropa), Nómadas Scout (Comunidad) y Rovers (Clan); cada una con su rama/unidad, marco simbólico, grupos naturales, progresión y dirigente.
-- **64 conceptos auditados, 10 rutas guiadas.**
+- **65 conceptos auditados, 10 rutas guiadas.**
 - **Pendiente:** **Capa 3** (herramientas del dirigente y aplicación); situaciones reales; íconos PNG 192/512 para iOS.
 
 ### Plantilla de rama (Capa 2)
