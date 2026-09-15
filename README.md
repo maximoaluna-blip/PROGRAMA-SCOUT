@@ -65,8 +65,9 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 - **Fase 1 — Capa 0 COMPLETA (32 conceptos auditados):** Grupos A (enfoque educativo), B (Método Scout y sus 8 elementos), C (organización y dinámica) y D (principios transversales).
 - **Fase 2 — Capa 1 COMPLETA (8 conceptos auditados):** la Política (PNPJ) y su Modelo «El Gran Juego para la Vida» — propósito, sujetos, principios, definición/características/elementos del PJ, criterios de calidad y operación por nivel.
 - **Fase 3 — Capa 2 (por rama) COMPLETA:** las **5 ramas auditadas** (24 conceptos) — Cachorros (Familia), Lobatos (Manada), Scouts (Tropa), Nómadas Scout (Comunidad) y Rovers (Clan); cada una con su rama/unidad, marco simbólico, grupos naturales, progresión y dirigente.
-- **65 conceptos auditados, 10 rutas guiadas.**
-- **Pendiente:** **Capa 3** (herramientas del dirigente y aplicación); situaciones reales; íconos PNG 192/512 para iOS.
+- **65 conceptos auditados, 10 rutas guiadas** (lo publicado).
+- **Fase 4 — Capa 3 «Aplicación» en BORRADOR (14-sep-2026, sin publicar):** 12 conceptos `capa: 3` / `estado: borrador` (herramientas del dirigente: ciclo de programa con ABP, ciclo operativo de seis pasos, diseñar una oportunidad de aprendizaje, planear la reunión de unidad, ASP y gestión del riesgo, consejos y asambleas, observar y facilitar la reflexión, seguimiento y registro, retroalimentación, experiencias externas, reconocimiento, familia en la práctica), **7 situaciones reales** y la ruta `herramientas-del-dirigente` (12 pasos). Auditoría doctrinal en `AUDITORIA-CAPA-3.md` — **APTO CON CORRECCIONES MENORES** (1 crítico, 3 mayores, 5 menores; las 12 citas verificadas en su página); correcciones aplicadas por el corrector en `data/`; el hallazgo transversal M2 (términos ausentes del glosario) se cerró en `GLOSARIO-ASC.md` v1.5 §E. Suite `data` 8/8. **Los datos viven en la rama `capa-3-borrador`, no en `main`**: el chip `borrador` se mostraría en producción, y promover a `auditado` + subir `CACHE_VERSION` + publicar es decisión del dueño.
+- **Pendiente:** decisión de promoción de la Capa 3; íconos PNG 192/512 para iOS.
 
 ### Plantilla de rama (Capa 2)
 
