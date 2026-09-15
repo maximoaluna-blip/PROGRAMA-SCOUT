@@ -3,12 +3,120 @@
     "id": "actividades-sin-rumbo",
     "titulo": "«Hacemos actividades pero siento que no van a ningún lado»",
     "caso": "Un dirigente nuevo arma reuniones entretenidas cada semana, pero al final del trimestre no sabe qué aprendieron los muchachos ni hacia dónde avanzaron.",
-    "doctrina": "El Método Scout educa como un todo y se ordena mediante el Ciclo de Programa: las actividades no son fines en sí mismas, son medios para alcanzar objetivos de las Áreas de Crecimiento.",
-    "aplicacion": "Cerrar el período con una evaluación simple por joven, y abrir el siguiente eligiendo actividades con participación de la unidad y vinculadas a objetivos concretos de crecimiento.",
-    "conceptos": ["ciclo-de-programa", "metodo-scout", "areas-de-crecimiento"],
+    "doctrina": "El Método Scout educa como un todo y se ordena mediante el Ciclo de Programa; las actividades no son fines en sí mismas: son oportunidades para que cada joven explore, aplique y profundice competencias educativas de las seis áreas de crecimiento.",
+    "aplicacion": "Cerrar el período con una evaluación simple por joven, y abrir el siguiente eligiendo actividades con participación de la unidad y vinculadas a competencias educativas concretas.",
+    "conceptos": [
+      "ciclo-de-programa",
+      "metodo-scout",
+      "areas-de-crecimiento"
+    ],
     "fuente": {
-      "fuente": "Modelo de Aplicación PNPJ «El Gran Juego para la Vida»",
-      "ubicacion": "por verificar"
+      "fuente": "Modelo de Aplicación PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 3 §3.2, p. 16 (el Método como sistema) y Cap. 11, p. 75"
+    },
+    "estado": "borrador"
+  },
+  {
+    "id": "no-se-si-cuenta-como-aplico",
+    "titulo": "«No sé si lo que hizo en el campamento cuenta como exploración o como aplicación»",
+    "caso": "En el campamento, un scout se encargó de la cocina de su patrulla y lo hizo bien. Al llenar el registro, la dirigente duda: ¿esto es Exploro o Aplico? No tiene nada anotado, solo la impresión de que «le fue bien».",
+    "doctrina": "El Modelo asocia cada nivel a lo observable: en Aplico el joven pone en práctica sus competencias en situaciones reales, asume responsabilidades y decide con mayor conciencia. Su propio ejemplo es un scout que se encarga de la cocina de su patrulla aplicando lo aprendido sobre nutrición, seguridad e higiene: «Esta experiencia se registra como una oportunidad de aplicación». Y la observación sirve precisamente «para decidir si lo vivido cuenta como exploración, aplicación o profundización, y qué sigue».",
+    "aplicacion": "Antes de la próxima salida define 3 o 4 indicadores simples por conducta observable y anota micro-evidencias de una línea («asumió su rol sin recordatorios»). Con eso, en el cierre decides el nivel con hechos y no con impresiones, se lo devuelves al scout con «Vi – Logró – Próximo paso» y dejas constancia en la hoja «OA duplicable» del Registro de Acompañamiento.",
+    "conceptos": [
+      "seguimiento-y-registro-de-la-progresion",
+      "observar-y-facilitar-la-reflexion",
+      "etapas-de-progresion",
+      "retroalimentacion-vi-logro-proximo-paso"
+    ],
+    "fuente": {
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 8 §8.1.2.2, p. 48 y Cap. 9 §9.3.1, p. 61"
+    },
+    "estado": "borrador"
+  },
+  {
+    "id": "la-familia-solo-viene-a-aplaudir",
+    "titulo": "«Las familias solo aparecen en las ceremonias, a aplaudir y tomar fotos»",
+    "caso": "El grupo convoca a las familias dos veces al año: la ceremonia de promesas y la de paso. Llegan, aplauden, toman fotos y se van. Entre semana, el dirigente siente que carga solo con todo.",
+    "doctrina": "«La familia es entorno, no público.» El Modelo la reconoce como aliada con tareas concretas y propone acciones de involucramiento: participación en la planeación, observación y retroalimentación, ceremonias y celebraciones, espacios de formación, voluntariado ocasional y comunicación permanente. En la ceremonia hay que evitar convertirla en «espectáculo para aplausos» y priorizar que las familias entiendan qué aprendió el protagonista y cómo continuarlo en casa.",
+    "aplicacion": "Pide a cada familia una acción sencilla por ciclo (una conversación en casa, una foto-evidencia, un gesto de apoyo). En la próxima ceremonia envía una nota previa con propósito y roles, cierra con un mensaje sencillo y un gesto de transferencia para la semana, y abre un canal de retorno. Sin tercerizar tu labor ni cargártela toda.",
+    "conceptos": [
+      "familia-en-la-practica",
+      "familia-aliada",
+      "reconocimiento-en-la-practica"
+    ],
+    "fuente": {
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 9 §9.6, p. 67; Cap. 12, p. 84; Cap. 13 §13.3, p. 87"
+    },
+    "estado": "borrador"
+  },
+  {
+    "id": "los-adultos-deciden-todo",
+    "titulo": "«Los dirigentes planeamos todo el ciclo y los muchachos solo ejecutan»",
+    "caso": "El equipo de dirigentes de la Comunidad se reúne un sábado, arma el calendario completo del semestre y lo presenta a los Nómadas Scout ya cerrado. Las actividades son buenas, pero la asistencia baja y nadie propone nada.",
+    "doctrina": "El Modelo pide decidir con los Protagonistas de Programa, no por ellos, y señala como reto evitar el adultocentrismo: «asegurar que los adultos no monopolicen las decisiones». La Guía de Dirigente de Comunidad es tajante: «El programa debe ser creado por los jóvenes, no para ellos». El Congreso de Comunidad es la máxima instancia de participación: todos los Nómadas Scout con voz y voto; los dirigentes acompañan con voz, sin sustituir el protagonismo juvenil.",
+    "aplicacion": "Reabre el ciclo: convoca el Congreso de Comunidad (al menos uno por ciclo de programa), lee con ellos el entorno, formulen juntos la pregunta guía y deja que los Consejos de Equipo propongan y seleccionen las oportunidades de aprendizaje. Pregunta y negocia: ¿qué tiene más sentido ahora?, ¿qué rol quiere probar cada quien?, ¿cómo sabremos que funcionó? La participación no retrasa: focaliza.",
+    "conceptos": [
+      "consejos-y-asambleas-de-unidad",
+      "participacion-juvenil",
+      "ciclo-de-programa-con-abp",
+      "comunidad-nomadas"
+    ],
+    "fuente": {
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024); Guía de Dirigente de Comunidad (Scouts de Colombia, 2026)",
+      "ubicacion": "Modelo: Cap. 9 §9.6, p. 68 y Cap. 15 §15.6, p. 97. Guía de Comunidad: p. 16 y Cap. 11, p. 44"
+    },
+    "estado": "borrador"
+  },
+  {
+    "id": "una-carpeta-de-formatos-que-nadie-lee",
+    "titulo": "«Tengo una carpeta llena de formatos y no me sirve para decidir nada»",
+    "caso": "Una dirigente de Manada llena cada semana tres formatos distintos por lobato. La carpeta crece, pero cuando una familia le pregunta cómo va su hija no sabe qué responder, y el equipo empieza a abandonar los registros.",
+    "doctrina": "El Modelo advierte: «La calidad de tu acompañamiento no se mide por el grosor de la carpeta, sino por la claridad de las decisiones que tomas gracias a lo registrado», y propone un kit base casi siempre suficiente: checklist con 3 o 4 indicadores, una evidencia y una bitácora Kolb de una línea por equipo. El Recurso 2.0 añade el «mínimo mínimo» para arrancar: una conducta observable por semana, un registro anecdótico cada quince días, una conversación de cierre con dos preguntas y una revisión en la reunión siguiente.",
+    "aplicacion": "Durante un mes reduce al mínimo mínimo. Usa una sola herramienta por vez (lista breve, anecdotario o semáforo) y limita las conductas observables por sesión. Registra hechos, no juicios («es responsable», no; «revisó su lista y ayudó a que otros se organizaran», sí). Cuando eso se vuelva hábito, suma técnicas solo en salidas, campamentos o cierres de proyecto.",
+    "conceptos": [
+      "seguimiento-y-registro-de-la-progresion",
+      "ciclo-operativo-seis-pasos",
+      "observar-y-facilitar-la-reflexion"
+    ],
+    "fuente": {
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024); Recurso Educativo «Herramientas de Seguimiento para la Progresión Personal 2.0» (DNPJ, Scouts de Colombia, 2026)",
+      "ubicacion": "Modelo: Cap. 9 §9.3.2.3.3, p. 65. Recurso 2.0: Cap. 5, p. 12 y Cap. 10, p. 28 (paginación PDF)"
+    },
+    "estado": "borrador"
+  },
+  {
+    "id": "la-salida-sin-analisis-de-riesgo",
+    "titulo": "«Armamos la salida el jueves por chat y el sábado ya estábamos en la quebrada»",
+    "caso": "Una patrulla propone una caminata a una quebrada. Los dirigentes la aprueban el jueves por chat, sin visitar el lugar ni acordar quién estará a cargo de qué. En la salida un scout resbala y nadie tiene el botiquín ni los contactos de emergencia a mano.",
+    "doctrina": "En el diseño de oportunidades de aprendizaje «siempre se han de considerar de manera anticipada los posibles factores de riesgo asociados a los entornos»: revisar las condiciones del lugar, la disponibilidad de recursos y el nivel de supervisión requerido. La seguridad no se revisa al final: se diseña desde el inicio y acompaña cada fase del ciclo. Para cada experiencia: identificar riesgos, evaluar probabilidad e impacto, establecer medidas preventivas, definir planes de respuesta y aprender de lo vivido.",
+    "aplicacion": "Ninguna salida sin Ficha de Oportunidad de Aprendizaje: bloque de gestión del riesgo diligenciado (peligro, riesgo, tipo, probabilidad, consecuencia, medidas de control), adultos requeridos con función y teléfono, fichas de salud a mano, botón A Salvo del Peligro al alcance y contactos de emergencia. Aplica la medida de protección 2+1 (nunca un adulto a solas con un menor) en todo acompañamiento. La gestión del riesgo no limita la aventura: la hace responsable.",
+    "conceptos": [
+      "a-salvo-del-peligro-y-gestion-del-riesgo",
+      "disenar-una-oportunidad-de-aprendizaje",
+      "duraslid"
+    ],
+    "fuente": {
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024); Guía de Dirigente de Manada (Scouts de Colombia, 2026); Política Nacional A Salvo del Peligro «Haré todo cuanto de mí dependa» (ASC, dic-2025)",
+      "ubicacion": "Modelo: Cap. 7 §7.1, p. 40 y Cap. 11 §11.5, p. 79. Guía de Manada: §11.2.2, p. 65; Política ASP: p. 26 (medida 2+1)"
+    },
+    "estado": "borrador"
+  },
+  {
+    "id": "la-ceremonia-se-volvio-un-show",
+    "titulo": "«Nuestra ceremonia de insignias dura dos horas y parece una premiación»",
+    "caso": "En el cierre de ciclo el grupo entrega decenas de insignias una por una, con discursos largos de los adultos y aplausos por cantidad. Los muchachos se aburren y quienes recibieron menos insignias se sienten señalados.",
+    "doctrina": "«Cuando hablas del reconocimiento personal en una ceremonia, no anuncias números ni colecciones de insignias. Nombras competencias y evidencias». El símbolo no ocupa el lugar del aprendizaje: lo ilumina. Lo que no aporta: inflación simbólica y «cosismo», protagonismo adulto permanente, comparaciones y clasificaciones, tematización vacía y burocracia sin sentido pedagógico. Lo que sí: nombrar competencias con ejemplos, reconocer trayectorias singulares (camino, no carrera), dar lugar a la voz juvenil y cerrar con proyección.",
+    "aplicacion": "Rediseña con tres preguntas: ¿qué queremos reconocer?, ¿qué evidencia lo muestra?, ¿qué haremos ahora con esto? Frases claras y breves («hoy celebramos que aprendiste a escuchar mejor al equipo»), micrófono cedido a los jóvenes, roles reales para los equipos, un chequeo de seguridad emocional (sin exposiciones forzadas ni comparaciones) y un cierre ligero tipo Kolb. Menos es más cuando lo que predomina es el sentido.",
+    "conceptos": [
+      "reconocimiento-en-la-practica",
+      "reconocimiento",
+      "marco-simbolico"
+    ],
+    "fuente": {
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 12, pp. 81–83"
     },
     "estado": "borrador"
   }

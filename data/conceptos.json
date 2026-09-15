@@ -1231,5 +1231,246 @@
       "clan-rovers"
     ],
     "estado": "auditado"
+  },
+  {
+    "id": "ciclo-de-programa-con-abp",
+    "termino": "El Ciclo de Programa aplicado: cinco momentos con ABP",
+    "capa": 3,
+    "rama": null,
+    "definicion": "El Modelo 2026 ordena el Ciclo de Programa en cinco momentos acompañados por Aprendizaje Basado en Proyectos (ABP): (a) diagnóstico participativo —mirar y escuchar el entorno y formular con los jóvenes una pregunta guía—; (b) planificación con ABP —acordar productos, destinatarios, criterios de éxito y roles, y verificar DURASLID—; (c) ejecución iterativa —tramos cortos con metas intermedias y reflexión en cada hito—; (d) presentación pública —compartir el producto con su destinatario—; y (e) evaluación y transferencia —cosechar evidencias y verificar qué se lleva cada quien a casa, a la escuela o a su equipo—. El ritmo se elige entre microciclos (4 a 12 semanas), mesociclos (8 a 16) y macrociclos (anuales).",
+    "enLaPractica": "Antes de llamar «proyecto» a algo, verifica que tenga pregunta guía, protagonistas del proceso, criterios de evaluación y presentación de resultados: si falta alguno, no hay ABP. Elige el ritmo que puedas sostener con calidad; no hay obligación de sincronizar la progresión personal con el calendario del ciclo. Las Guías de Familia, Manada y Comunidad organizan el mismo ciclo en cuatro momentos (análisis y selección, organización, realización, evaluación); el fondo no cambia: el programa lo crean los jóvenes, no se hace para ellos.",
+    "cita": {
+      "texto": "El Ciclo de Programa plantea cinco momentos, y cada uno es acompañado por metodologías ABP para asegurar foco, calidad y transferencia:",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 11 §11.2, p. 75"
+    },
+    "relacionados": [
+      "ciclo-de-programa",
+      "participacion-juvenil",
+      "duraslid",
+      "el-gran-juego-para-la-vida"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "ciclo-operativo-seis-pasos",
+    "termino": "El ciclo operativo del dirigente: seis pasos por reunión",
+    "capa": 3,
+    "rama": null,
+    "definicion": "Rutina ligera que el Modelo propone para cada reunión, sin «cien formatos»: 1) diagnosticar (2 o 3 conductas observables por competencia educativa, y que los protagonistas se autoubiquen con semáforo o caritas); 2) planear (una competencia, un propósito, una evidencia); 3) facilitar la experiencia (DURASLID más ajustes razonables); 4) reflexionar (Kolb en cuatro preguntas; dos minutos bastan); 5) registrar solo lo que importa (lista de cotejo de 3 o 4 ítems, una foto del producto, un anecdotario de una línea por persona); 6) retroalimentar y decidir con el grupo si el avance cuenta como exploración, aplicación o profundización, y dejar constancia.",
+    "enLaPractica": "Es el puente entre el Ciclo de Programa (meses) y la reunión de esta semana. Tu lista de cotejo se llena durante la actividad, no después. Cierra siempre con el protagonista —«esto hiciste, así se vio, este es el siguiente paso»— e involucra al grupo natural: ¿qué reconocemos?, ¿qué repetimos? Si lo repites, el grupo aprende a aprender.",
+    "cita": {
+      "texto": "No necesitas cien formatos. Basta con desarrollar una rutina para cada una de tus reuniones. Esta idea de seis pasos ligeros puede serte de ayuda:",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 9 §9.5, p. 66"
+    },
+    "relacionados": [
+      "rol-del-dirigente",
+      "ciclo-de-programa",
+      "duraslid",
+      "etapas-de-progresion"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "disenar-una-oportunidad-de-aprendizaje",
+    "termino": "Diseñar una oportunidad de aprendizaje (tablero DURASLID y Ficha de OA)",
+    "capa": 3,
+    "rama": null,
+    "definicion": "Diseñar una oportunidad de aprendizaje empieza por una necesidad real y un propósito escrito en una frase. Luego la idea se sitúa en un «tablero DURASLID rápido», con una pregunta por componente: ¿qué es nuevo o retador para mi unidad?, ¿quién se beneficia y cómo lo mediremos?, ¿qué reconoceremos y cómo lo contaremos?, ¿cuál es el gancho y el ritmo?, ¿qué riesgos, roles y reglas?, ¿cómo lo jugamos con sentido?, ¿qué ajustes universales o particulares?, ¿qué voces, espacios y lenguajes sumamos? Termina enlazando una o dos competencias educativas como foco, el momento de progresión (Exploro, Aplico, Profundizo) y el sistema de equipos. El mismo filtro se vuelve a aplicar durante la facilitación y en el cierre con Kolb.",
+    "enLaPractica": "La DNPJ ofrece la «Ficha de Oportunidad de Aprendizaje» (Herramienta para la Planeación de Reuniones Scout y Oportunidades de Aprendizaje, DNPJ-2026-020): información general, autoevaluación DURASLID, objetivo de la actividad, conductas observables foco, áreas de crecimiento y competencias educativas, paso a paso, gestión del riesgo, adultos requeridos y materiales. Si no sabes a quién beneficia ni cómo lo sabrás, la idea todavía no está lista.",
+    "cita": {
+      "texto": "Parte de una necesidad real. Escribe en una frase el propósito. Luego sitúa tu idea en un tablero DURASLID rápido:",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 10 §10.3, p. 73"
+    },
+    "relacionados": [
+      "oportunidades-de-aprendizaje",
+      "duraslid",
+      "competencias-educativas",
+      "sistema-de-equipos"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "planear-la-reunion-de-unidad",
+    "termino": "Planear la reunión de unidad (Hoja de Ruta)",
+    "capa": 3,
+    "rama": null,
+    "definicion": "La reunión semanal es donde el Ciclo de Programa aterriza en experiencias concretas. Su planeación escrita asegura coherencia con el Método Scout, con DURASLID y con las condiciones de seguridad, y permite que otro dirigente asuma la reunión sin que el programa «se caiga». La «Hoja de Ruta para Reunión» (DNPJ-2026-020) es el formato sintético de la DNPJ para organizar una reunión completa con mirada integral: datos generales, condiciones de salvaguarda, logística, secuencia metodológica y referencias útiles.",
+    "enLaPractica": "La Hoja de Ruta cabe en una página: rama, ambiente de referencia, fecha, lugar y hora; verificación A Salvo del Peligro (botón listo y al alcance de todos, enfoque de diversidad e inclusión, salvaguarda en reuniones en línea); y la secuencia de la reunión (hora, actividad, descripción, responsable, materiales). Complementa —no sustituye— la Ficha de cada oportunidad de aprendizaje. Las Guías de Familia y de Manada (y, con sus propios nombres, la de Clan) cuentan las planeaciones de reuniones entre los documentos indispensables de la rama, junto con la planeación del ciclo, el calendario de unidad, el registro de permanencia y el registro de progresión personal.",
+    "cita": {
+      "texto": "Esta hoja funciona como un formato sintético de planeación de reunión. Está pensada para que el dirigente pueda organizar una reunión scout completa con una mirada integral: datos generales, condiciones de salvaguarda, elementos logísticos, secuencia metodológica de la reunión y referencias útiles.",
+      "fuente": "Recurso Educativo «Herramientas de Seguimiento para la Progresión Personal 2.0» (DNPJ, Scouts de Colombia, 2026)",
+      "ubicacion": "Anexo 3, p. 35 (paginación PDF)"
+    },
+    "relacionados": [
+      "ciclo-de-programa",
+      "duraslid",
+      "disenar-una-oportunidad-de-aprendizaje",
+      "a-salvo-del-peligro-y-gestion-del-riesgo"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "a-salvo-del-peligro-y-gestion-del-riesgo",
+    "termino": "A Salvo del Peligro y gestión del riesgo en las actividades",
+    "capa": 3,
+    "rama": null,
+    "definicion": "«A Salvo del Peligro» (ASP) es el conjunto de políticas, prácticas y protocolos orientados a garantizar entornos seguros —físicos, emocionales y digitales— en toda actividad scout; promueve una cultura de autocuidado, cuidado mutuo y corresponsabilidad, y orienta la activación de rutas internas y externas cuando se requiera. Se concreta en «Haré todo cuanto de mí dependa: Política Nacional de Entornos Seguros» y en herramientas como el botón «Me Pongo A Salvo del Peligro» (virtual en scout.org.co y físico en códigos QR en los sitios de reunión) para reportar incidentes, y la medida 2+1: siempre al menos tres personas —dos adultos y un menor, o un adulto y dos menores—. La gestión del riesgo la complementa: para cada experiencia, identificar riesgos, evaluar probabilidad e impacto, establecer medidas preventivas, definir planes de respuesta y aprender de lo vivido.",
+    "enLaPractica": "La seguridad no se «revisa al final»: se diseña desde el diagnóstico y acompaña cada fase del ciclo. En el diseño de toda oportunidad de aprendizaje considera de forma anticipada los factores de riesgo del entorno (condiciones del lugar, recursos, nivel de supervisión). La Ficha de OA (DNPJ-2026-020) trae un bloque de gestión del riesgo (peligro, riesgo, tipo, probabilidad, consecuencia, nivel, medidas de control) y la Hoja de Ruta pregunta si el botón ASP está listo y al alcance de todos. Cada Guía de Dirigente 2026 añade normas propias de su rama (por ejemplo, presencia mínima de adultos en la Familia de Cachorros). Esa Política la aprobó el Consejo Scout Nacional mediante el Acuerdo C.S.N. 657 del 3 de diciembre de 2025; los cinco pasos de gestión del riesgo vienen de la Guía de Dirigente de Manada, §11.2.2, p. 65. Orientación institucional: asalvodelpeligro@scout.org.co.",
+    "cita": {
+      "texto": "Conjunto de políticas, prácticas y protocolos orientados a garantizar entornos seguros —físicos, emocionales y digitales— en toda actividad scout. Promueve una cultura de autocuidado, cuidado mutuo, y corresponsabilidad en la construcción de entornos seguros.",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Glosario, p. 103"
+    },
+    "relacionados": [
+      "duraslid",
+      "oportunidades-de-aprendizaje",
+      "disenar-una-oportunidad-de-aprendizaje",
+      "familia-aliada"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "consejos-y-asambleas-de-unidad",
+    "termino": "Los consejos y asambleas de unidad, rama por rama",
+    "capa": 3,
+    "rama": null,
+    "definicion": "Espacios de coordinación donde los representantes de los grupos naturales, junto con los dirigentes, planifican, evalúan y toman decisiones que afectan a toda la rama. Unos son del pequeño grupo (Consejo de Patrulla, Consejo de Equipo) y otros de toda la unidad (Corte de Honor, Congreso de Comunidad, Consejo de Clan). Cada rama los nombra y los vive a su manera: en Cachorros, el Encuentro del Cubil (todos los Cachorros, guiados por los Viejos Lobos, idealmente al inicio y al final de cada ciclo); en Lobatos, el Consejo de Roca, «corazón de la participación», donde se comparten opiniones, se proponen actividades y se decide por consenso o votación; en Scouts, el Consejo de Patrulla y la Corte de Honor, basados en la democracia representativa; en Nómadas Scout, el Congreso de Comunidad (todos los Nómadas Scout con voz y voto; los dirigentes con voz) y los Consejos de Equipo; en Rovers, el Consejo de Clan, órgano de gobierno de la rama que elige anualmente al Comité de Clan.",
+    "enLaPractica": "Tu papel es facilitar el diálogo, cuidar el respeto y asegurar que todos tengan oportunidad de hablar, no presidir: decidir con los protagonistas, no por ellos. Deja constancia con un acta simple (qué se decidió, quién lo asume y cuándo se revisa). En Cachorros y Lobatos la democracia también se aprende jugando: votaciones con fichas o colores, «Piedra de la Palabra» o «Tronco del Consejo» para el turno de hablar.",
+    "cita": {
+      "texto": "Consejos o asambleas de unidad: espacios de coordinación donde los representantes de los grupos naturales, junto con los dirigentes, planifican, evalúan y toman decisiones que afectan a toda la rama.",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 15 §15.3, p. 95"
+    },
+    "relacionados": [
+      "participacion-juvenil",
+      "grupos-naturales",
+      "sistema-de-equipos",
+      "grupos-naturales-cachorros",
+      "grupos-naturales-manada",
+      "grupos-naturales-scouts",
+      "grupos-naturales-nomadas",
+      "clan-rovers"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "observar-y-facilitar-la-reflexion",
+    "termino": "Observar con intención y facilitar la reflexión (ciclo de Kolb)",
+    "capa": 3,
+    "rama": null,
+    "definicion": "La mirada del dirigente es una herramienta pedagógica: observar no es vigilar, es estar presente con intención, definir 3 o 4 indicadores simples antes de empezar, registrar micro-evidencias en un anecdotario («Camila cedió el turno sin recordárselo») y usar ese registro para elegir la pregunta del cierre. Facilitar la reflexión no es dar «el discurso final»: es una conversación guiada donde el dirigente pone el marco y los jóvenes traen el contenido. El Modelo propone el ciclo de Kolb en cuatro pasos —¿qué hicimos?, ¿cómo nos sentimos y qué observamos?, ¿qué aprendimos?, ¿dónde lo usaremos después?— que se activa en 2 a 8 minutos según la complejidad y la rama.",
+    "enLaPractica": "Claves: preguntas abiertas (qué, cómo, cuándo) y evitar el «por qué», que activa defensas; validar emociones sin psicologizar; devolver la pelota con hechos; cerrar con un compromiso pequeño, concreto y fechado. Cuida el clima: tiempo breve, giros de voz con objeto de la palabra, múltiples modos de respuesta (dibujar, escribir, señalar), lenguaje de crecimiento («aún», «próximo paso»). Regla de oro: si alguien ajeno al grupo pudiera ver tu evidencia y llegar a la misma conclusión, estás observando al nivel correcto.",
+    "cita": {
+      "texto": "Observar no es vigilar. Es estar presente con intención, leer las señales del grupo y de cada protagonista, registrar lo justo (ni más ni menos) y usar ese registro para activar preguntas que abran posibilidades.",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 9 §9.3, p. 60"
+    },
+    "relacionados": [
+      "rol-del-dirigente",
+      "aprender-haciendo",
+      "oportunidades-de-aprendizaje",
+      "apoyo-del-adulto"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "seguimiento-y-registro-de-la-progresion",
+    "termino": "Seguimiento y registro de la progresión (kit mínimo)",
+    "capa": 3,
+    "rama": null,
+    "definicion": "El seguimiento funciona cuando se parece a la vida real de la unidad: mirar con intención, recoger una evidencia pequeña y conversar lo justo para acordar un paso siguiente. El Recurso Educativo «Herramientas de Seguimiento para la Progresión Personal 2.0» ofrece un banco de técnicas —observación en acción, anecdotario, lista de cotejo, rúbrica ligera, semáforo, coevaluación 2+1 (dos fortalezas y una mejora), bitácora, portafolio ligero, devolución del destinatario— y un kit mínimo por rama con una misma lógica: una herramienta para mirar, una para conversar y una para guardar evidencia. Se registra lo educativo (hechos, acuerdos, evidencias), nunca lo íntimo o sensible; lo sensible va por las rutas institucionales.",
+    "enLaPractica": "Receta para casi cualquier actividad: 1) escoge una conducta observable, 2) elige una sola técnica para recoger evidencia, 3) cierra con una pregunta y un paso siguiente. El «Registro de Acompañamiento a la Progresión Personal» (DNPJ-2026-021) consolida por protagonista una hoja central y una hoja «OA duplicable» por oportunidad de aprendizaje, con la voz del protagonista (¿qué aprendí?, ¿qué fue importante para mí?, ¿qué quisiera seguir intentando?). No es para poner nota: el seguimiento orienta el crecimiento, no clasifica personas.",
+    "cita": {
+      "texto": "Si quieres una receta práctica para casi cualquier actividad: 1. Escoge una conducta observable (la que más te importa hoy). 2. Elige una técnica para recoger evidencia (una sola). 3. Cierra con una pregunta y un paso siguiente (“¿qué ajustamos para la próxima?”).",
+      "fuente": "Recurso Educativo «Herramientas de Seguimiento para la Progresión Personal 2.0» (DNPJ, Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 4 §4.9, p. 9 (paginación PDF)"
+    },
+    "relacionados": [
+      "progresion-personal",
+      "etapas-de-progresion",
+      "competencias-educativas",
+      "ciclo-operativo-seis-pasos"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "retroalimentacion-vi-logro-proximo-paso",
+    "termino": "Retroalimentación bienintencionada: «Vi – Logró – Próximo paso»",
+    "capa": 3,
+    "rama": null,
+    "definicion": "Estructura de tres pasos para devolver al protagonista lo observado: 1) Vi —el hecho observable, sin adornos ni etiquetas—; 2) Logró —el efecto o sentido: en el equipo, la seguridad, el resultado, la convivencia—; 3) Próximo paso —una propuesta concreta, realista, que se pueda intentar pronto—. Funciona porque no discute «personalidad»: habla de hechos, de impacto y del siguiente paso. El énfasis cambia con el momento de progresión: en Exploro anima el intento y da una pista; en Aplico mira consistencia, ajustes y hábitos; en Profundizo mira transferencia, impacto y autonomía real.",
+    "enLaPractica": "Tono: directo, sin ironía, corto, centrado en la acción y con salida clara; evita «eres», «siempre», «nunca». Cuando hay que corregir una conducta que afecta a otros: «Esto que pasó… (hecho). Eso afecta… (impacto). En esta unidad cuidamos… (marco). Lo que esperamos ahora es… (acción concreta)». No es castigo: es cuidado del ambiente educativo. Cierra con dos preguntas: ¿qué vas a intentar diferente la próxima vez?, ¿qué apoyo necesitas para lograrlo?",
+    "cita": {
+      "texto": "Una buena retroalimentación no necesita ser perfecta, ni extensa. Necesita ser oportuna, clara y respetuosa.",
+      "fuente": "Recurso Educativo «Herramientas de Seguimiento para la Progresión Personal 2.0» (DNPJ, Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 7, p. 16 (paginación PDF)"
+    },
+    "relacionados": [
+      "apoyo-del-adulto",
+      "rol-del-dirigente",
+      "seguimiento-y-registro-de-la-progresion"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "experiencias-externas-como-oportunidades",
+    "termino": "Experiencias fuera del Movimiento: las tres puertas de entrada",
+    "capa": 3,
+    "rama": null,
+    "definicion": "La progresión no ocurre solo cuando la unidad se reúne: una conversación difícil en casa, una decisión en el colegio, una frustración en el deporte o una situación digital que exige criterio son oportunidades de aprendizaje externas. No se recolectan: se escuchan cuando aparecen, en un ambiente seguro y sin presión. El Recurso 2.0 propone tres «puertas» —A: un momento que te marcó; B: un reto que apareció; C: algo que salió distinto—, cada una con una pregunta base, y tres conductas de cuidado previas: ofrecer elección, delimitar el propósito y cuidar la privacidad.",
+    "enLaPractica": "Una experiencia, una competencia educativa principal (a lo sumo dos). Recórrela con Kolb (qué ocurrió, qué sintió, qué idea se lleva, qué intenta distinto la próxima vez) y cierra con «¿qué te gustaría llevarte como aprendizaje de esto?». Evidencia ligera y proporcional: basta una frase observable que el protagonista reconozca («pude pedir ayuda», «sostuve el acuerdo»). Nadie está obligado a compartir detalles y el dirigente no es investigador.",
+    "cita": {
+      "texto": "Las experiencias externas no se recolectan. Se escuchan cuando aparecen. Y para que aparezcan, hace falta un ambiente seguro: preguntas abiertas, tono tranquilo y cero presión.",
+      "fuente": "Recurso Educativo «Herramientas de Seguimiento para la Progresión Personal 2.0» (DNPJ, Scouts de Colombia, 2026)",
+      "ubicacion": "Cap. 9 §9.3, p. 23 (paginación PDF)"
+    },
+    "relacionados": [
+      "oportunidades-de-aprendizaje",
+      "familia-aliada",
+      "observar-y-facilitar-la-reflexion"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "reconocimiento-en-la-practica",
+    "termino": "Reconocer en la práctica: siete momentos y una ceremonia segura",
+    "capa": 3,
+    "rama": null,
+    "definicion": "El Modelo distingue siete tipos de reconocimiento, todos con sentido pedagógico: 1) ceremonia de investidura o promesa; 2) ceremonia de paso entre unidades; 3) reconocimientos cotidianos (felicitaciones, palabras de aliento); 4) reconocimientos simbólicos intermedios (insignias o menciones por competencias educativas o avances en áreas de crecimiento); 5) reconocimientos de fase o de progresión mayor; 6) reconocimientos colectivos (camada, seisena, patrulla, equipo); 7) reconocimientos de impacto externo. En la ceremonia no se anuncian números ni colecciones de insignias: se nombran competencias y evidencias, y el símbolo ilumina el aprendizaje, no lo sustituye.",
+    "enLaPractica": "Antes de cada ceremonia, tres preguntas: ¿qué queremos reconocer?, ¿qué evidencia lo muestra?, ¿qué haremos ahora con esto? Chequeo rápido de seguridad: física (clima, suelos, aforo, botiquín), emocional (sin exposiciones forzadas, humor hiriente ni comparaciones), digital (consentimiento para imágenes), cultural (símbolos que no excluyan) y roles (responsable de seguridad, de tiempos y de mediación emocional). Evita la inflación simbólica y el «cosismo», el protagonismo adulto permanente y la burocracia sin sentido pedagógico.",
+    "cita": {
+      "texto": "Cuando dudes, vuelve a tres preguntas simples: ¿qué queremos reconocer?, ¿qué evidencia lo muestra?, ¿qué haremos ahora con esto?",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 12, p. 83"
+    },
+    "relacionados": [
+      "reconocimiento",
+      "marco-simbolico",
+      "etapas-de-progresion",
+      "progresion-personal"
+    ],
+    "estado": "borrador"
+  },
+  {
+    "id": "familia-en-la-practica",
+    "termino": "Trabajar con las familias: acciones concretas",
+    "capa": 3,
+    "rama": null,
+    "definicion": "La familia es aliada con tareas concretas, no público de aplausos. El Modelo propone seis acciones de involucramiento: participación en la planeación (escuchar sus propuestas al definir oportunidades de aprendizaje), observación y retroalimentación, ceremonias y celebraciones, espacios de formación para familias, voluntariado ocasional y comunicación permanente (reuniones, boletines, plataformas digitales). Corresponde al dirigente facilitar el vínculo: valorar a las familias como actores educativos y no solo como proveedoras de recursos, escucharlas, orientar pedagógicamente su participación y retroalimentarla.",
+    "enLaPractica": "Pide a la familia una acción sencilla (una conversación, una foto evidencia, un gesto de apoyo): no tercerices tu labor, pero tampoco te la cargues toda. En ceremonias: una nota previa con propósito y roles, un mensaje de cierre sencillo, un gesto de transferencia para la semana y un canal de retorno. En Cachorros (y puede servir en Lobatos), una nota breve a familias —una línea con lo observado y una idea práctica para apoyar en casa— es opcional pero muy poderosa. En la Familia de Cachorros, los padres pueden permanecer observando la reunión, pero participan en las dinámicas solo cuando los Viejos Lobos lo solicitan.",
+    "cita": {
+      "texto": "Invítala como aliada educativa. Pide una acción sencilla (una conversación, una foto evidencia, un gesto de apoyo). No “tercerices” tu labor, pero tampoco te la cargues toda. La familia es entorno, no público.",
+      "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
+      "ubicacion": "Cap. 9 §9.6, p. 67"
+    },
+    "relacionados": [
+      "familia-aliada",
+      "reconocimiento-en-la-practica",
+      "dirigente-cachorros"
+    ],
+    "estado": "borrador"
   }
 ]

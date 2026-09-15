@@ -130,5 +130,26 @@
     "capa": 2,
     "pasos": ["clan-rovers", "marco-simbolico-rovers", "progresion-rovers", "dirigente-rovers"],
     "estado": "borrador"
+  },
+  {
+    "id": "herramientas-del-dirigente",
+    "titulo": "Las herramientas del dirigente, de la planeación al reconocimiento",
+    "descripcion": "Cómo se aterriza la doctrina en la práctica semanal: el ciclo con ABP, la rutina de seis pasos, el diseño de una oportunidad de aprendizaje, la reunión, la seguridad, los consejos de unidad, la observación y la reflexión, el seguimiento, la retroalimentación, las experiencias externas, el reconocimiento y las familias.",
+    "capa": 3,
+    "pasos": [
+      "ciclo-de-programa-con-abp",
+      "ciclo-operativo-seis-pasos",
+      "disenar-una-oportunidad-de-aprendizaje",
+      "planear-la-reunion-de-unidad",
+      "a-salvo-del-peligro-y-gestion-del-riesgo",
+      "consejos-y-asambleas-de-unidad",
+      "observar-y-facilitar-la-reflexion",
+      "seguimiento-y-registro-de-la-progresion",
+      "retroalimentacion-vi-logro-proximo-paso",
+      "experiencias-externas-como-oportunidades",
+      "reconocimiento-en-la-practica",
+      "familia-en-la-practica"
+    ],
+    "estado": "borrador"
   }
 ]
