@@ -16,7 +16,7 @@ body {
 }
 a { color: var(--link); text-decoration: none; }
 button { font-family: inherit; cursor: pointer; color: inherit; }
-:focus-visible { outline: 3px solid var(--cyan); outline-offset: 2px; border-radius: 6px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 6px; }
 
 /* El sprite no ocupa lugar: [hidden] no aplica a <svg> en todos los navegadores. */
 .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
@@ -73,6 +73,8 @@ button { font-family: inherit; cursor: pointer; color: inherit; }
 }
 .icon-btn .ico { width: 22px; height: 22px; }
 .icon-btn[hidden] { display: none; }
+/* Sobre el morado de la cabecera el foco va en amarillo (≥ 3:1 contra --brand-deep). */
+.app-header :focus-visible { outline-color: var(--accent); }
 
 /* ---- Layout ---- */
 main { max-width: var(--maxw); margin: 0 auto; padding: 18px 16px calc(104px + var(--safe-bottom)); }

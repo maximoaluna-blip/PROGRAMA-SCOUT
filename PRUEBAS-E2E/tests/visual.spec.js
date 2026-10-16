@@ -28,3 +28,37 @@ test('la ficha de rama se tiñe con su color', async ({ page }) => {
   const fondo = await page.locator('.detail .cinta').evaluate((el) => getComputedStyle(el).backgroundColor);
   expect(fondo).toBe('rgb(255, 208, 15)');
 });
+
+// WCAG 1.4.11: el indicador de foco necesita ≥ 3:1 contra el fondo de la página.
+function luminancia(rgb) {
+  const [r, g, b] = rgb.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number).map((v) => {
+    const c = v / 255;
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+function contraste(a, b) {
+  const [l1, l2] = [luminancia(a), luminancia(b)].sort((x, y) => y - x);
+  return (l1 + 0.05) / (l2 + 0.05);
+}
+
+for (const tema of ['light', 'dark']) {
+  test(`el foco de teclado se ve (≥ 3:1) [${tema}]`, async ({ page }) => {
+    await page.addInitScript((t) => { try { localStorage.setItem('ps-theme', t); } catch (e) {} }, tema === 'dark' ? 'dark' : '');
+    await page.goto('./#/', { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('.layer-card');
+    let enCapa = false;
+    for (let i = 0; i < 15 && !enCapa; i++) {
+      await page.keyboard.press('Tab');
+      enCapa = await page.evaluate(() => document.activeElement?.classList.contains('layer-card'));
+    }
+    expect(enCapa, 'el Tab no llegó a una tarjeta de capa').toBe(true);
+    const { foco, fondo, estilo } = await page.evaluate(() => {
+      const cs = getComputedStyle(document.activeElement);
+      return { foco: cs.outlineColor, estilo: cs.outlineStyle, fondo: getComputedStyle(document.body).backgroundColor };
+    });
+    expect(estilo, 'sin outline de foco').not.toBe('none');
+    const c = contraste(foco, fondo);
+    expect(c, `foco ${foco} sobre ${fondo} = ${c.toFixed(2)}:1`).toBeGreaterThanOrEqual(3);
+  });
+}
