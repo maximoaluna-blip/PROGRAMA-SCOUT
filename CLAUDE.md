@@ -38,7 +38,7 @@ GitHub Pages desde la raíz (`main`, `/`), HTTPS. Publicar = `commit + push` a `
 
 ## 6. Estado
 
-Las cuatro capas (0 transversal, 1 Política PNPJ, 2 las 5 ramas, 3 aplicación) están **publicadas**; cifras en `README.md` §Estado. La Capa 3 se auditó en `AUDITORIA-CAPA-3.md`. ⚠️ Las rutas de las Capas 0–2 siguen con `estado: borrador` y muestran el chip en producción. Pendiente: íconos PNG iOS. Ver `README.md` §Estado y la **plantilla de rama** en `ESQUEMA-CONTENIDO.md`.
+Las cuatro capas (0 transversal, 1 Política PNPJ, 2 las 5 ramas, 3 aplicación) están **publicadas**; cifras en `README.md` §Estado. La Capa 3 se auditó en `AUDITORIA-CAPA-3.md`. ⚠️ Una ruta también lleva `estado`: si se queda en `borrador`, muestra el chip en producción aunque sus conceptos estén auditados. Pendiente: íconos PNG iOS. Ver `README.md` §Estado y la **plantilla de rama** en `ESQUEMA-CONTENIDO.md`.
 
 Terminología confirmada (docs 2026):
 - Política vigente = **PNPJ** (Política Nacional de Programa de Jóvenes, 2024, DNPJ-2026-023). **«PSNPJ» = versión 2020 sustituida**, no usar para lo vigente.

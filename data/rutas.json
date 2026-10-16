@@ -17,7 +17,7 @@
       "prioridades-educativas",
       "competencias-educativas"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "el-metodo-scout-paso-a-paso",
@@ -36,7 +36,7 @@
       "participacion-en-la-comunidad",
       "equilibrio-del-metodo"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "como-se-organiza-y-mueve-la-unidad",
@@ -51,7 +51,7 @@
       "ciclo-de-programa",
       "duraslid"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "principios-que-atraviesan-todo",
@@ -66,7 +66,7 @@
       "coeducacion-diversidad-inclusion",
       "scouts-por-los-ods"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "la-politica-y-su-modelo",
@@ -83,7 +83,7 @@
       "operacion-de-la-politica",
       "el-gran-juego-para-la-vida"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "conoce-la-manada",
@@ -97,7 +97,7 @@
       "progresion-manada",
       "dirigente-manada"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "conoce-cachorros",
@@ -105,7 +105,7 @@
     "descripcion": "La rama de 5 a 6 años: la Familia, su marco simbólico (la selva y el Cubil), las Camadas, la progresión por el juego y el Viejo Lobo de Familia.",
     "capa": 2,
     "pasos": ["familia-cachorros", "marco-simbolico-cachorros", "grupos-naturales-cachorros", "progresion-cachorros", "dirigente-cachorros"],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "conoce-scouts",
@@ -113,7 +113,7 @@
     "descripcion": "La rama de 11 a 14 años: la Tropa, la aventura, el Sistema de Patrulla, la progresión por especialidades y el Jefe de Tropa.",
     "capa": 2,
     "pasos": ["tropa-scouts", "marco-simbolico-scouts", "grupos-naturales-scouts", "progresion-scouts", "dirigente-scouts"],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "conoce-nomadas",
@@ -121,7 +121,7 @@
     "descripcion": "La rama de 15 a 17 años: la Comunidad, su marco simbólico, los Equipos con liderazgo rotativo, la progresión y el Dirigente de Comunidad.",
     "capa": 2,
     "pasos": ["comunidad-nomadas", "marco-simbolico-nomadas", "grupos-naturales-nomadas", "progresion-nomadas", "dirigente-nomadas"],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "conoce-rovers",
@@ -129,7 +129,7 @@
     "descripcion": "La rama de 18 a 20 años: el Clan, la Ruta y el Servicio, los equipos, la progresión por fases (RC, RP) y el Dirigente de Clan.",
     "capa": 2,
     "pasos": ["clan-rovers", "marco-simbolico-rovers", "progresion-rovers", "dirigente-rovers"],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "herramientas-del-dirigente",
