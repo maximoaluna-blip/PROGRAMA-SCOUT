@@ -177,6 +177,39 @@ test('la flor de lis no se anima', async ({ page }) => {
   await revisar();
 });
 
+// Ficha leída → el anillo de su capa avanza en Inicio (desde el valor anterior).
+async function leerYVolver(page) {
+  await sembrar(page, {});
+  await page.goto('./#/concepto/proposito-del-movimiento');
+  await expect(page.locator('.detail h2')).toBeVisible();
+  await page.locator('.detail .fuente').evaluate((el) => el.scrollIntoView({ block: 'center' }));
+  await expect(page.locator('.sello-visto')).toHaveCount(1);
+  await page.locator('.tabbar a[data-route=""]').click();
+  const anillo = page.locator('.layer-card[data-capa="0"] .anillo');
+  await expect(anillo).toBeVisible();
+  return anillo;
+}
+const animacionesDe = (loc) => loc.evaluate((el) => el.getAnimations({ subtree: true }).length);
+
+test('ficha leída: el anillo de la capa avanza en Inicio', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  const anillo = await leerYVolver(page);
+  expect(Number(await anillo.getAttribute('data-pct'))).toBeGreaterThan(0);
+  expect(await animacionesDe(anillo)).toBeGreaterThan(0);
+  // Sin avance nuevo, volver a Inicio no repite la animación.
+  await page.locator('.tabbar a[data-route="buscar"]').click();
+  await page.locator('.tabbar a[data-route=""]').click();
+  await expect(anillo).toBeVisible();
+  expect(await animacionesDe(anillo)).toBe(0);
+});
+
+test('movimiento reducido: el anillo queda en su valor final, sin animar', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const anillo = await leerYVolver(page);
+  expect(Number(await anillo.getAttribute('data-pct'))).toBeGreaterThan(0);
+  expect(await animacionesDe(anillo)).toBe(0);
+});
+
 test('al volver, la vista entra desde el lado contrario', async ({ page }) => {
   await page.goto('./#/');
   await expect(page.locator('.layer-card').first()).toBeVisible();

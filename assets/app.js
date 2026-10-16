@@ -9,7 +9,7 @@ import { leer, guardar, reiniciar, disponible, estadoInicial } from "./almacen.j
 import { configurar, activo, tocar } from "./sonido.js";
 import { marcarLeida, ganarParches, avanceCapa } from "./progreso.js";
 import { hoyISO } from "./vistas.js";
-import { montarEscena } from "./escena.js";
+import { montarEscena, movimientoReducido } from "./escena.js";
 import { celebrarParche, animarVisto } from "./celebracion.js";
 
 const DB = { capas: [], conceptos: [], situaciones: [], rutas: [], parches: [] };
@@ -125,6 +125,36 @@ function cascada(raiz) {
 
 let desmontarEscena = null;
 
+/* Anillos de capa en Inicio: avanzan desde el último valor mostrado (en memoria,
+   no en localStorage). Una «tapa» del color de la pista cubre el tramo nuevo y
+   gira hasta descubrirlo: solo transform y opacity. Sin avance, no se anima. */
+const anillosVistos = {};
+function recordarAnillos() {
+  DB.capas.forEach((c) => {
+    const a = avanceCapa(ctx.estado, DB, c.nivel);
+    anillosVistos[c.nivel] = a.total ? Math.round((a.leidas * 100) / a.total) : 0;
+  });
+}
+function avanzarAnillos(raiz) {
+  raiz.querySelectorAll(".layer-card[data-capa]").forEach((card) => {
+    const capa = card.dataset.capa;
+    const anillo = card.querySelector(".anillo");
+    const svg = anillo && anillo.querySelector(".anillo-svg");
+    if (!svg) return;
+    const ahora = Number(anillo.dataset.pct) || 0;
+    const antes = anillosVistos[capa];
+    anillosVistos[capa] = ahora;
+    if (antes === undefined || ahora <= antes || movimientoReducido()) return;
+    const delta = ahora - antes;
+    const tapa = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    tapa.setAttribute("class", "anillo-tapa");
+    for (const [k, v] of Object.entries({ cx: 28, cy: 28, r: 25, pathLength: 100, "stroke-dasharray": `${delta} 100`, "stroke-dashoffset": -antes })) tapa.setAttribute(k, v);
+    tapa.style.setProperty("--giro", `${delta * 3.6}deg`);
+    tapa.addEventListener("animationend", () => tapa.remove());
+    svg.appendChild(tapa);
+  });
+}
+
 /* ---------- router ---------- */
 function render() {
   const hash = location.hash || "#/";
@@ -155,6 +185,7 @@ function render() {
     if (direccion() === "atras") vista.classList.add("entra-atras");
     cascada(vista);
   }
+  avanzarAnillos(app);
   const hero = app.querySelector(".inicio .hero");
   if (hero) desmontarEscena = montarEscena(hero, {
     fogata: true, estrellas: 12,
@@ -309,6 +340,7 @@ window.go = go;
   initCelebracion();
   ctx.almacenDisponible = disponible();
   await loadData();
+  recordarAnillos();
   window.addEventListener("hashchange", render);
   render();
   if ("serviceWorker" in navigator) {

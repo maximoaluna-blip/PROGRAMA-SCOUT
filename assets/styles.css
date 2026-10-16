@@ -653,6 +653,19 @@ mark { background: var(--accent); color: #2c2927; border-radius: 3px; padding: 0
 }
 .hex-rama:active { transform: scale(.95); transition: transform 90ms ease-out; }
 
+/* Anillo de capa que avanza (app.js añade la tapa solo si subió desde la última vez):
+   la tapa, del color de la pista, gira y descubre el tramo nuevo. */
+.anillo-tapa {
+  fill: none; stroke: var(--border); stroke-width: 5.2; stroke-linecap: round;
+  transform-box: view-box; transform-origin: 28px 28px;
+  animation: anillo-avanza 800ms var(--curva-salida) 260ms both;
+}
+@keyframes anillo-avanza {
+  from { transform: rotate(0deg); opacity: 1; }
+  85% { opacity: 1; }
+  to { transform: rotate(var(--giro)); opacity: 0; }
+}
+.layer-card:has(.anillo-tapa) .anillo-ico { animation: brinco 420ms var(--curva-rebote) 900ms backwards; }
 /* La bitácora de Inicio se llena al entrar. */
 .inicio .bb-pista .relleno { animation: llenar 700ms var(--curva-salida) 200ms backwards; }
 @keyframes llenar { from { transform: scaleX(0); } }
@@ -795,6 +808,7 @@ mark { background: var(--accent); color: #2c2927; border-radius: 3px; padding: 0
 /* ---- Movimiento reducido: sin ambiente, rebotes ni chispas; solo fundidos de 100 ms ---- */
 @media (prefers-reduced-motion: reduce) {
   .view, .view.entra-atras { animation: fundido 100ms linear; }
+  .anillo-tapa { display: none; }
   .cascada, .inicio .bb-pista .relleno, .tabbar.pastilla-lista a.active .ti .ico { animation: none; }
   .layer-card, .list-item, .hex-rama, .sigue-donde a, .fd-tarjeta, .siguiente-en-ruta a,
   .related a, .btn-secundario, .icon-btn, .tabbar a .ti, .hp-seguir { transition: none; }
