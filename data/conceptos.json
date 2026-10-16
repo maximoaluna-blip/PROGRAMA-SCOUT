@@ -1250,7 +1250,7 @@
       "duraslid",
       "el-gran-juego-para-la-vida"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "ciclo-operativo-seis-pasos",
@@ -1270,7 +1270,7 @@
       "duraslid",
       "etapas-de-progresion"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "disenar-una-oportunidad-de-aprendizaje",
@@ -1290,7 +1290,7 @@
       "competencias-educativas",
       "sistema-de-equipos"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "planear-la-reunion-de-unidad",
@@ -1310,7 +1310,7 @@
       "disenar-una-oportunidad-de-aprendizaje",
       "a-salvo-del-peligro-y-gestion-del-riesgo"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "a-salvo-del-peligro-y-gestion-del-riesgo",
@@ -1330,7 +1330,7 @@
       "disenar-una-oportunidad-de-aprendizaje",
       "familia-aliada"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "consejos-y-asambleas-de-unidad",
@@ -1354,7 +1354,7 @@
       "grupos-naturales-nomadas",
       "clan-rovers"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "observar-y-facilitar-la-reflexion",
@@ -1374,7 +1374,7 @@
       "oportunidades-de-aprendizaje",
       "apoyo-del-adulto"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "seguimiento-y-registro-de-la-progresion",
@@ -1394,7 +1394,7 @@
       "competencias-educativas",
       "ciclo-operativo-seis-pasos"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "retroalimentacion-vi-logro-proximo-paso",
@@ -1413,7 +1413,7 @@
       "rol-del-dirigente",
       "seguimiento-y-registro-de-la-progresion"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "experiencias-externas-como-oportunidades",
@@ -1432,7 +1432,7 @@
       "familia-aliada",
       "observar-y-facilitar-la-reflexion"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "reconocimiento-en-la-practica",
@@ -1452,7 +1452,7 @@
       "etapas-de-progresion",
       "progresion-personal"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "familia-en-la-practica",
@@ -1471,6 +1471,6 @@
       "reconocimiento-en-la-practica",
       "dirigente-cachorros"
     ],
-    "estado": "borrador"
+    "estado": "auditado"
   }
 ]

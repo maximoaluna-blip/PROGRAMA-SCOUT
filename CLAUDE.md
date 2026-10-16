@@ -38,9 +38,7 @@ GitHub Pages desde la raíz (`main`, `/`), HTTPS. Publicar = `commit + push` a `
 
 ## 6. Estado
 
-**65 conceptos auditados** + 10 rutas en producción. Capas 0 (A–D), 1 (Política PNPJ) y **2 (por rama, las 5: Cachorros, Lobatos, Scouts, Nómadas Scout, Rovers) COMPLETAS**.
-
-**Capa 3 «Aplicación» en BORRADOR (14-sep-2026):** 12 conceptos + 7 situaciones + ruta `herramientas-del-dirigente`, auditados doctrinalmente (`AUDITORIA-CAPA-3.md`, APTO CON CORRECCIONES MENORES, correcciones aplicadas) pero **no promovidos a `auditado` ni publicados** — los datos están en la rama `capa-3-borrador`. Promover exige: decisión del dueño, `PRUEBAS-E2E` en verde, subir `CACHE_VERSION` (hoy `programa-scout-v9`) y verificar en producción. Pendiente además: íconos PNG iOS. Ver `README.md` §Estado y la **plantilla de rama** en `ESQUEMA-CONTENIDO.md`.
+Las cuatro capas (0 transversal, 1 Política PNPJ, 2 las 5 ramas, 3 aplicación) están **publicadas**; cifras en `README.md` §Estado. La Capa 3 se auditó en `AUDITORIA-CAPA-3.md`. ⚠️ Las rutas de las Capas 0–2 siguen con `estado: borrador` y muestran el chip en producción. Pendiente: íconos PNG iOS. Ver `README.md` §Estado y la **plantilla de rama** en `ESQUEMA-CONTENIDO.md`.
 
 Terminología confirmada (docs 2026):
 - Política vigente = **PNPJ** (Política Nacional de Programa de Jóvenes, 2024, DNPJ-2026-023). **«PSNPJ» = versión 2020 sustituida**, no usar para lo vigente.

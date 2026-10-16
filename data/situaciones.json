@@ -14,7 +14,7 @@
       "fuente": "Modelo de Aplicación PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
       "ubicacion": "Cap. 3 §3.2, p. 16 (el Método como sistema) y Cap. 11, p. 75"
     },
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "no-se-si-cuenta-como-aplico",
@@ -32,7 +32,7 @@
       "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
       "ubicacion": "Cap. 8 §8.1.2.2, p. 48 y Cap. 9 §9.3.1, p. 61"
     },
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "la-familia-solo-viene-a-aplaudir",
@@ -49,7 +49,7 @@
       "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
       "ubicacion": "Cap. 9 §9.6, p. 67; Cap. 12, p. 84; Cap. 13 §13.3, p. 87"
     },
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "los-adultos-deciden-todo",
@@ -67,7 +67,7 @@
       "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024); Guía de Dirigente de Comunidad (Scouts de Colombia, 2026)",
       "ubicacion": "Modelo: Cap. 9 §9.6, p. 68 y Cap. 15 §15.6, p. 97. Guía de Comunidad: p. 16 y Cap. 11, p. 44"
     },
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "una-carpeta-de-formatos-que-nadie-lee",
@@ -84,7 +84,7 @@
       "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024); Recurso Educativo «Herramientas de Seguimiento para la Progresión Personal 2.0» (DNPJ, Scouts de Colombia, 2026)",
       "ubicacion": "Modelo: Cap. 9 §9.3.2.3.3, p. 65. Recurso 2.0: Cap. 5, p. 12 y Cap. 10, p. 28 (paginación PDF)"
     },
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "la-salida-sin-analisis-de-riesgo",
@@ -101,7 +101,7 @@
       "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024); Guía de Dirigente de Manada (Scouts de Colombia, 2026); Política Nacional A Salvo del Peligro «Haré todo cuanto de mí dependa» (ASC, dic-2025)",
       "ubicacion": "Modelo: Cap. 7 §7.1, p. 40 y Cap. 11 §11.5, p. 79. Guía de Manada: §11.2.2, p. 65; Política ASP: p. 26 (medida 2+1)"
     },
-    "estado": "borrador"
+    "estado": "auditado"
   },
   {
     "id": "la-ceremonia-se-volvio-un-show",
@@ -118,6 +118,6 @@
       "fuente": "Modelo de Aplicación de la PNPJ «El Gran Juego para la Vida» (DNPJ-2026-024)",
       "ubicacion": "Cap. 12, pp. 81–83"
     },
-    "estado": "borrador"
+    "estado": "auditado"
   }
 ]
