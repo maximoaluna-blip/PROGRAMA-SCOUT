@@ -64,8 +64,24 @@ test('ganar un parche muestra la hoja y se cierra', async ({ page }) => {
 });
 
 test('la hoja se cierra con un toque y con su botón', async ({ page }) => {
+  // Un toque en el instante en que aparece la hoja (antes de 400 ms) no la cierra.
+  await page.addInitScript(() => {
+    new MutationObserver((ms) => {
+      for (const m of ms) for (const n of m.addedNodes) {
+        if (n.classList && n.classList.contains('hoja-parche') && window.__toqueTemprano === undefined) {
+          n.click();
+          window.__toqueTemprano = n.isConnected && !n.classList.contains('saliendo');
+        }
+      }
+    }).observe(document, { childList: true, subtree: true });
+  });
   const hoja = await ganarConoceRovers(page);
-  await hoja.getByRole('button', { name: 'Seguir' }).click();
+  expect(await page.evaluate(() => window.__toqueTemprano), 'el toque temprano no debe cerrar').toBe(true);
+  const seguir = hoja.getByRole('button', { name: 'Seguir' });
+  // El foco llega a «Seguir» cuando ya se ve.
+  await expect(seguir).toBeFocused();
+  expect(Number(await seguir.evaluate((el) => getComputedStyle(el).opacity))).toBeGreaterThan(0.9);
+  await seguir.click();
   await expect(page.locator('.hoja-parche')).toHaveCount(0);
 });
 
@@ -178,7 +194,16 @@ test('la flor de lis no se anima', async ({ page }) => {
 });
 
 // Ficha leída → el anillo de su capa avanza en Inicio (desde el valor anterior).
+// Un MutationObserver cuenta las «tapas» creadas: no depende de pillar la animación a mitad de vuelo.
 async function leerYVolver(page) {
+  await page.addInitScript(() => {
+    window.__tapas = 0;
+    new MutationObserver((ms) => {
+      for (const m of ms) for (const n of m.addedNodes) {
+        if (n.nodeType === 1 && (n.matches('.anillo-tapa') || n.querySelector('.anillo-tapa'))) window.__tapas++;
+      }
+    }).observe(document, { childList: true, subtree: true });
+  });
   await sembrar(page, {});
   await page.goto('./#/concepto/proposito-del-movimiento');
   await expect(page.locator('.detail h2')).toBeVisible();
@@ -189,25 +214,28 @@ async function leerYVolver(page) {
   await expect(anillo).toBeVisible();
   return anillo;
 }
-const animacionesDe = (loc) => loc.evaluate((el) => el.getAnimations({ subtree: true }).length);
+const tapasCreadas = (page) => page.evaluate(() => window.__tapas);
 
 test('ficha leída: el anillo de la capa avanza en Inicio', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   const anillo = await leerYVolver(page);
   expect(Number(await anillo.getAttribute('data-pct'))).toBeGreaterThan(0);
-  expect(await animacionesDe(anillo)).toBeGreaterThan(0);
-  // Sin avance nuevo, volver a Inicio no repite la animación.
+  await expect.poll(() => tapasCreadas(page)).toBeGreaterThan(0);
+  const creadas = await tapasCreadas(page);
+  // Sin avance nuevo, volver a Inicio no crea otra tapa (el contador no sube).
   await page.locator('.tabbar a[data-route="buscar"]').click();
   await page.locator('.tabbar a[data-route=""]').click();
   await expect(anillo).toBeVisible();
-  expect(await animacionesDe(anillo)).toBe(0);
+  await expect(page.locator('.anillo-tapa')).toHaveCount(0);
+  expect(await tapasCreadas(page)).toBe(creadas);
 });
 
 test('movimiento reducido: el anillo queda en su valor final, sin animar', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   const anillo = await leerYVolver(page);
   expect(Number(await anillo.getAttribute('data-pct'))).toBeGreaterThan(0);
-  expect(await animacionesDe(anillo)).toBe(0);
+  await expect(page.locator('.anillo-tapa')).toHaveCount(0);
+  expect(await tapasCreadas(page)).toBe(0);
 });
 
 test('al volver, la vista entra desde el lado contrario', async ({ page }) => {

@@ -126,7 +126,14 @@ function mostrar(p, { completo = false, etiqueta, alMostrar } = {}) {
     fondo.forEach((el) => { el.inert = true; });
     document.body.appendChild(raiz);
     const boton = raiz.querySelector(".hp-seguir");
-    boton.focus({ preventScroll: true });
+    // «Seguir» aparece con retardo (900 ms + 300 ms de fundido): el foco entra primero a la hoja
+    // y pasa al botón cuando ya se ve. Los toques de los primeros 400 ms no la cierran.
+    const abiertaEn = performance.now();
+    raiz.tabIndex = -1;
+    raiz.focus({ preventScroll: true });
+    const enfocarBoton = setTimeout(() => {
+      if (raiz.contains(document.activeElement)) boton.focus({ preventScroll: true });
+    }, quieta ? 150 : 1250);
     // La región viva recibe su texto ya montada, para que se anuncie.
     requestAnimationFrame(() => { raiz.querySelector(".hp-texto").textContent = mensaje; });
     try { alMostrar?.(); } catch (e) { /* el sonido nunca rompe la hoja */ }
@@ -139,6 +146,7 @@ function mostrar(p, { completo = false, etiqueta, alMostrar } = {}) {
       if (cerrada) return;
       cerrada = true;
       clearTimeout(chispas);
+      clearTimeout(enfocarBoton);
       document.removeEventListener("keydown", teclas, true);
       window.removeEventListener("hashchange", cerrar);
       abierta = null;
@@ -153,10 +161,10 @@ function mostrar(p, { completo = false, etiqueta, alMostrar } = {}) {
     };
     const teclas = (e) => {
       if (e.key === "Escape") { e.preventDefault(); cerrar(); }
-      else if (e.key === "Tab") { e.preventDefault(); boton.focus({ preventScroll: true }); }
+      else if (e.key === "Tab") { e.preventDefault(); if (performance.now() - abiertaEn >= 400) boton.focus({ preventScroll: true }); }
     };
     document.addEventListener("keydown", teclas, true);
-    raiz.addEventListener("click", cerrar);
+    raiz.addEventListener("click", () => { if (performance.now() - abiertaEn >= 400) cerrar(); });
     // Navegar a otra vista cierra la hoja (la fila sigue con la próxima).
     window.addEventListener("hashchange", cerrar);
     abierta = { cerrar };

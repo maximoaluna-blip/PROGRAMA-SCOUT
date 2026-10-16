@@ -43,3 +43,11 @@ test('el service worker se registra (offline disponible)', async ({ page }) => {
   }, null, { timeout: 15_000 }).then(() => true).catch(() => false);
   expect(registrado, 'el service worker debió registrarse').toBeTruthy();
 });
+
+// Al instalar, el service worker salta la caché HTTP (GitHub Pages: max-age=600) para que
+// el shell nunca mezcle un index.html viejo con un app.js nuevo.
+test('el service worker precachea y refresca sin pasar por la caché HTTP', async ({ page }) => {
+  const sw = await (await page.request.get('./sw.js')).text();
+  expect(sw).toContain('cache: "reload"');
+  expect(sw).toContain('cache: "no-cache"');
+});

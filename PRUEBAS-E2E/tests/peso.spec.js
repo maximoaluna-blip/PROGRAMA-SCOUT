@@ -1,6 +1,6 @@
 // Presupuesto de peso: suma los bytes (crudos) de lo que el service worker precachea
 // bajo ./assets/ más ./data/parches.json. Solo escritorio (@solo-escritorio).
-// El spec §6 fijaba 120 KB; se midió 130,8 KB crudos (≈35 KB con gzip) y el controlador
+// El spec §6 fijaba 120 KB; se midió 130,8 KB crudos (≈39 KB con gzip) y el controlador
 // subió el tope a 140 KB como guardia contra crecimiento — ver docs/superpowers/specs,
 // decisión pendiente del dueño.
 const { test, expect } = require('./_base');

@@ -153,3 +153,33 @@ test('reiniciar conserva las preferencias de sonido y bienvenida', async ({ page
   expect(g.bienvenida).toBe(true);
   expect(g.leidas).toEqual({});
 });
+
+// Una situación cuenta como leída cuando «Cómo aplicarlo» entra en pantalla (spec §5.1),
+// no cuando llega «Conceptos en juego». Se oculta ese último bloque para probarlo.
+test('situación: se lee al llegar a «Cómo aplicarlo»', async ({ page }) => {
+  await page.goto('./#/situacion/actividades-sin-rumbo');
+  await expect(page.locator('.detail h2')).toBeVisible();
+  const ultimo = page.locator('.detail .block').last();
+  await expect(ultimo, 'la situación debe cerrar con «Conceptos en juego»').not.toHaveClass(/practica/);
+  await ultimo.evaluate((el) => { el.style.display = 'none'; });
+  expect((await guardado(page)).situaciones || {}).not.toHaveProperty('actividades-sin-rumbo');
+  await page.locator('.detail .practica').evaluate((el) => el.scrollIntoView({ block: 'center' }));
+  await expect.poll(async () => Boolean(((await guardado(page)).situaciones || {})['actividades-sin-rumbo'])).toBe(true);
+});
+
+// Con el almacenamiento bloqueado (SecurityError al tocar window.localStorage) la app arranca igual.
+// Sin almacenamiento no hay marca de bienvenida: «#/» lleva a la bienvenida y «Empezar» entra a Inicio.
+test('localStorage bloqueado: la app arranca y el tema se alterna sin errores', async ({ page }) => {
+  const errores = [];
+  page.on('pageerror', (e) => errores.push(e.message));
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'localStorage', { configurable: true, get() { throw new DOMException('bloqueado', 'SecurityError'); } });
+  });
+  await page.goto('./#/');
+  const empezar = page.locator('#empezar');
+  if (await empezar.isVisible().catch(() => false)) await empezar.click();
+  await expect(page.locator('.layer-card').first()).toBeVisible();
+  await page.locator('#theme-btn').click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  expect(errores).toEqual([]);
+});

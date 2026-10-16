@@ -209,9 +209,9 @@ function render() {
   app.scrollTo?.(0, 0);
   window.scrollTo(0, 0);
   updateTabbar(route);
-  // Lectura real: la fuente (ficha) o el último bloque (situación) debe entrar en pantalla.
+  // Lectura real: la fuente (ficha) o «Cómo aplicarlo» (situación) debe entrar en pantalla.
   if (route === "concepto" && byId[param]) vigilarLectura("concepto", param, app.querySelector(".detail .fuente"));
-  else if (route === "situacion" && ctx.db.situaciones.some((x) => x.id === param)) vigilarLectura("situacion", param, [...app.querySelectorAll(".detail .block")].pop());
+  else if (route === "situacion" && ctx.db.situaciones.some((x) => x.id === param)) vigilarLectura("situacion", param, app.querySelector(".detail .practica"));
   else vigilarLectura(null, null, null);
   // Panal: al elegir una rama, se baja a sus fichas.
   if (route === "capa" && sub) document.getElementById("fichas-rama")?.scrollIntoView({ block: "start" });
@@ -389,12 +389,14 @@ function initCelebracion() {
 
 /* ---------- tema ---------- */
 function initTheme() {
-  const saved = localStorage.getItem("ps-theme");
+  // El script de index.html ya aplicó el tema guardado antes del primer pintado; aquí se repite por si falló.
+  let saved = null;
+  try { saved = localStorage.getItem("ps-theme"); } catch (e) { /* almacenamiento bloqueado */ }
   if (saved) document.documentElement.dataset.theme = saved;
   document.getElementById("theme-btn").onclick = () => {
     const cur = document.documentElement.dataset.theme === "dark" ? "" : "dark";
     document.documentElement.dataset.theme = cur;
-    localStorage.setItem("ps-theme", cur);
+    try { localStorage.setItem("ps-theme", cur); } catch (e) { /* el tema vale solo en esta sesión */ }
   };
 }
 
