@@ -81,11 +81,9 @@ function anillo(a, ico) {
         </span>`;
 }
 
-/* Paso de la ruta: `paso` puede ser índice (desde 0) o id de la ficha. */
+/* Paso de la ruta: `paso` es el número desde 1 (el mismo de `?paso=n` en el hash). */
 function idDelPaso(ruta, paso) {
-  const pasos = ruta.pasos || [];
-  if (typeof paso === "number") return pasos[paso];
-  return pasos.includes(paso) ? paso : undefined;
+  return Number.isInteger(paso) ? (ruta.pasos || [])[paso - 1] : undefined;
 }
 
 /* Tinte de una ruta: la rama si todos sus pasos son de una sola; si no, la capa más frecuente. */
@@ -218,7 +216,7 @@ function fichaDia(ctx, fecha) {
   const rama = RAMAS[c.rama];
   const capa = ctx.db.capas.find((k) => k.nivel === c.capa);
   return `
-      <section class="ficha-dia" ${tinte(c.capa, c.rama)}>
+      <section class="ficha-dia${leida(ctx, c.id) ? "" : " nueva"}" ${tinte(c.capa, c.rama)}>
         <p class="section-title">Ficha del día</p>
         <a class="fd-tarjeta" href="#/concepto/${esc(c.id)}">
           <span class="fd-cinta">
@@ -396,7 +394,7 @@ export function vistaCapa(ctx, id, sub) {
     </div>`;
 }
 
-export function vistaConcepto(ctx, id) {
+export function vistaConcepto(ctx, id, query = "") {
   const c = ctx.byId[id];
   if (!c) return vistaNoEncontrada();
   const capa = ctx.db.capas.find((k) => k.nivel === c.capa);
@@ -421,6 +419,17 @@ export function vistaConcepto(ctx, id) {
   const rel = (c.relacionados || [])
     .map((rid) => (ctx.byId[rid] ? `<a href="#/concepto/${rid}">${esc(ctx.byId[rid].termino)} ${icono("flecha")}</a>` : ""))
     .join("");
+  // Si se llegó desde una ruta (?ruta=…&paso=n), enlaza al paso siguiente o a la ruta.
+  const q = new URLSearchParams(query);
+  const ruta = ctx.db.rutas.find((r) => r.id === q.get("ruta"));
+  const n = Number(q.get("paso"));
+  let siguiente = "";
+  if (ruta && Number.isInteger(n) && (ruta.pasos || [])[n - 1] === id) {
+    const sig = ctx.byId[(ruta.pasos || [])[n]];
+    siguiente = sig
+      ? `<nav class="siguiente-en-ruta" aria-label="Siguiente en la ruta"><a href="#/concepto/${esc(sig.id)}?ruta=${esc(ruta.id)}&amp;paso=${n + 1}"><span class="sr-eyebrow">Siguiente en la ruta · paso ${n + 1} de ${ruta.pasos.length}</span><strong>${esc(sig.termino)}</strong>${icono("flecha")}</a></nav>`
+      : `<nav class="siguiente-en-ruta" aria-label="Fin de la ruta"><a href="#/ruta/${esc(ruta.id)}"><span class="sr-eyebrow">Último paso de la ruta</span><strong>Volver a ${esc(ruta.titulo)}</strong>${icono("flecha")}</a></nav>`;
+  }
   // Orden fijo: la fuente oficial es siempre el último hijo de .detail.
   return `
     <article class="view detail ficha" ${tinte(c.capa, c.rama)}>
@@ -433,6 +442,7 @@ export function vistaConcepto(ctx, id) {
         <p>${esc(c.enLaPractica)}</p>
       </section>
       ${rel ? `<section class="block">${etiqueta("huella", "Conceptos relacionados")}<div class="related">${rel}</div></section>` : ""}
+      ${siguiente}
       ${fuente}
     </article>`;
 }
@@ -494,7 +504,7 @@ export function vistaRuta(ctx, id) {
       const esActual = c.id === actual;
       return `
         <li>
-          <a class="paso${l ? " leido" : ""}${esActual ? " actual" : ""}" data-id="${esc(c.id)}" href="#/concepto/${esc(c.id)}"${esActual ? ' aria-current="step"' : ""}>
+          <a class="paso${l ? " leido" : ""}${esActual ? " actual" : ""}" data-id="${esc(c.id)}" href="#/concepto/${esc(c.id)}?ruta=${esc(r.id)}&amp;paso=${i + 1}"${esActual ? ' aria-current="step"' : ""}>
             <span class="paso-col" aria-hidden="true">
               <span class="paso-nodo">${l ? icono("visto") : i + 1}</span>
               <span class="huellas">${icono("huella")}${icono("huella")}</span>
