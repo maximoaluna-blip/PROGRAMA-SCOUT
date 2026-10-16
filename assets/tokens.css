@@ -46,8 +46,11 @@
   --fs-26: 1.625rem;
   --fs-34: 2.125rem;
 
-  /* ---- Movimiento (mínimo aquí; el sistema completo llega en la Task 8) ---- */
+  /* ---- Movimiento (spec §4.1): navegación 150–250 ms; logro ~2 s ---- */
   --t-rapida: 180ms;
+  --t-nav: 220ms;
+  --curva-salida: cubic-bezier(.22, 1, .36, 1);
+  --curva-rebote: cubic-bezier(.34, 1.56, .64, 1);
 
   --maxw: 720px;
   --safe-bottom: env(safe-area-inset-bottom, 0px);

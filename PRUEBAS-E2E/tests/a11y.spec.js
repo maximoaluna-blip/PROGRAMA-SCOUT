@@ -25,6 +25,11 @@ async function auditar(page, hash, tema, esperaSel) {
   }, tema);
   await page.goto(hash, { waitUntil: 'domcontentloaded' });
   await page.waitForSelector(esperaSel);
+  // Medir el contraste en reposo: a mitad de un fundido (entrada, cascada) axe ve
+  // colores a medio camino. Las animaciones del ambiente son infinitas: no se esperan.
+  await page.evaluate(() => Promise.all(document.getAnimations()
+    .filter((a) => a.effect && a.effect.getComputedTiming().iterations !== Infinity)
+    .map((a) => a.finished.catch(() => {}))));
   const r = await new AxeBuilder({ page }).withTags(TAGS).analyze();
   const graves = r.violations.filter((v) => IMPACTOS.has(v.impact));
   const resumen = graves

@@ -411,7 +411,8 @@ export function vistaConcepto(ctx, id, query = "") {
       </div>`;
   const cita = c.cita || {};
   const fuente = `
-      <section class="fuente">
+      <section class="fuente${leida(ctx, id) ? " sello-host" : ""}">
+        ${leida(ctx, id) ? `<span class="sello-visto"><span class="sv-check">${icono("visto")}</span><span class="sv-txt">Leída</span></span>` : ""}
         ${etiqueta("libro", "Fuente oficial")}
         ${cita.texto ? `<p class="cite">${esc(cita.texto)}</p>` : '<p class="cite sin-texto">Cita textual pendiente de incorporar.</p>'}
         ${cita.fuente || cita.ubicacion ? `<p class="src"><strong>${esc(cita.fuente || "")}</strong>${cita.ubicacion ? `<span>${esc(cita.ubicacion)}</span>` : ""}</p>` : ""}

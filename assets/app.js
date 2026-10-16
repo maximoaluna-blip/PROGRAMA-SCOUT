@@ -9,6 +9,8 @@ import { leer, guardar, reiniciar, disponible, estadoInicial } from "./almacen.j
 import { configurar, activo, tocar } from "./sonido.js";
 import { marcarLeida, ganarParches, avanceCapa } from "./progreso.js";
 import { hoyISO } from "./vistas.js";
+import { montarEscena } from "./escena.js";
+import { celebrarParche, animarVisto } from "./celebracion.js";
 
 const DB = { capas: [], conceptos: [], situaciones: [], rutas: [], parches: [] };
 const byId = {};
@@ -33,7 +35,7 @@ async function loadData() {
 function runSearch(q) {
   const cont = document.getElementById("search-results");
   if (cont) cont.innerHTML = resultadosBusqueda(ctx, q);
-  history.replaceState(null, "", "#/buscar/" + encodeURIComponent(q));
+  history.replaceState(history.state, "", "#/buscar/" + encodeURIComponent(q));
 }
 window.runSearch = runSearch;
 
@@ -78,8 +80,10 @@ function recordarUltima(id, query) {
 /* Una ficha cuenta como leída cuando su bloque final entra en pantalla (60 %).
    Si el bloque es más alto que el 60 % de la pantalla, basta con llenarla. */
 let observador = null;
+let objetivoLectura = null; // donde se pone el sello «Leída» al contar la lectura
 function vigilarLectura(tipo, id, objetivo) {
   if (observador) { observador.disconnect(); observador = null; }
+  objetivoLectura = objetivo || null;
   if (!objetivo || !("IntersectionObserver" in window)) return;
   observador = new IntersectionObserver((entradas) => {
     for (const e of entradas) {
@@ -94,6 +98,32 @@ function vigilarLectura(tipo, id, objetivo) {
   }, { threshold: [0, 0.6, 1] });
   observador.observe(objetivo);
 }
+
+/* ---------- movimiento de navegación ---------- */
+/* Dirección: cada entrada del historial lleva su número; volver a uno menor es «atrás». */
+let posicion = null;
+function direccion() {
+  const st = history.state;
+  if (st && typeof st.n === "number") {
+    const atras = posicion !== null && st.n < posicion;
+    posicion = st.n;
+    return atras ? "atras" : "adelante";
+  }
+  posicion = posicion === null ? 0 : posicion + 1;
+  try { history.replaceState({ ...(st || {}), n: posicion }, ""); } catch (e) { /* sin historial */ }
+  return "adelante";
+}
+
+/* Tarjetas en cascada: 40 ms entre una y otra (solo las primeras, para no demorar). */
+const EN_CASCADA = ".layer-card, .list-item, .sigue-donde, .fd-tarjeta, .hex-rama, .sendero > li, .parche, .avance-fila";
+function cascada(raiz) {
+  [...raiz.querySelectorAll(EN_CASCADA)].slice(0, 14).forEach((el, i) => {
+    el.style.setProperty("--i", i);
+    el.classList.add("cascada");
+  });
+}
+
+let desmontarEscena = null;
 
 /* ---------- router ---------- */
 function render() {
@@ -117,7 +147,20 @@ function render() {
     case "mochila": html = vistaMochila(ctx); break;
     default: html = vistaInicio(ctx);
   }
+  desmontarEscena?.();
+  desmontarEscena = null;
   app.innerHTML = html;
+  const vista = app.firstElementChild;
+  if (vista && vista.classList.contains("view")) {
+    if (direccion() === "atras") vista.classList.add("entra-atras");
+    cascada(vista);
+  }
+  const hero = app.querySelector(".inicio .hero");
+  if (hero) desmontarEscena = montarEscena(hero, {
+    fogata: true, estrellas: 12,
+    // Franja de arriba y columna derecha (junto a la fogata): lejos del saludo y del título.
+    zonas: [{ x: [6, 94], y: [2, 6] }, { x: [83, 97], y: [36, 58] }, { x: [60, 80], y: [2, 7] }],
+  });
   app.scrollTo?.(0, 0);
   window.scrollTo(0, 0);
   updateTabbar(route);
@@ -203,7 +246,48 @@ function initSonido() {
     if (e.isTrusted && e.target.closest && e.target.closest(TOCABLES)) tocar("tic");
   });
   document.addEventListener("ps:leida", (e) => { if (e.detail && e.detail.nueva === true) tocar("leida"); });
-  document.addEventListener("ps:parche", (e) => tocar(e.detail && e.detail.completo ? "completo" : "parche"));
+  /* El sonido del parche o de la capa suena al aparecer su hoja (ver initCelebracion). */
+}
+
+/* ---------- celebración ---------- */
+/* Colores y símbolos de capa (spec §2.1) para celebrar una capa completa sin parche propio. */
+const CAPA_COLOR = [["#622599", "#ffffff"], ["#003087", "#ffffff"], ["#ffd00f", "#3d2e00"], ["#00a23b", "#03260e"]];
+const CAPA_SIMBOLO = ["brujula", "libro", "panal", "nudo"];
+function initCelebracion() {
+  /* Una sola celebración por lectura: si la misma lectura gana parche, la capa
+     completa se celebra dentro de la hoja del parche (tratamiento «completo»). */
+  let parcheEnEstaLectura = false;
+  document.addEventListener("ps:leida", (e) => {
+    const d = e.detail || {};
+    if (d.nueva !== true) return;
+    parcheEnEstaLectura = false;
+    animarVisto(objetivoLectura);
+    const c = d.tipo === "concepto" ? byId[d.id] : null;
+    if (!c) return;
+    const a = avanceCapa(ctx.estado, DB, c.capa);
+    if (!(a.total > 0 && a.leidas === a.total)) return;
+    // ps:parche, si lo hay, se emite en este mismo turno: se decide al terminarlo.
+    queueMicrotask(() => {
+      if (parcheEnEstaLectura) return;
+      const capa = DB.capas.find((k) => k.nivel === c.capa) || {};
+      const [color, texto] = CAPA_COLOR[c.capa] || CAPA_COLOR[0];
+      celebrarParche(
+        { id: `capa-${c.capa}`, titulo: `Capa ${c.capa} · ${capa.titulo || ""}`.replace(/ · $/, ""), color, texto,
+          simbolo: CAPA_SIMBOLO[c.capa] || "brujula", forma: "circulo",
+          mensaje: `Leíste las ${a.total} fichas de esta capa.` },
+        { completo: true, etiqueta: "Capa completa", alMostrar: () => tocar("completo") },
+      );
+    });
+  });
+  document.addEventListener("ps:parche", (e) => {
+    const { parche, completo } = e.detail || {};
+    if (!parche) return;
+    parcheEnEstaLectura = true;
+    const etiqueta = parche.id === "bitacora-completa" ? "Bitácora completa"
+      : parche.forma === "hexagono" ? "Rama completa"
+      : completo ? "Parche ganado · Capa completa" : "Parche ganado";
+    celebrarParche(parche, { completo: Boolean(completo), etiqueta, alMostrar: () => tocar(completo ? "completo" : "parche") });
+  });
 }
 
 /* ---------- tema ---------- */
@@ -222,6 +306,7 @@ window.go = go;
 (async function init() {
   initTheme();
   initSonido();
+  initCelebracion();
   ctx.almacenDisponible = disponible();
   await loadData();
   window.addEventListener("hashchange", render);
