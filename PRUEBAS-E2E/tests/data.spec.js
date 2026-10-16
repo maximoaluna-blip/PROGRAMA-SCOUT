@@ -1,6 +1,6 @@
 // Integridad del contenido curado (fuente de verdad en /data).
 // No necesita navegador: lee los JSON del repo. Solo escritorio (@solo-escritorio).
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./_base');
 const fs = require('fs');
 const path = require('path');
 

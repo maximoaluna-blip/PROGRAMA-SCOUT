@@ -1,18 +1,17 @@
-/* Programa Scout — lógica de la app (vanilla JS, sin build)
-   SPA con enrutado por hash. Datos curados en /data (fuente de verdad). */
+/* Programa Scout — lógica de la app (módulo ES, sin build)
+   SPA con enrutado por hash. Datos curados en /data (fuente de verdad).
+   Las vistas viven en vistas.js. */
+import {
+  vistaInicio, vistaCapa, vistaConcepto, vistaSituacion, vistaRuta,
+  vistaBuscar, resultadosBusqueda, vistaSituaciones, vistaNoEncontrada,
+} from "./vistas.js";
 
-const DB = { capas: [], conceptos: [], situaciones: [], rutas: [] };
+const DB = { capas: [], conceptos: [], situaciones: [], rutas: [], parches: [] };
 const byId = {};
+const ctx = { db: DB, byId, estado: {} };
 const app = document.getElementById("app");
 
-/* ---------- utilidades ---------- */
-const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const norm = (s) => String(s ?? "").toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
 const go = (hash) => { location.hash = hash; };
-
-function draftChip(estado) {
-  return estado === "auditado" ? "" : '<span class="chip draft">borrador</span>';
-}
 
 /* ---------- carga de datos ---------- */
 async function loadData() {
@@ -24,181 +23,15 @@ async function loadData() {
   DB.conceptos.forEach((c) => (byId[c.id] = c));
 }
 
-/* ---------- búsqueda ---------- */
-function search(q) {
-  const n = norm(q).trim();
-  if (!n) return { conceptos: [], situaciones: [] };
-  const terms = n.split(/\s+/);
-  const match = (text) => terms.every((t) => norm(text).includes(t));
-  return {
-    conceptos: DB.conceptos.filter((c) => match(`${c.termino} ${c.definicion} ${c.enLaPractica}`)),
-    situaciones: DB.situaciones.filter((s) => match(`${s.titulo} ${s.caso} ${s.doctrina}`)),
-  };
-}
-
-/* ---------- vistas ---------- */
-function viewHome() {
-  const layers = DB.capas
-    .map(
-      (c) => `
-      <button class="layer-card" onclick="go('#/capa/${c.id}')">
-        <span class="lc-num">${c.nivel}</span>
-        <span class="lc-body"><h3>${esc(c.titulo)}</h3><p>${esc(c.resumen)}</p></span>
-      </button>`
-    )
-    .join("");
-
-  const rutas = DB.rutas
-    .map(
-      (r) => `
-      <button class="card list-item" onclick="go('#/ruta/${r.id}')">
-        <h3>🧭 ${esc(r.titulo)} ${draftChip(r.estado)}</h3>
-        <p>${esc(r.descripcion)}</p>
-      </button>`
-    )
-    .join("");
-
-  return `
-    <div class="view">
-      <div class="search-wrap">
-        <span class="si">🔍</span>
-        <input type="search" placeholder="Buscar un concepto o situación…" oninput="go('#/buscar/' + encodeURIComponent(this.value))" />
-      </div>
-      <p class="section-title">Explorar por capas</p>
-      <div class="layers">${layers}</div>
-      <p class="section-title">Rutas guiadas</p>
-      ${rutas || '<p class="empty">Aún no hay rutas.</p>'}
-      <p class="install-hint">Para instalarla: abre el menú del navegador y elige «Agregar a pantalla de inicio».</p>
-    </div>`;
-}
-
-function viewCapa(id) {
-  const capa = DB.capas.find((c) => c.id === id);
-  if (!capa) return viewNotFound();
-  const conceptos = DB.conceptos.filter((c) => c.capa === capa.nivel);
-  const items =
-    conceptos
-      .map(
-        (c) => `
-      <button class="card list-item" onclick="go('#/concepto/${c.id}')">
-        <h3>${esc(c.termino)} ${draftChip(c.estado)}</h3>
-        <p>${esc(c.definicion).slice(0, 110)}…</p>
-      </button>`
-      )
-      .join("") || '<p class="empty">Esta capa aún no tiene conceptos cargados.</p>';
-  return `
-    <div class="view">
-      <button class="back" onclick="go('#/')">← Inicio</button>
-      <h2 class="detail">${esc(capa.titulo)}</h2>
-      <p style="color:var(--muted);margin-top:0">${esc(capa.resumen)}</p>
-      <p class="section-title">Conceptos</p>
-      ${items}
-    </div>`;
-}
-
-function viewConcepto(id) {
-  const c = byId[id];
-  if (!c) return viewNotFound();
-  const cita =
-    c.cita && (c.cita.texto || c.cita.fuente)
-      ? `<div class="block"><div class="lbl">Fuente oficial</div>
-          <div class="cite">${c.cita.texto ? `«${esc(c.cita.texto)}»` : "Cita textual pendiente de incorporar."}
-          <div class="src">${esc(c.cita.fuente || "")}${c.cita.ubicacion ? " — " + esc(c.cita.ubicacion) : ""}</div></div></div>`
-      : "";
-  const rel = (c.relacionados || [])
-    .map((rid) => (byId[rid] ? `<a onclick="go('#/concepto/${rid}')">${esc(byId[rid].termino)}</a>` : ""))
-    .join("");
-  return `
-    <div class="view detail">
-      <button class="back" onclick="history.length>1?history.back():go('#/')">← Volver</button>
-      <h2>${esc(c.termino)} ${draftChip(c.estado)}</h2>
-      <p class="def">${esc(c.definicion)}</p>
-      <div class="block"><div class="lbl">En la práctica</div>
-        <div class="practice">${esc(c.enLaPractica)}</div></div>
-      ${cita}
-      ${rel ? `<div class="block"><div class="lbl">Conceptos relacionados</div><div class="related">${rel}</div></div>` : ""}
-    </div>`;
-}
-
-function viewSituacion(id) {
-  const s = DB.situaciones.find((x) => x.id === id);
-  if (!s) return viewNotFound();
-  const rel = (s.conceptos || [])
-    .map((rid) => (byId[rid] ? `<a onclick="go('#/concepto/${rid}')">${esc(byId[rid].termino)}</a>` : ""))
-    .join("");
-  return `
-    <div class="view detail">
-      <button class="back" onclick="history.length>1?history.back():go('#/')">← Volver</button>
-      <h2>${esc(s.titulo)} ${draftChip(s.estado)}</h2>
-      <div class="block"><div class="lbl">La situación</div><p>${esc(s.caso)}</p></div>
-      <div class="block"><div class="lbl">Qué dice la doctrina</div><div class="cite">${esc(s.doctrina)}
-        ${s.fuente ? `<div class="src">${esc(s.fuente.fuente || "")}${s.fuente.ubicacion ? " — " + esc(s.fuente.ubicacion) : ""}</div>` : ""}</div></div>
-      <div class="block"><div class="lbl">Cómo aplicarlo</div><div class="practice">${esc(s.aplicacion)}</div></div>
-      ${rel ? `<div class="block"><div class="lbl">Conceptos en juego</div><div class="related">${rel}</div></div>` : ""}
-    </div>`;
-}
-
-function viewRuta(id) {
-  const r = DB.rutas.find((x) => x.id === id);
-  if (!r) return viewNotFound();
-  const pasos = (r.pasos || [])
-    .map((pid) => (byId[pid] ? `<a class="card" onclick="go('#/concepto/${pid}')">${esc(byId[pid].termino)}</a>` : ""))
-    .join("");
-  return `
-    <div class="view detail">
-      <button class="back" onclick="go('#/')">← Inicio</button>
-      <h2>🧭 ${esc(r.titulo)} ${draftChip(r.estado)}</h2>
-      <p style="color:var(--muted)">${esc(r.descripcion)}</p>
-      <p class="section-title">Sigue la secuencia</p>
-      <div class="route-steps">${pasos}</div>
-    </div>`;
-}
-
-function searchResultsHTML(q) {
-  const res = search(q);
-  const cs = res.conceptos
-    .map((c) => `<button class="card list-item" onclick="go('#/concepto/${c.id}')"><h3>${esc(c.termino)} ${draftChip(c.estado)}</h3><p>${esc(c.definicion).slice(0,100)}…</p></button>`)
-    .join("");
-  const ss = res.situaciones
-    .map((s) => `<button class="card list-item" onclick="go('#/situacion/${s.id}')"><h3>💬 ${esc(s.titulo)}</h3></button>`)
-    .join("");
-  const total = res.conceptos.length + res.situaciones.length;
-  if (!q) return '<p class="empty">Escribe para buscar conceptos y situaciones.</p>';
-  if (total === 0) return '<p class="empty">Sin resultados. Prueba con otra palabra.</p>';
-  return `${cs ? `<p class="section-title">Conceptos</p>${cs}` : ""}${ss ? `<p class="section-title">Situaciones</p>${ss}` : ""}`;
-}
-
-function viewBuscar(q) {
-  return `
-    <div class="view">
-      <div class="search-wrap">
-        <span class="si">🔍</span>
-        <input id="q-input" type="search" value="${esc(q)}" placeholder="Buscar…" oninput="runSearch(this.value)" />
-      </div>
-      <div id="search-results">${searchResultsHTML(q)}</div>
-    </div>`;
-}
-
 /* Búsqueda en vivo: actualiza SOLO los resultados, sin re-renderizar el
    cuadro de texto (así no se pierde el foco al escribir). El hash se
    sincroniza con replaceState, que no dispara render(). */
 function runSearch(q) {
   const cont = document.getElementById("search-results");
-  if (cont) cont.innerHTML = searchResultsHTML(q);
+  if (cont) cont.innerHTML = resultadosBusqueda(ctx, q);
   history.replaceState(null, "", "#/buscar/" + encodeURIComponent(q));
 }
 window.runSearch = runSearch;
-
-function viewSituaciones() {
-  const items = DB.situaciones
-    .map((s) => `<button class="card list-item" onclick="go('#/situacion/${s.id}')"><h3>💬 ${esc(s.titulo)} ${draftChip(s.estado)}</h3><p>${esc(s.caso).slice(0,110)}…</p></button>`)
-    .join("") || '<p class="empty">Aún no hay situaciones cargadas.</p>';
-  return `<div class="view"><h2 class="detail">Situaciones reales</h2><p style="color:var(--muted);margin-top:0">Casos concretos resueltos con doctrina.</p>${items}</div>`;
-}
-
-function viewNotFound() {
-  return '<div class="view"><p class="empty">No encontramos eso.<br><button class="back" onclick="go(\'#/\')">← Inicio</button></p></div>';
-}
 
 /* ---------- router ---------- */
 function render() {
@@ -206,14 +39,14 @@ function render() {
   const [, route, param] = hash.replace(/^#\//, "#/").split("/");
   let html;
   switch (route) {
-    case "": html = viewHome(); break;
-    case "capa": html = viewCapa(param); break;
-    case "concepto": html = viewConcepto(param); break;
-    case "situacion": html = viewSituacion(param); break;
-    case "situaciones": html = viewSituaciones(); break;
-    case "ruta": html = viewRuta(param); break;
-    case "buscar": html = viewBuscar(param ? decodeURIComponent(param) : ""); break;
-    default: html = viewHome();
+    case "": html = vistaInicio(ctx); break;
+    case "capa": html = vistaCapa(ctx, param); break;
+    case "concepto": html = vistaConcepto(ctx, param); break;
+    case "situacion": html = vistaSituacion(ctx, param); break;
+    case "situaciones": html = vistaSituaciones(ctx); break;
+    case "ruta": html = vistaRuta(ctx, param); break;
+    case "buscar": html = vistaBuscar(ctx, param ? decodeURIComponent(param) : ""); break;
+    default: html = vistaInicio(ctx);
   }
   app.innerHTML = html;
   app.scrollTo?.(0, 0);

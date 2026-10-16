@@ -1,5 +1,5 @@
 // PWA — manifest válido y enlazado, service worker registrado, íconos accesibles.
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./_base');
 
 test('el manifest está enlazado y es válido', async ({ page }) => {
   await page.goto('./', { waitUntil: 'domcontentloaded' });

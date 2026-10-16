@@ -1,6 +1,6 @@
 // Búsqueda — incluye el test de REGRESIÓN del bug del foco:
 // al escribir varias letras seguidas, el cuadro no debe perder el foco.
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./_base');
 
 test('escribir varias letras NO pierde el foco (regresión)', async ({ page }) => {
   await page.goto('./#/buscar/', { waitUntil: 'domcontentloaded' });

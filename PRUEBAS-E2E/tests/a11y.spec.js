@@ -1,6 +1,6 @@
 // Accesibilidad con axe-core — WCAG 2.0/2.1 nivel A y AA.
 // Recorre las vistas clave en tema claro y oscuro. Solo escritorio.
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./_base');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 const TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'];

@@ -1,6 +1,6 @@
 // Responsive — corre en escritorio y en móvil (Pixel 5, ver projects).
 // Verifica que no haya scroll horizontal y que los elementos clave sean visibles.
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./_base');
 
 const VISTAS = [
   { nombre: 'home', hash: './#/', espera: '.layer-card' },

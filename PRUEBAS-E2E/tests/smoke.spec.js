@@ -1,5 +1,5 @@
 // Smoke — la PWA carga y renderiza sus vistas clave sin errores JS.
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./_base');
 
 function capturarErrores(page) {
   const errs = [];
