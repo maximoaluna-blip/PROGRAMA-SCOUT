@@ -1,7 +1,7 @@
 /* Service Worker — Programa Scout PWA
    Cachea el app-shell y los datos para funcionar sin conexión.
    Sube CACHE_VERSION cuando cambien archivos para forzar actualización. */
-const CACHE_VERSION = "programa-scout-v16";
+const CACHE_VERSION = "programa-scout-v17";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -12,6 +12,7 @@ const APP_SHELL = [
   "./assets/vistas.js",
   "./assets/almacen.js",
   "./assets/progreso.js",
+  "./assets/sonido.js",
   "./icons/icon.svg",
   "./icons/icon-192.png",
   "./icons/icon-512.png",

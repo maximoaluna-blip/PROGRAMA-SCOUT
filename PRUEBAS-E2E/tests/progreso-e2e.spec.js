@@ -134,3 +134,22 @@ test('ficha del día nueva para ti', async ({ page }) => {
   await expect(page.locator('.ficha-dia.nueva')).toHaveCount(0);
   await expect(page.locator('.ficha-dia .nueva')).toHaveCount(0);
 });
+
+test('reiniciar conserva las preferencias de sonido y bienvenida', async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem('ps-progreso-v1', JSON.stringify({
+      bienvenida: true, sonido: true,
+      leidas: { 'clan-rovers': '2026-10-01' },
+      parches: { 'conoce-rovers': '2026-10-01' },
+    }));
+  });
+  await page.goto('./#/mochila');
+  page.once('dialog', (d) => d.accept());
+  await page.locator('#reiniciar-avance').click();
+  await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('ps-progreso-v1') || '{}').parches))
+    .toEqual({});
+  const g = await guardado(page);
+  expect(g.sonido).toBe(true);
+  expect(g.bienvenida).toBe(true);
+  expect(g.leidas).toEqual({});
+});

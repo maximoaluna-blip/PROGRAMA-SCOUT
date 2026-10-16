@@ -5,7 +5,8 @@ import {
   vistaInicio, vistaCapa, vistaConcepto, vistaSituacion, vistaRuta,
   vistaBuscar, resultadosBusqueda, vistaSituaciones, vistaMochila,
 } from "./vistas.js";
-import { leer, guardar, reiniciar, disponible } from "./almacen.js";
+import { leer, guardar, reiniciar, disponible, estadoInicial } from "./almacen.js";
+import { configurar, activo, tocar } from "./sonido.js";
 import { marcarLeida, ganarParches, avanceCapa } from "./progreso.js";
 import { hoyISO } from "./vistas.js";
 
@@ -166,9 +167,44 @@ window.addEventListener("resize", moverPastilla);
 document.addEventListener("click", (e) => {
   if (!e.target.closest || !e.target.closest("#reiniciar-avance")) return;
   if (!confirm("¿Borrar tu avance en este teléfono?")) return;
-  ctx.estado = reiniciar();
+  /* Sonido y bienvenida son preferencias, no avance: sobreviven al reinicio. */
+  const { sonido, bienvenida } = ctx.estado;
+  reiniciar();
+  ctx.estado = { ...estadoInicial(), sonido, bienvenida };
+  guardar(ctx.estado);
   render();
 });
+
+/* ---------- sonido ---------- */
+const TOCABLES = ".layer-card, .list-item, .tabbar a, .hex-rama";
+function pintarSonido() {
+  const b = document.getElementById("sonido-btn");
+  if (!b) return;
+  const on = activo();
+  b.hidden = false;
+  b.setAttribute("aria-label", "Sonido");
+  b.setAttribute("aria-pressed", String(on));
+  const uso = b.querySelector("use");
+  if (uso) uso.setAttribute("href", on ? "#i-altavoz" : "#i-altavoz-off");
+}
+function initSonido() {
+  configurar(ctx.estado.sonido === true);
+  pintarSonido();
+  document.getElementById("sonido-btn")?.addEventListener("click", () => {
+    const on = !activo();
+    configurar(on);
+    ctx.estado = { ...ctx.estado, sonido: on };
+    guardar(ctx.estado);
+    pintarSonido();
+    if (on) tocar("tic");
+  });
+  /* Tic solo en toques reales del usuario (no en clics programáticos). */
+  document.addEventListener("click", (e) => {
+    if (e.isTrusted && e.target.closest && e.target.closest(TOCABLES)) tocar("tic");
+  });
+  document.addEventListener("ps:leida", (e) => { if (e.detail && e.detail.nueva === true) tocar("leida"); });
+  document.addEventListener("ps:parche", (e) => tocar(e.detail && e.detail.completo ? "completo" : "parche"));
+}
 
 /* ---------- tema ---------- */
 function initTheme() {
@@ -185,6 +221,7 @@ function initTheme() {
 window.go = go;
 (async function init() {
   initTheme();
+  initSonido();
   ctx.almacenDisponible = disponible();
   await loadData();
   window.addEventListener("hashchange", render);
