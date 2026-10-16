@@ -14,10 +14,24 @@ test('el manifest está enlazado y es válido', async ({ page }) => {
   expect(man.display, 'manifest.display').toBe('standalone');
 });
 
-test('el ícono declarado es accesible', async ({ page }) => {
+test('los íconos declarados son accesibles', async ({ page }) => {
   await page.goto('./', { waitUntil: 'domcontentloaded' });
-  const resp = await page.request.get(new URL('./icons/icon.svg', page.url()).toString());
-  expect(resp.status(), 'icono HTTP').toBe(200);
+  const manHref = await page.getAttribute('link[rel="manifest"]', 'href');
+  const manUrl = new URL(manHref, page.url()).toString();
+  const man = await (await page.request.get(manUrl)).json();
+  for (const icon of man.icons) {
+    const resp = await page.request.get(new URL(icon.src, manUrl).toString());
+    expect(resp.status(), `icono ${icon.src} HTTP`).toBe(200);
+  }
+  // iOS no usa el manifest ni acepta SVG: necesita un apple-touch-icon PNG.
+  const apple = await page.getAttribute('link[rel="apple-touch-icon"]', 'href');
+  expect(apple, 'apple-touch-icon').toMatch(/\.png$/);
+  const resp = await page.request.get(new URL(apple, page.url()).toString());
+  expect(resp.status(), 'apple-touch-icon HTTP').toBe(200);
+  // Android pide al menos un PNG de 192 y uno de 512, y uno maskable.
+  const sizes = man.icons.filter((i) => i.type === 'image/png').map((i) => i.sizes);
+  expect(sizes, 'PNG 192 y 512').toEqual(expect.arrayContaining(['192x192', '512x512']));
+  expect(man.icons.some((i) => (i.purpose || '').includes('maskable')), 'ícono maskable').toBeTruthy();
 });
 
 test('el service worker se registra (offline disponible)', async ({ page }) => {

@@ -68,7 +68,7 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 - **77 conceptos auditados, 7 situaciones reales, 11 rutas guiadas** (lo publicado; Capas 0–3).
 - **Fase 4 — Capa 3 «Aplicación» PUBLICADA (15-oct-2026; auditada el 14-sep-2026):** 12 conceptos `capa: 3` / `estado: auditado` (herramientas del dirigente: ciclo de programa con ABP, ciclo operativo de seis pasos, diseñar una oportunidad de aprendizaje, planear la reunión de unidad, ASP y gestión del riesgo, consejos y asambleas, observar y facilitar la reflexión, seguimiento y registro, retroalimentación, experiencias externas, reconocimiento, familia en la práctica), **7 situaciones reales** y la ruta `herramientas-del-dirigente` (12 pasos). Auditoría doctrinal en `AUDITORIA-CAPA-3.md` — **APTO CON CORRECCIONES MENORES** (1 crítico, 3 mayores, 5 menores; las 12 citas verificadas en su página); correcciones aplicadas por el corrector en `data/`; el hallazgo transversal M2 (términos ausentes del glosario) se cerró en `GLOSARIO-ASC.md` v1.5 §E. Suite `data` 8/8. Promovida a `auditado` por decisión del dueño el 15-oct-2026, con la suite E2E en verde y `CACHE_VERSION` v10.
 - **Rutas:** las 11 en `auditado` desde el 15-oct-2026 (las 10 de las Capas 0–2 se quedaron en `borrador` al publicarse y mostraban el chip aunque todos sus conceptos estaban auditados).
-- **Pendiente:** íconos PNG 192/512 para iOS.
+- **Íconos:** `icons/icon.svg` es la fuente; de él salen los PNG (192, 512, maskable 512 y `apple-touch-icon` 180, estos dos a sangre), renderizados con el Chromium de Playwright (15-oct-2026). Si cambia el SVG, se regeneran los cuatro.
 
 ### Plantilla de rama (Capa 2)
 
