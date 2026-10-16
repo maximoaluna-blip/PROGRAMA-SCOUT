@@ -72,7 +72,7 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 - **Rutas:** las 11 en `auditado` desde el 15-oct-2026 (las 10 de las Capas 0–2 se quedaron en `borrador` al publicarse y mostraban el chip aunque todos sus conceptos estaban auditados).
 - **Íconos:** `icons/icon.svg` es la fuente; de él salen los PNG (192, 512, maskable 512 y `apple-touch-icon` 180, estos dos a sangre), renderizados con el Chromium de Playwright (15-oct-2026). Si cambia el SVG, se regeneran los cuatro.
 
-- **Rediseño visual (rama `rediseno-visual`, sin publicar):** Bienvenida con escena y elección de sonido, Inicio con bitácora, panal de ramas, sendero de rutas, Mochila con 13 parches y celebración al ganarlos. Peso de `assets/` + `data/parches.json`: **130,8 KB crudos** (133.910 B; ≈39 KB con gzip), por encima de los 120 KB del spec §6; `peso.spec.js` fija el tope en 140 KB como guardia y el dueño decide. `CACHE_VERSION` v20.
+- **Rediseño visual PUBLICADO (16-oct-2026, ADR-157 en la raíz):** Bienvenida con escena y elección de sonido, Inicio con bitácora, panal de ramas, sendero de rutas, Mochila con 13 parches y celebración al ganarlos. Diseño en `docs/superpowers/specs/2026-10-16-rediseno-visual-design.md`, plan en `docs/superpowers/plans/`. Suite E2E: 186 pruebas, en verde en CI y contra producción. `CACHE_VERSION` v21. Peso de `assets/` + `data/parches.json`: **130,8 KB crudos** (133.910 B; ≈39 KB con gzip), por encima de los 120 KB del spec §6. `peso.spec.js` fija el tope en 140 KB como guardia; una poda de unos 11 KB queda a criterio del dueño.
 
 ### Plantilla de rama (Capa 2)
 
