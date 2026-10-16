@@ -1,0 +1,145 @@
+[
+  {
+    "id": "por-que-educamos",
+    "titulo": "¿Por qué y para qué educamos en el escultismo?",
+    "criterio": {
+      "ruta": "por-que-educamos"
+    },
+    "color": "#622599",
+    "texto": "#ffffff",
+    "simbolo": "brujula",
+    "forma": "circulo"
+  },
+  {
+    "id": "el-metodo-scout-paso-a-paso",
+    "titulo": "El Método Scout, elemento por elemento",
+    "criterio": {
+      "ruta": "el-metodo-scout-paso-a-paso"
+    },
+    "color": "#622599",
+    "texto": "#ffffff",
+    "simbolo": "brujula",
+    "forma": "circulo"
+  },
+  {
+    "id": "como-se-organiza-y-mueve-la-unidad",
+    "titulo": "Cómo se organiza y se mueve la vida scout",
+    "criterio": {
+      "ruta": "como-se-organiza-y-mueve-la-unidad"
+    },
+    "color": "#622599",
+    "texto": "#ffffff",
+    "simbolo": "brujula",
+    "forma": "circulo"
+  },
+  {
+    "id": "principios-que-atraviesan-todo",
+    "titulo": "Principios que atraviesan todo el programa",
+    "criterio": {
+      "ruta": "principios-que-atraviesan-todo"
+    },
+    "color": "#622599",
+    "texto": "#ffffff",
+    "simbolo": "brujula",
+    "forma": "circulo"
+  },
+  {
+    "id": "la-politica-y-su-modelo",
+    "titulo": "La Política (PNPJ) y su Modelo, paso a paso",
+    "criterio": {
+      "ruta": "la-politica-y-su-modelo"
+    },
+    "color": "#003087",
+    "texto": "#ffffff",
+    "simbolo": "libro",
+    "forma": "circulo"
+  },
+  {
+    "id": "conoce-la-manada",
+    "titulo": "Conoce la Manada",
+    "criterio": {
+      "ruta": "conoce-la-manada"
+    },
+    "color": "#ffd00f",
+    "texto": "#3d2e00",
+    "simbolo": "panal",
+    "forma": "hexagono"
+  },
+  {
+    "id": "conoce-cachorros",
+    "titulo": "Conoce la Familia de Cachorros",
+    "criterio": {
+      "ruta": "conoce-cachorros"
+    },
+    "color": "#f0592b",
+    "texto": "#3a1405",
+    "simbolo": "panal",
+    "forma": "hexagono"
+  },
+  {
+    "id": "conoce-scouts",
+    "titulo": "Conoce la Tropa",
+    "criterio": {
+      "ruta": "conoce-scouts"
+    },
+    "color": "#016937",
+    "texto": "#ffffff",
+    "simbolo": "panal",
+    "forma": "hexagono"
+  },
+  {
+    "id": "conoce-nomadas",
+    "titulo": "Conoce la Comunidad",
+    "criterio": {
+      "ruta": "conoce-nomadas"
+    },
+    "color": "#233f96",
+    "texto": "#ffffff",
+    "simbolo": "panal",
+    "forma": "hexagono"
+  },
+  {
+    "id": "conoce-rovers",
+    "titulo": "Conoce el Clan",
+    "criterio": {
+      "ruta": "conoce-rovers"
+    },
+    "color": "#be2026",
+    "texto": "#ffffff",
+    "simbolo": "panal",
+    "forma": "hexagono"
+  },
+  {
+    "id": "herramientas-del-dirigente",
+    "titulo": "Las herramientas del dirigente, de la planeación al reconocimiento",
+    "criterio": {
+      "ruta": "herramientas-del-dirigente"
+    },
+    "color": "#00a23b",
+    "texto": "#03260e",
+    "simbolo": "nudo",
+    "forma": "circulo"
+  },
+  {
+    "id": "lector-de-situaciones",
+    "titulo": "Lector de situaciones",
+    "criterio": {
+      "situaciones": "todas"
+    },
+    "color": "#00a23b",
+    "texto": "#03260e",
+    "simbolo": "dialogo",
+    "forma": "circulo"
+  },
+  {
+    "id": "bitacora-completa",
+    "titulo": "Bitácora completa",
+    "criterio": {
+      "conceptos": "todos"
+    },
+    "color": "#3D1660",
+    "texto": "#FFE675",
+    "simbolo": "brujula",
+    "forma": "circulo"
+  }
+]

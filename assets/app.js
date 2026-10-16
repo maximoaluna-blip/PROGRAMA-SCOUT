@@ -15,7 +15,7 @@ const go = (hash) => { location.hash = hash; };
 
 /* ---------- carga de datos ---------- */
 async function loadData() {
-  const files = ["capas", "conceptos", "situaciones", "rutas"];
+  const files = ["capas", "conceptos", "situaciones", "rutas", "parches"];
   const results = await Promise.all(
     files.map((f) => fetch(`./data/${f}.json`).then((r) => r.json()))
   );

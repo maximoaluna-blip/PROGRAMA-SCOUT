@@ -82,4 +82,25 @@ test.describe('@solo-escritorio integridad de datos', () => {
     const malos = conceptos.filter((c) => !niveles.has(c.capa)).map((c) => `${c.id} (capa ${c.capa})`);
     expect(malos, `conceptos con capa inexistente: ${malos.join(', ')}`).toEqual([]);
   });
+  test('parches.json válido', () => {
+    const parches = read('parches.json');
+    expect(parches).toHaveLength(13);
+    expect(new Set(parches.map((p) => p.id)).size).toBe(13);
+    const idsRuta = new Set(rutas.map((r) => r.id));
+    for (const p of parches) {
+      if (p.criterio.ruta) expect(idsRuta.has(p.criterio.ruta), `${p.id}: ruta inexistente`).toBeTruthy();
+    }
+    const conRuta = new Set(parches.filter((p) => p.criterio.ruta).map((p) => p.criterio.ruta));
+    for (const r of rutas) expect(conRuta.has(r.id), `ruta sin parche: ${r.id}`).toBeTruthy();
+    // Contraste WCAG (luminancia relativa) >= 4,5:1 entre color y texto.
+    const lum = (hex) => {
+      const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255)
+        .map((v) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4)));
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    };
+    const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m); return (x + 0.05) / (y + 0.05); };
+    for (const p of parches) {
+      expect(ratio(p.color, p.texto), `${p.id}: contraste ${p.color}/${p.texto}`).toBeGreaterThanOrEqual(4.5);
+    }
+  });
 });
