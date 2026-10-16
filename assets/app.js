@@ -46,6 +46,7 @@ function render() {
     case "situaciones": html = vistaSituaciones(ctx); break;
     case "ruta": html = vistaRuta(ctx, param); break;
     case "buscar": html = vistaBuscar(ctx, param ? decodeURIComponent(param) : ""); break;
+    case "mochila": html = vistaNoEncontrada(); break; // la Mochila llega en la Task 5
     default: html = vistaInicio(ctx);
   }
   app.innerHTML = html;

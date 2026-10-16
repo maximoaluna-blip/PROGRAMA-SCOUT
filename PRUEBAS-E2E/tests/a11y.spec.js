@@ -11,6 +11,8 @@ const VISTAS = [
   { nombre: 'capa', hash: './#/capa/transversal' },
   { nombre: 'concepto', hash: './#/concepto/metodo-scout' },
   { nombre: 'buscar', hash: './#/buscar/educa' },
+  { nombre: 'concepto-rama', hash: './#/concepto/manada-lobatos' },
+  { nombre: 'situacion', hash: './#/situacion/actividades-sin-rumbo' },
 ];
 
 async function auditar(page, hash, tema, esperaSel) {
@@ -33,6 +35,8 @@ const ESPERA = {
   capa: '.list-item',
   concepto: '.detail h2',
   buscar: '#q-input',
+  'concepto-rama': '.detail h2',
+  situacion: '.detail h2',
 };
 
 test.describe('@solo-escritorio accesibilidad', () => {

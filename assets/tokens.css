@@ -1,0 +1,66 @@
+/* Programa Scout — tokens del sistema visual «parche y panal».
+   Valores exactos del spec §2.1 (docs/superpowers/specs/2026-10-16-rediseno-visual-design.md).
+   Regla: Familia (cachorros) y Manada (lobatos) nunca como color de texto sobre blanco;
+   el cian es solo decorativo. Cada color de rama/capa trae su «-texto» que pasa AA encima. */
+:root {
+  /* ---- Marca ---- */
+  --brand: #622599;
+  --brand-deep: #3D1660;
+  --accent: #FFE675;
+  --cyan: #00AFEF;
+  --night: #1b1030;
+  --ink: #2C2927;
+  --muted: #636363;
+  --bg: #F2F5F7;
+
+  /* ---- Ramas (oficiales de scout.org.co) ---- */
+  --rama-cachorros: #f0592b;      --rama-cachorros-texto: #3a1405;
+  --rama-lobatos: #ffd00f;        --rama-lobatos-texto: #3d2e00;
+  --rama-scouts: #016937;         --rama-scouts-texto: #ffffff;
+  --rama-nomadas-scout: #233f96;  --rama-nomadas-scout-texto: #ffffff;
+  --rama-rovers: #be2026;         --rama-rovers-texto: #ffffff;
+
+  /* ---- Capas: 0 brújula · 1 libro · 2 panal (miel; cada ficha usa su rama) · 3 nudo ---- */
+  --capa-0: #622599;  --capa-0-texto: #ffffff;
+  --capa-1: #003087;  --capa-1-texto: #ffffff;
+  --capa-2: #ffd00f;  --capa-2-texto: #3d2e00;
+  --capa-3: #00a23b;  --capa-3-texto: #03260e;
+
+  /* ---- Superficies (spec §2.4) ---- */
+  --card: #ffffff;
+  --border: #e2dfe8;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --radius: 16px;
+  --link: var(--brand);          /* enlaces y etiquetas de color sobre fondo claro */
+  --tint: #f3edfa;               /* fondo suave de chips y realces */
+
+  /* ---- Tipografía (spec §2.2) ---- */
+  --font: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-26: 1.625rem;
+  --fs-34: 2.125rem;
+
+  /* ---- Movimiento (mínimo aquí; el sistema completo llega en la Task 8) ---- */
+  --t-rapida: 180ms;
+
+  --maxw: 720px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  color-scheme: light;
+}
+
+/* Modo oscuro = noche de campamento. Los colores de rama y capa no cambian
+   (se usan como fondo con su «-texto»); cambian superficies y tintas. */
+[data-theme="dark"] {
+  --bg: var(--night);
+  --ink: #efeaf6;
+  --muted: #bdb4cc;
+  --card: #261943;
+  --border: #3d2d63;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  --link: #d2b8ff;
+  --tint: #33235a;
+  color-scheme: dark;
+}

@@ -13,24 +13,52 @@
   <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
   <link rel="stylesheet" href="./assets/styles.css" />
   <title>Programa Scout — Consulta PJ</title>
 </head>
 <body>
+  <!-- Sprite de íconos propios: trazo 2 px, currentColor, caja 24×24.
+       Uso: <svg class="ico"><use href="#i-nombre"/></svg> -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" hidden aria-hidden="true" width="0" height="0">
+    <defs>
+      <symbol id="i-brujula" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.8 8.2l-2.2 5.4-5.4 2.2 2.2-5.4z"/><path d="M12 3v1.5M12 19.5V21M3 12h1.5M19.5 12H21"/></symbol>
+      <symbol id="i-libro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C9.5 4.8 6 4.3 3 5v13.5c3-.7 6.5-.2 9 1.5 2.5-1.7 6-2.2 9-1.5V5c-3-.7-6.5-.2-9 1.5z"/><path d="M12 6.5V20"/></symbol>
+      <symbol id="i-panal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.28 4.3L12 6.45v4.3l-3.72 2.15-3.73-2.15v-4.3z"/><path d="M15.72 4.3l3.73 2.15v4.3l-3.73 2.15L12 10.75v-4.3z"/><path d="M12 10.75l3.72 2.15v4.3L12 19.35 8.28 17.2v-4.3z"/></symbol>
+      <symbol id="i-nudo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5h5c4 0 5 7 9 7h5"/><path d="M2.5 15.5h5c4 0 5-7 9-7h5"/><path d="M2.5 6v5M21.5 13v5"/></symbol>
+      <symbol id="i-carpa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20L12 5.5 20.5 20"/><path d="M2 20h20"/><path d="M12 12.5L8.5 20M12 12.5l3.5 7.5"/><path d="M12 5.5V2.5l3 1.2-3 1.2"/></symbol>
+      <symbol id="i-fogata" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c.8 2.6 4.5 4.2 4.5 8.2a4.5 4.5 0 0 1-9 0c0-2 .9-3.3 2-4.3 0 1.7.9 2.8 2 3.2-.3-2.8-.4-4.6.5-7.1z"/><path d="M4.5 21.5l15-4M4.5 17.5l15 4"/></symbol>
+      <symbol id="i-mapa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+      <symbol id="i-huella" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 17c0-2.8 2-5 4.5-5s4.5 2.2 4.5 5c0 2-2 3-4.5 3s-4.5-1-4.5-3z"/><circle cx="5.5" cy="10.5" r="1.7"/><circle cx="9.3" cy="6.2" r="1.8"/><circle cx="14.7" cy="6.2" r="1.8"/><circle cx="18.5" cy="10.5" r="1.7"/></symbol>
+      <symbol id="i-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></symbol>
+      <symbol id="i-dialogo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M7.5 9h9M7.5 12.5h5.5"/></symbol>
+      <symbol id="i-mochila" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10a6 6 0 0 1 12 0v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9.5 4.6V3.5a2.5 2.5 0 0 1 5 0v1.1"/><path d="M9 21v-4.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V21"/><path d="M6 12.5h12"/></symbol>
+      <symbol id="i-casa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7.5 9 7.5"/><path d="M5.5 9v11h4.5v-6h4v6h4.5V9"/></symbol>
+      <symbol id="i-altavoz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h3.5L12 5v14l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6a8 8 0 0 1 0 12"/></symbol>
+      <symbol id="i-altavoz-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h3.5L12 5v14l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></symbol>
+      <symbol id="i-tema" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 0 0 17z" fill="currentColor"/></symbol>
+      <symbol id="i-visto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol>
+    </defs>
+  </svg>
+
   <header class="app-header">
     <img class="logo" src="./icons/icon.svg" alt="" />
     <h1>Programa Scout</h1>
     <span class="spacer"></span>
-    <button class="icon-btn" id="theme-btn" aria-label="Cambiar tema">◐</button>
+    <!-- Interruptor de sonido: oculto hasta que exista el sonido (Task 7). -->
+    <button class="icon-btn" id="sonido-btn" aria-label="Activar sonidos" hidden><svg class="ico" aria-hidden="true"><use href="#i-altavoz-off"/></svg></button>
+    <button class="icon-btn" id="theme-btn" aria-label="Cambiar tema"><svg class="ico" aria-hidden="true"><use href="#i-tema"/></svg></button>
   </header>
 
   <main id="app"><p class="empty">Cargando…</p></main>
 
-  <nav class="tabbar">
-    <a href="#/" data-route="" class="active"><span class="ti">🏠</span>Inicio</a>
-    <a href="#/buscar/" data-route="buscar"><span class="ti">🔍</span>Buscar</a>
-    <a href="#/situaciones" data-route="situaciones"><span class="ti">💬</span>Situaciones</a>
+  <nav class="tabbar" aria-label="Navegación principal">
+    <a href="#/" data-route="" class="active"><span class="ti"><svg class="ico" aria-hidden="true"><use href="#i-casa"/></svg></span>Inicio</a>
+    <a href="#/buscar/" data-route="buscar"><span class="ti"><svg class="ico" aria-hidden="true"><use href="#i-lupa"/></svg></span>Buscar</a>
+    <a href="#/situaciones" data-route="situaciones"><span class="ti"><svg class="ico" aria-hidden="true"><use href="#i-dialogo"/></svg></span>Situaciones</a>
+    <a href="#/mochila" data-route="mochila"><span class="ti"><svg class="ico" aria-hidden="true"><use href="#i-mochila"/></svg></span>Mochila</a>
   </nav>
 
   <script type="module" src="./assets/app.js"></script>
