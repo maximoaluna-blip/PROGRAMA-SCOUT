@@ -309,6 +309,10 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 18px 16px calc(104px + v
 
 /* ---- Pista de instalación ---- */
 .install-hint { font-size: .8rem; color: var(--muted); text-align: center; margin-top: 24px; }
+/* «Acerca de»: vuelve a abrir la bienvenida. */
+.acerca { text-align: center; margin: 4px 0 0; font-size: var(--fs-14); }
+.acerca a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 12px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.acerca .ico { width: 18px; height: 18px; }
 
 /* =====================================================================
    Pantallas (Task 5): Inicio, Capa y panal, Ruta (sendero), Buscar, Mochila
@@ -741,6 +745,95 @@ mark { background: var(--accent); color: #2c2927; border-radius: 3px; padding: 0
 @keyframes sello { from { opacity: 0; transform: scale(.4) rotate(-12deg); } }
 @keyframes destapar { from { transform: scaleX(1); } to { transform: scaleX(0); } }
 
+/* ---- Bienvenida: noche de campamento en ambos temas ---- */
+/* Pantalla completa bajo la cabecera; la barra inferior se retira (display:none:
+   fuera de la vista, del tabulador y de los lectores de pantalla). */
+body.en-bienvenida { background: var(--night); }
+body.en-bienvenida::before { display: none; }
+body.en-bienvenida main { max-width: none; padding: 0; }
+body.en-bienvenida .tabbar { display: none; }
+body.en-bienvenida main > .empty { visibility: hidden; }
+.bienvenida {
+  --cielo: clamp(176px, 31vh, 260px);
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: calc(100vh - 60px - env(safe-area-inset-top, 0px));
+  min-height: calc(100dvh - 60px - env(safe-area-inset-top, 0px));
+  background: linear-gradient(180deg, #3D1660 0, #2a1350 calc(var(--cielo) - 70px), var(--night) var(--cielo));
+  color: #fff;
+  padding: var(--cielo) 20px calc(24px + var(--safe-bottom));
+}
+.bienvenida .escena { z-index: -1; border-radius: 0; }
+.bienvenida .esc-topo { bottom: auto; height: calc(var(--cielo) - 40px); opacity: .6; }
+.bienvenida .esc-fogata { top: calc(var(--cielo) - 118px); bottom: auto; width: 96px; height: 96px; margin-left: -48px; }
+.bienvenida .esc-brasa { top: 30%; }
+.bv-cerros {
+  position: absolute; left: 0; right: 0; top: calc(var(--cielo) - 104px); width: 100%; height: 104px; z-index: -2;
+  pointer-events: none;
+}
+.bv-cerro-lejos { fill: #2f1a58; }
+.bv-cerro-cerca { fill: var(--night); }
+.bv-contenido { position: relative; max-width: 460px; margin: 0 auto; text-align: center; }
+.bv-eyebrow {
+  margin: 0; color: var(--accent); font-weight: 800; font-size: var(--fs-12);
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.bv-titulo {
+  margin: 6px auto 16px; max-width: 21ch; text-wrap: balance;
+  font-size: clamp(1.5rem, 7vw, var(--fs-34)); font-weight: 900; line-height: 1.1; letter-spacing: -.015em;
+}
+.bv-promesas { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 8px; text-align: left; }
+.bv-promesas li {
+  display: flex; align-items: center; gap: 12px;
+  padding: 9px 14px; border-radius: 14px;
+  background: rgba(255, 255, 255, .07); border: 1.5px dashed rgba(255, 230, 117, .42);
+  font-size: var(--fs-14); font-weight: 600; line-height: 1.4; color: #f3eefa;
+}
+.bv-ico {
+  flex: none; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--accent); color: #3D1660;
+}
+.bv-ico .ico { width: 20px; height: 20px; }
+.bv-sonido {
+  display: flex; align-items: center; gap: 14px; text-align: left;
+  padding: 10px 14px; border-radius: 14px; background: rgba(255, 255, 255, .1);
+}
+.bv-sonido-txt { flex: 1; display: grid; gap: 2px; }
+.bv-sonido label { font-weight: 800; font-size: var(--fs-16); cursor: pointer; }
+.bv-nota { font-size: var(--fs-12); color: #d9cdea; line-height: 1.4; }
+/* Interruptor: pista con borde visible (≥ 3:1) y perilla que se desliza. */
+.interruptor {
+  flex: none; position: relative; width: 56px; height: 32px; padding: 0; border-radius: 999px;
+  background: rgba(255, 255, 255, .12); border: 2px solid #cbbde0;
+  transition: background-color 180ms linear, border-color 180ms linear;
+}
+.int-perilla {
+  position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%;
+  background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+  transition: transform 220ms var(--curva-rebote);
+}
+.interruptor[aria-checked="true"] { background: var(--accent); border-color: var(--accent); }
+.interruptor[aria-checked="true"] .int-perilla { transform: translateX(24px); background: #3D1660; }
+.bienvenida :focus-visible { outline-color: var(--accent); }
+.bv-empezar {
+  display: block; width: 100%; margin-top: 16px; border: 0; border-radius: 999px; padding: 14px 28px;
+  background: var(--accent); color: #3D1660; font-weight: 900; font-size: var(--fs-16); letter-spacing: .02em;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .35), 0 0 0 4px rgba(255, 230, 117, .16);
+  transition: transform 280ms var(--curva-rebote);
+}
+.bv-empezar:active { transform: scale(.97); transition: transform 90ms ease-out; }
+/* Entrada: el título aterriza con un rebote suave; luego las promesas y los controles. */
+.bv-eyebrow { animation: fundido 400ms linear 100ms backwards; }
+.bv-titulo { animation: aterrizar 780ms var(--curva-rebote) 180ms backwards; }
+@keyframes aterrizar {
+  0% { opacity: 0; transform: translateY(-26px) scale(.96); }
+  45% { opacity: 1; }
+  100% { opacity: 1; transform: none; }
+}
+.bv-promesas li { animation: subir 360ms var(--curva-salida) backwards; animation-delay: calc(560ms + var(--i, 0) * 110ms); }
+.bv-sonido, .bv-empezar { animation: subir 360ms var(--curva-salida) 900ms backwards; }
+.bv-empezar { animation-delay: 980ms; }
+.bienvenida .escena { animation: fundido 900ms linear backwards; }
+
 /* ---- Hoja del parche (celebracion.js) ---- */
 .hoja-parche { position: fixed; inset: 0; z-index: 50; display: flex; align-items: flex-end; justify-content: center; }
 .hp-velo { position: absolute; inset: 0; background: rgba(27, 16, 48, .66); animation: fundido 250ms linear; }
@@ -817,6 +910,10 @@ mark { background: var(--accent); color: #2c2927; border-radius: 3px; padding: 0
   .tabbar a:active .ti, .hp-seguir:active { transform: none; }
   .tabbar.pastilla-lista .pastilla { transition: opacity 100ms linear; }
   .escena, .escena * { animation: none !important; }
+  .bv-eyebrow, .bv-titulo, .bv-promesas li, .bv-sonido, .bv-empezar { animation: fundido 100ms linear; }
+  .interruptor, .int-perilla { transition: background-color 100ms linear, border-color 100ms linear; }
+  .bv-empezar { transition: none; }
+  .bv-empezar:active { transform: none; }
   .sello-visto.animar { animation: fundido 100ms linear; }
   .sello-visto.animar .sv-tapa { animation: none; }
   .hoja-parche .hp-velo, .hoja-parche .hp-hoja { animation: fundido 100ms linear; }

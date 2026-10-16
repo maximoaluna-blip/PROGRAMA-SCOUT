@@ -3,14 +3,14 @@
    Las vistas viven en vistas.js. */
 import {
   vistaInicio, vistaCapa, vistaConcepto, vistaSituacion, vistaRuta,
-  vistaBuscar, resultadosBusqueda, vistaSituaciones, vistaMochila,
+  vistaBuscar, resultadosBusqueda, vistaSituaciones, vistaMochila, vistaBienvenida,
 } from "./vistas.js";
 import { leer, guardar, reiniciar, disponible, estadoInicial } from "./almacen.js";
-import { configurar, activo, tocar } from "./sonido.js";
+import { configurar, activo, tocar, fogata } from "./sonido.js";
 import { marcarLeida, ganarParches, avanceCapa } from "./progreso.js";
 import { hoyISO } from "./vistas.js";
 import { montarEscena, movimientoReducido } from "./escena.js";
-import { celebrarParche, animarVisto } from "./celebracion.js";
+import { celebrarParche, animarVisto, cerrarCelebracion } from "./celebracion.js";
 
 const DB = { capas: [], conceptos: [], situaciones: [], rutas: [], parches: [] };
 const byId = {};
@@ -124,6 +124,7 @@ function cascada(raiz) {
 }
 
 let desmontarEscena = null;
+let datosListos = false;
 
 /* Anillos de capa en Inicio: avanzan desde el último valor mostrado (en memoria,
    no en localStorage). Una «tapa» del color de la pista cubre el tramo nuevo y
@@ -157,6 +158,12 @@ function avanzarAnillos(raiz) {
 
 /* ---------- router ---------- */
 function render() {
+  ctx.estado = leer();
+  /* Primera visita: solo el inicio vacío (``, `#`, `#/`) lleva a la bienvenida;
+     un enlace profundo abre su destino. replaceState: «atrás» no vuelve a un #/ que redirige. */
+  if (!ctx.estado.bienvenida && ["", "#", "#/"].includes(location.hash)) {
+    try { history.replaceState(history.state, "", "#/bienvenida"); } catch (e) { /* sin historial */ }
+  }
   const hash = location.hash || "#/";
   const [, route, rawParam, sub] = hash.replace(/^#\//, "#/").split("/");
   // La consulta (?ruta=…&paso=…) se separa del parámetro antes de buscar el id.
@@ -165,6 +172,9 @@ function render() {
   const query = corte === -1 ? "" : rawParam.slice(corte + 1);
   if (route === "concepto" && byId[param]) recordarUltima(param, query);
   ctx.estado = leer();
+  const enBienvenida = route === "bienvenida";
+  // La bienvenida no usa datos: se pinta sin esperarlos (sin destello de «Cargando…»).
+  if (!datosListos && !enBienvenida) return;
   let html;
   switch (route) {
     case "": html = vistaInicio(ctx); break;
@@ -175,10 +185,13 @@ function render() {
     case "ruta": html = vistaRuta(ctx, param); break;
     case "buscar": html = vistaBuscar(ctx, param ? decodeURIComponent(param) : ""); break;
     case "mochila": html = vistaMochila(ctx); break;
+    case "bienvenida": html = vistaBienvenida(ctx); break;
     default: html = vistaInicio(ctx);
   }
   desmontarEscena?.();
   desmontarEscena = null;
+  if (enBienvenida) cerrarCelebracion();
+  document.body.classList.toggle("en-bienvenida", enBienvenida);
   app.innerHTML = html;
   const vista = app.firstElementChild;
   if (vista && vista.classList.contains("view")) {
@@ -192,6 +205,7 @@ function render() {
     // Franja de arriba y columna derecha (junto a la fogata): lejos del saludo y del título.
     zonas: [{ x: [6, 94], y: [2, 6] }, { x: [83, 97], y: [36, 58] }, { x: [60, 80], y: [2, 7] }],
   });
+  if (enBienvenida) desmontarEscena = montarBienvenida(app.querySelector(".bienvenida"));
   app.scrollTo?.(0, 0);
   window.scrollTo(0, 0);
   updateTabbar(route);
@@ -270,6 +284,7 @@ function initSonido() {
     ctx.estado = { ...ctx.estado, sonido: on };
     guardar(ctx.estado);
     pintarSonido();
+    pintarInterruptor();
     if (on) tocar("tic");
   });
   /* Tic solo en toques reales del usuario (no en clics programáticos). */
@@ -279,6 +294,57 @@ function initSonido() {
   document.addEventListener("ps:leida", (e) => { if (e.detail && e.detail.nueva === true) tocar("leida"); });
   /* El sonido del parche o de la capa suena al aparecer su hoja (ver initCelebracion). */
 }
+
+/* ---------- bienvenida ---------- */
+/* Escena nocturna y crepitar de fogata. El crepitar suena solo con el sonido activo
+   (sonido.js exige además un gesto real); se apaga al salir o con la pestaña oculta. */
+function montarBienvenida(raiz) {
+  if (!raiz) return null;
+  const desmontar = montarEscena(raiz, {
+    fogata: true, estrellas: 14,
+    // Cielo sobre los cerros, a los lados de la fogata.
+    zonas: [{ x: [5, 38], y: [2, 17] }, { x: [62, 95], y: [2, 17] }, { x: [40, 60], y: [1, 5] }],
+  });
+  const alVer = () => fogata(!document.hidden && activo());
+  document.addEventListener("visibilitychange", alVer);
+  alVer();
+  return () => {
+    document.removeEventListener("visibilitychange", alVer);
+    fogata(false);
+    desmontar();
+  };
+}
+
+function pintarInterruptor() {
+  const sw = document.getElementById("sonido-toggle");
+  if (sw) sw.setAttribute("aria-checked", String(activo()));
+  if (document.body.classList.contains("en-bienvenida")) fogata(!document.hidden && activo());
+}
+
+/* Cambiar el sonido aquí lo deja guardado como el botón de la cabecera;
+   «Empezar» guarda además que la bienvenida ya se vio. */
+function ponerSonido(on) {
+  configurar(on);
+  ctx.estado = { ...leer(), sonido: on };
+  if (!guardar(ctx.estado)) ctx.almacenDisponible = false;
+  pintarSonido();
+  pintarInterruptor();
+  if (on) tocar("tic");
+}
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest) return;
+  if (e.target.closest("#sonido-toggle")) {
+    ponerSonido(document.getElementById("sonido-toggle").getAttribute("aria-checked") !== "true");
+  } else if (e.target.closest("#empezar")) {
+    const on = document.getElementById("sonido-toggle")?.getAttribute("aria-checked") === "true";
+    configurar(on);
+    ctx.estado = { ...leer(), bienvenida: true, sonido: on };
+    if (!guardar(ctx.estado)) ctx.almacenDisponible = false;
+    pintarSonido();
+    go("#/");
+  }
+});
 
 /* ---------- celebración ---------- */
 /* Colores y símbolos de capa (spec §2.1) para celebrar una capa completa sin parche propio. */
@@ -339,10 +405,14 @@ window.go = go;
   initSonido();
   initCelebracion();
   ctx.almacenDisponible = disponible();
-  await loadData();
-  recordarAnillos();
   window.addEventListener("hashchange", render);
-  render();
+  render(); // solo pinta si toca la bienvenida
+  const yaPintada = Boolean(app.querySelector(".bienvenida"));
+  await loadData();
+  datosListos = true;
+  recordarAnillos();
+  // Si mientras cargaba se salió de la bienvenida, ahora sí se pinta el destino.
+  if (!(yaPintada && location.hash === "#/bienvenida")) render();
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("./sw.js").catch(() => {});
   }

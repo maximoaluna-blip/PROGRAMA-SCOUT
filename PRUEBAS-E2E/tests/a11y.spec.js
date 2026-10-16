@@ -16,6 +16,7 @@ const VISTAS = [
   { nombre: 'capa-ramas', hash: './#/capa/ramas' },
   { nombre: 'ruta', hash: './#/ruta/conoce-rovers' },
   { nombre: 'mochila', hash: './#/mochila' },
+  { nombre: 'bienvenida', hash: './#/bienvenida' },
 ];
 
 async function auditar(page, hash, tema, esperaSel) {
@@ -48,6 +49,7 @@ const ESPERA = {
   'capa-ramas': '.panal .hex-rama',
   ruta: '.sendero .paso',
   mochila: '.parche',
+  bienvenida: '#empezar',
 };
 
 test.describe('@solo-escritorio accesibilidad', () => {

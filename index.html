@@ -19,6 +19,8 @@
   <title>Programa Scout — Consulta PJ</title>
 </head>
 <body>
+  <!-- Primera visita: la noche de la bienvenida se pinta antes de que cargue la app (sin destello claro). -->
+  <script>try { var e = JSON.parse(localStorage.getItem("ps-progreso-v1") || "{}"); if (!e.bienvenida && ["", "#", "#/", "#/bienvenida"].indexOf(location.hash) > -1) document.body.classList.add("en-bienvenida"); } catch (x) {}</script>
   <!-- Sprite de íconos propios: trazo 2 px, currentColor, caja 24×24.
        Uso: <svg class="ico"><use href="#i-nombre"/></svg> -->
   <svg xmlns="http://www.w3.org/2000/svg" class="sprite" hidden aria-hidden="true" width="0" height="0">

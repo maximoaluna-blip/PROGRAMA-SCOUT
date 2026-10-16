@@ -288,6 +288,41 @@ export function vistaInicio(ctx) {
       <p class="section-title">Rutas guiadas</p>
       ${rutas || '<p class="empty">Aún no hay rutas.</p>'}
       <p class="install-hint">Para instalarla: abre el menú del navegador y elige «Agregar a pantalla de inicio».</p>
+      <p class="acerca"><a href="#/bienvenida">${icono("fogata")} Acerca de Programa Scout</a></p>
+    </div>`;
+}
+
+/* ---------- Bienvenida: noche de campamento, tres promesas y elección de sonido ---------- */
+const PROMESAS = [
+  ["lupa", "Consulta el Programa de Jóvenes: aquí no se certifica, se aclara."],
+  ["libro", "Todo lo que ves tiene su fuente oficial."],
+  ["mochila", "Tu avance queda guardado en este teléfono."],
+];
+
+export function vistaBienvenida(ctx) {
+  const sonido = (ctx.estado || {}).sonido === true;
+  const promesas = PROMESAS
+    .map(([ico, texto], i) => `<li style="--i:${i}"><span class="bv-ico">${icono(ico)}</span><span>${texto}</span></li>`)
+    .join("");
+  return `
+    <div class="view bienvenida">
+      <svg class="bv-cerros" viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="bv-cerro-lejos" d="M0 52C42 30 78 26 118 40s70 4 104-12 74-18 110 2 52 20 68 18V90H0z"/>
+        <path class="bv-cerro-cerca" d="M0 70c38-14 84-22 132-12s70 6 92-6 46-10 72 0 66 22 104 12V90H0z"/>
+      </svg>
+      <div class="bv-contenido">
+        <p class="bv-eyebrow">Te damos la bienvenida</p>
+        <h2 class="bv-titulo">Tu guía de campo del Programa de Jóvenes</h2>
+        <ul class="bv-promesas">${promesas}</ul>
+        <div class="bv-sonido">
+          <span class="bv-sonido-txt">
+            <label for="sonido-toggle">¿Activar sonidos?</label>
+            <span class="bv-nota" id="sonido-nota">Suaves y breves. Puedes cambiarlo luego en la cabecera.</span>
+          </span>
+          <button type="button" id="sonido-toggle" class="interruptor" role="switch" aria-checked="${sonido}" aria-describedby="sonido-nota"><span class="int-perilla"></span></button>
+        </div>
+        <button type="button" id="empezar" class="bv-empezar">Empezar</button>
+      </div>
     </div>`;
 }
 
