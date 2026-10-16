@@ -13,6 +13,9 @@ const VISTAS = [
   { nombre: 'buscar', hash: './#/buscar/educa' },
   { nombre: 'concepto-rama', hash: './#/concepto/manada-lobatos' },
   { nombre: 'situacion', hash: './#/situacion/actividades-sin-rumbo' },
+  { nombre: 'capa-ramas', hash: './#/capa/ramas' },
+  { nombre: 'ruta', hash: './#/ruta/conoce-rovers' },
+  { nombre: 'mochila', hash: './#/mochila' },
 ];
 
 async function auditar(page, hash, tema, esperaSel) {
@@ -37,6 +40,9 @@ const ESPERA = {
   buscar: '#q-input',
   'concepto-rama': '.detail h2',
   situacion: '.detail h2',
+  'capa-ramas': '.panal .hex-rama',
+  ruta: '.sendero .paso',
+  mochila: '.parche',
 };
 
 test.describe('@solo-escritorio accesibilidad', () => {

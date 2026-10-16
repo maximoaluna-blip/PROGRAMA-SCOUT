@@ -5,6 +5,9 @@ const { test, expect } = require('./_base');
 const VISTAS = [
   { nombre: 'home', hash: './#/', espera: '.layer-card' },
   { nombre: 'concepto', hash: './#/concepto/metodo-scout', espera: '.detail h2' },
+  { nombre: 'capa-ramas', hash: './#/capa/ramas', espera: '.panal .hex-rama' },
+  { nombre: 'ruta', hash: './#/ruta/conoce-rovers', espera: '.sendero .paso' },
+  { nombre: 'mochila', hash: './#/mochila', espera: '.parche' },
 ];
 
 for (const v of VISTAS) {

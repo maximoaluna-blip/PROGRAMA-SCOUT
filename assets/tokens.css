@@ -34,6 +34,8 @@
   --link: var(--brand);          /* enlaces y etiquetas de color sobre fondo claro */
   --tint: #f3edfa;               /* fondo suave de chips y realces */
   --focus: var(--brand);         /* indicador de foco: ≥ 3:1 contra el fondo (WCAG 1.4.11) */
+  --parche-vacio: #ebe8f0;       /* silueta de un parche pendiente */
+  --parche-borde: #d3cddd;
 
   /* ---- Tipografía (spec §2.2) ---- */
   --font: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -64,5 +66,7 @@
   --link: #d2b8ff;
   --tint: #33235a;
   --focus: var(--cyan);          /* sobre --night el cian sí pasa 3:1 */
+  --parche-vacio: #2c1f4b;
+  --parche-borde: #45356d;
   color-scheme: dark;
 }
