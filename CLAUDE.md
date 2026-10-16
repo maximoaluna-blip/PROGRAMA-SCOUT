@@ -13,6 +13,10 @@ PWA **mobile-first** (Android/iPhone) para **consultar, aclarar y aterrizar** lo
 - PWA estática vanilla (HTML/CSS/JS, sin build), SPA con enrutado por hash. Offline con `sw.js`.
 - **Fuente de verdad = `/data/*.json`** (`conceptos`, `capas`, `rutas`, `situaciones`). Modelo en `ESQUEMA-CONTENIDO.md`.
 - **Capas progresivas**: 0 transversal → 1 política → 2 ramas → 3 aplicación.
+- **Módulos ES en `assets/`** (sin build): `app.js` arranque y enrutado · `vistas.js` pantallas · `almacen.js` localStorage con respaldo en memoria · `progreso.js` lecturas y parches · `sonido.js` sonido sintetizado · `escena.js` escena de campamento · `celebracion.js` celebración de parches. Detalle en `README.md`.
+- ⚠️ La suite E2E depende de los selectores `.layer-card`, `.list-item`, `.detail h2`, `#q-input`, `#search-results`, `.tabbar a`, `#theme-btn` y de `.fuente` como **último hijo** de `.detail`; y de que `tests/_base.js` siembre `ps-progreso-v1` (salta la bienvenida y silencia el sonido).
+- ⚠️ Una ruta nueva en `data/rutas.json` necesita su parche en `data/parches.json` (`data.spec` lo exige). Un parche ganado no se pierde.
+- ⚠️ La flor de lis (`icons/icon.svg`) nunca se anima ni se usa como adorno. Movimiento solo con `transform`/`opacity` y con variante en `prefers-reduced-motion`.
 
 ## 3. Reglas no negociables
 

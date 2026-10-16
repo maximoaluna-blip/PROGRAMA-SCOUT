@@ -19,14 +19,16 @@ App **mobile-first** (Android e iPhone) para **consultar, aclarar y aterrizar** 
 - **Datos curados** en `/data/*.json` = fuente de verdad, auditable. Ver [`ESQUEMA-CONTENIDO.md`](ESQUEMA-CONTENIDO.md).
 - **Offline** vía `sw.js` (service worker, estrategia stale-while-revalidate).
 - **Capas progresivas**: transversal → política → ramas → aplicación.
+- **Módulos ES** en `assets/` (sin build): `app.js` (arranque y enrutado), `vistas.js` (pantallas), `almacen.js` (localStorage con respaldo en memoria), `progreso.js` (lecturas y parches), `sonido.js` (sonidos sintetizados con Web Audio, sin archivos de audio), `escena.js` (escena de campamento), `celebracion.js` (celebración al ganar un parche); estilos en `tokens.css` y `styles.css`.
+- **Progreso en el teléfono**: `localStorage` clave `ps-progreso-v1`, sin datos personales; 13 parches definidos en `data/parches.json`.
 
 ```
 PROGRAMA SCOUT/
 ├─ index.html              · app-shell
 ├─ manifest.webmanifest    · instalable (Android/iOS)
 ├─ sw.js                   · offline (subir CACHE_VERSION al cambiar archivos)
-├─ assets/  styles.css · app.js
-├─ data/    capas · conceptos · situaciones · rutas (.json)
+├─ assets/  tokens.css · styles.css · app.js · vistas.js · almacen.js · progreso.js · sonido.js · escena.js · celebracion.js
+├─ data/    capas · conceptos · situaciones · rutas · parches (.json)
 ├─ icons/   icon.svg
 ├─ PRUEBAS-E2E/            · suite Playwright + axe (ver su README)
 ├─ .github/workflows/      · CI (pruebas-e2e.yml)
@@ -69,6 +71,8 @@ Repo propio `maximoaluna-blip/PROGRAMA-SCOUT`, GitHub Pages sirviendo desde la r
 - **Fase 4 — Capa 3 «Aplicación» PUBLICADA (15-oct-2026; auditada el 14-sep-2026):** 12 conceptos `capa: 3` / `estado: auditado` (herramientas del dirigente: ciclo de programa con ABP, ciclo operativo de seis pasos, diseñar una oportunidad de aprendizaje, planear la reunión de unidad, ASP y gestión del riesgo, consejos y asambleas, observar y facilitar la reflexión, seguimiento y registro, retroalimentación, experiencias externas, reconocimiento, familia en la práctica), **7 situaciones reales** y la ruta `herramientas-del-dirigente` (12 pasos). Auditoría doctrinal en `AUDITORIA-CAPA-3.md` — **APTO CON CORRECCIONES MENORES** (1 crítico, 3 mayores, 5 menores; las 12 citas verificadas en su página); correcciones aplicadas por el corrector en `data/`; el hallazgo transversal M2 (términos ausentes del glosario) se cerró en `GLOSARIO-ASC.md` v1.5 §E. Suite `data` 8/8. Promovida a `auditado` por decisión del dueño el 15-oct-2026, con la suite E2E en verde y `CACHE_VERSION` v10.
 - **Rutas:** las 11 en `auditado` desde el 15-oct-2026 (las 10 de las Capas 0–2 se quedaron en `borrador` al publicarse y mostraban el chip aunque todos sus conceptos estaban auditados).
 - **Íconos:** `icons/icon.svg` es la fuente; de él salen los PNG (192, 512, maskable 512 y `apple-touch-icon` 180, estos dos a sangre), renderizados con el Chromium de Playwright (15-oct-2026). Si cambia el SVG, se regeneran los cuatro.
+
+- **Rediseño visual (rama `rediseno-visual`, sin publicar):** Bienvenida con escena y elección de sonido, Inicio con bitácora, panal de ramas, sendero de rutas, Mochila con 13 parches y celebración al ganarlos. Peso de `assets/` + `data/parches.json`: **130,8 KB crudos** (133.910 B; ≈39 KB con gzip), por encima de los 120 KB del spec §6; `peso.spec.js` fija el tope en 140 KB como guardia y el dueño decide. `CACHE_VERSION` v20.
 
 ### Plantilla de rama (Capa 2)
 

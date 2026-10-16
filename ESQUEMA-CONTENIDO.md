@@ -80,6 +80,21 @@ Cada rama instancia ~5 conceptos con `capa: 2` y `rama: <id>` (`cachorros`|`loba
 }
 ```
 
+## `data/parches.json` — parches de la Mochila
+
+```json
+{ "id": "conoce-la-manada", "titulo": "Conoce la Manada", "criterio": { "ruta": "conoce-la-manada" },
+  "color": "#ffd00f", "texto": "#3d2e00", "simbolo": "panal", "forma": "hexagono" }
+```
+
+- `criterio` es uno de: `{ "ruta": id }`, `{ "situaciones": "todas" }` o `{ "conceptos": "todos" }`.
+- `forma`: `hexagono` (parches de rama) o `circulo`; `simbolo` es un id del sprite de `index.html`.
+- 13 parches: 11 de ruta (uno por ruta), «Lector de situaciones» y «Bitácora completa».
+- Se gana al leer todas las fichas del criterio, en cualquier orden, dentro o fuera de la ruta.
+- **Regla: cada ruta tiene su parche; un parche ganado no se pierde** (queda con su fecha aunque el criterio crezca).
+- Los títulos derivan del título de la ruta; `data.spec.js` exige el parche de cada ruta nueva.
+- El avance (`leidas`, `situaciones`, `parches`, `ultima`) vive en `localStorage` (`ps-progreso-v1`), sin datos personales.
+
 ## Reglas
 
 1. **Nada se publica como `auditado`** sin pasar por `auditor-doctrinal-asc` contra los documentos en `DOCUMENTOS BASE/SCOUTS/PROGRAMA DE JOVENES/`.
